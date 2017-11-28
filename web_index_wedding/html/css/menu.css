@@ -1,0 +1,320 @@
+@charset "UTF-8";
+meta.cssInfo {
+	name: 'menu.css';
+	author: 'NearSaint';
+	time: '2017.0627';
+}
+nav.menu {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 10rem;
+}
+nav.menu > div.logo {
+	display: block;
+	float: left;
+	margin: 0 4rem;
+	width: 20rem;
+	height: 100%;
+	background-image: url(../images/images/logo.png);
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+nav.menu > div.logo > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+nav.menu > a.btnOpenNav {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	display: none;
+	width: 4rem;
+	height: 4rem;
+	-webkit-border-radius: 0 0 0 10px;
+	-moz-border-radius: 0 0 0 10px;
+	border-radius: 0 0 0 10px;
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 4rem;
+}
+nav.menu > a.btnOpenNav:active,
+nav.menu > a.btnOpenNav:focus {
+	background: rgba(0, 0, 0, 0.3);
+	color: rgb(228, 51, 63);
+}
+nav.menu > ul {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: end;
+	float: right;
+	width: -webkit-calc(100% - 28rem);
+	width: -moz-calc(100% - 28rem);
+	width: calc(100% - 28rem);
+	height: 100%;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	-moz-box-pack: end;
+	justify-content: flex-end;
+}
+nav.menu > ul > li {
+	margin: 0 1rem;
+	padding: 4rem 1rem;
+	height: 100%;
+}
+nav.menu > ul > li > a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	line-height: 2rem;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+}
+nav.menu > ul > li > a > i {
+	display: none;
+}
+nav.menu > ul > li.active > a {
+	color: rgb(228, 51, 63);
+}
+nav.menu > ul > li > a:hover {
+	color: rgb(228, 51, 63);
+}
+nav.menu > ul > li.active > a > i {
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	z-index: 1;
+	display: block;
+	margin-left: -20px;
+	width: 40px;
+	height: 2px;
+	background: rgb(228, 51, 63);
+}
+nav.menu > ul > span.line {
+	display: block;
+	margin: 4rem 0;
+	width: 1px;
+	height: 2rem;
+	background: #fff;
+}
+nav.menu > ul > div.sign {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 1rem;
+}
+nav.menu > ul > div.sign > a {
+	display: block;
+	margin: 0 1rem;
+	color: #fff;
+	line-height: 2rem;
+}
+nav.menu > ul > div.sign > a.up {
+	padding: 4rem 1rem;
+	-webkit-transition: background 0.3s, color 0.3s, border 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, border 0.3s;
+	-o-transition: background 0.3s, color 0.3s, border 0.3s;
+	transition: background 0.3s, color 0.3s, border 0.3s
+}
+nav.menu > ul > div.sign > a.up:hover {
+	color: rgb(228, 51, 63);
+}
+nav.menu > ul > div.sign > a.in {
+	margin: 3rem 1rem;
+	padding: 0 3rem;
+	border: 2px solid #fff;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	line-height: 3.8rem;
+	-webkit-transition: background 0.3s, color 0.3s, border 0.3s;
+	-moz-transition: background 0.3s, color 0.3s, border 0.3s;
+	-o-transition: background 0.3s, color 0.3s, border 0.3s;
+	transition: background 0.3s, color 0.3s, border 0.3s
+}
+nav.menu > ul > div.sign > a.in:hover {
+	border-color: rgb(228, 51, 63);
+	background: rgba(255, 255, 255, 0.3);
+	color: rgb(228, 51, 63);
+}
+nav.menu > ul > a.btnCloseNav {
+	position: absolute;
+	bottom: 4rem;
+	left: 50%;
+	display: none;
+	margin-left: -3rem;
+	width: 6rem;
+	height: 6rem;
+	color: #fff;
+	text-align: center;
+	font-size: 3.2rem;
+	line-height: 6rem;
+}
+nav.menu.menuFixed {
+	height: 4rem;
+	background: rgba(0, 0, 0, 0.8);
+}
+nav.menu.menuFixed > div.logo {
+	margin: 0 2rem;
+	width: 12rem;
+}
+nav.menu.menuFixed > ul > li {
+	padding: 0 1rem;
+}
+nav.menu.menuFixed > ul > li > a {
+	line-height: 4rem;
+}
+nav.menu.menuFixed > ul > li.active > a > i {
+	bottom: 0;
+}
+nav.menu.menuFixed > ul > span.line {
+	margin: 1rem 0;
+	background: #999;
+}
+nav.menu.menuFixed > ul > div.sign > a.up {
+	padding: 0 1rem;
+	line-height: 4rem;
+}
+nav.menu.menuFixed > ul > div.sign > a.in {
+	margin: 0.5rem 1rem;
+	line-height: 2.6rem;
+}
+nav.menu.menuFixed > a.btnOpenNav {
+	color: #fff;
+}
+@media screen and (min-width:1024px) and (max-width:1190px) {
+	nav.menu {
+		height: 6rem;
+	}
+	nav.menu div.logo {
+		width: 15rem;
+	}
+	nav.menu > ul {
+		width: -webkit-calc(100% - 23rem);
+		width: -moz-calc(100% - 23rem);
+		width: calc(100% - 23rem);
+	}
+	nav.menu > ul > li {
+		padding: 2rem 1rem;
+	}
+	nav.menu > ul > span.line {
+		margin: 2rem 0;
+	}
+	nav.menu > ul > div.sign > a.up {
+		padding: 2rem 1rem;
+	}
+	nav.menu > ul > div.sign > a.in {
+		margin: 1.5rem 1rem;
+		line-height: 2.6rem;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+	nav.menu {
+		display: -webkit-box !important;
+		display: -webkit-flex !important;
+		display: -moz-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		height: 5rem;
+	}
+	nav.menu div.logo {
+		margin: 0 2rem;
+		width: 12rem;
+	}
+	nav.menu > ul {
+		width: -webkit-calc(100% - 16rem);
+		width: -moz-calc(100% - 16rem);
+		width: calc(100% - 16rem);
+	}
+	nav.menu > ul > li {
+		margin: 0 0.5rem;
+		padding: 1rem 0.5rem;
+	}
+	nav.menu > ul > li > a {
+		font-size: 1.2rem;
+		line-height: 3rem;
+	}
+	nav.menu > ul > li.active > a > i {
+		bottom: -10px;
+		margin-left: -15px;
+		width: 30px;
+	}
+	nav.menu > ul > span.line {
+		margin: 1.5rem 0;
+	}
+	nav.menu > ul > div.sign > a.up {
+		margin: 0 0.5rem;
+		padding: 1rem 0.5rem;
+		font-size: 1.2rem;
+		line-height: 3rem;
+	}
+	nav.menu > ul > div.sign > a.in {
+		margin: 1rem 0.5rem;
+		padding: 0 2rem;
+		font-size: 1.2rem;
+		line-height: 2.6rem;
+	}
+}
+@media screen and (max-width:767px) {
+	nav.menu {
+		height: 4rem;
+	}
+	nav.menu div.logo {
+		margin: 0 1rem;
+		width: 10rem;
+	}
+	nav.menu > ul {
+		position: fixed;
+		top: 0;
+		right: 0;
+		display: none;
+		padding-top: 4rem;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.9);
+	}
+	nav.menu > ul > li {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 5rem;
+		text-align: center;
+	}
+	nav.menu > ul > li > a {
+		font-size: 2rem;
+		line-height: 5rem;
+	}
+	nav.menu > ul > li.active > a > i {
+		bottom: 10px;
+		margin-left: -25px;
+		width: 50px;
+	}
+	nav.menu > a.btnOpenNav {
+		display: block;
+	}
+	nav.menu > ul > span.line {
+		display: none;
+	}
+	nav.menu > ul > div.sign {
+		display: none;
+	}
+	nav.menu > ul > a.btnCloseNav {
+		display: block;
+	}
+}

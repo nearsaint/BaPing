@@ -1,0 +1,176 @@
+@charset "UTF-8";
+meta.cssInfo {
+	name: 'bp.css';
+	author: 'NearSaint';
+	time: '2017.0724';
+}
+body > section.bg > div.mask,
+section.bp {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+section.bp {
+	right: 0;
+	z-index: 99;
+	overflow: hidden;
+	background: rgba(0, 0, 0, .95)
+}
+section.bp.container {
+	padding: 0!important;
+	width: 100%!important
+}
+section.bp.container div#slider {
+	-webkit-box-sizing: border-box!important;
+	-moz-box-sizing: border-box!important;
+	box-sizing: border-box!important;
+	-webkit-border-radius: 0!important;
+	-moz-border-radius: 0!important;
+	border-radius: 0!important;
+	background: 0 0!important;
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+	-ms-box-sizing: border-box!important
+}
+section.bp > div.img {
+	float: left;
+	display: block;
+	overflow: hidden;
+	padding: 0!important;
+	width: 50%;
+	height: 100%
+}
+section.bp > div.img > div {
+	position: relative;
+	display: block;
+	width: 100%!important;
+	height: 100%!important;
+	background-position: center;
+	background-repeat: no-repeat
+}
+section.bp > div.img > div div.surface {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-moz-transform: translateY(-50%) translateX(-50%);
+	-ms-transform: translateY(-50%) translateX(-50%);
+	-o-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%)
+}
+section.bp > div.img > div div.images {
+	margin: 0 auto
+}
+section.bp > div.img > div div.image1,
+section.bp > div.img > div div.image2 {
+	width: 100%!important;
+	height: 100%!important;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat
+}
+section.bp > div.text {
+	position: relative;
+	margin-left: 50%;
+	padding: 20px;
+	width: 50%;
+	height: 100%
+}
+section.bp > div.text > div {
+	position: relative;
+	padding: 20px 0;
+	height: 150px
+}
+section.bp > div.text > div > i {
+	display: block;
+	margin: 0 20px;
+	width: 110px;
+	height: 110px;
+	border: 3px solid #fff;
+	-webkit-border-radius: 75pt;
+	-moz-border-radius: 75pt;
+	border-radius: 75pt;
+	background-color: #ccc;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat
+}
+section.bp > div.text > div > i[sex='1'] {
+	border-color: #00a0e9
+}
+section.bp > div.text > div > i[sex='2'] {
+	border-color: #e4007f
+}
+section.bp > div.text > div > h5 {
+	position: absolute;
+	top: 50%;
+	left: 10pc;
+	color: #fff;
+	font-weight: 700;
+	font-size: 60px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+section.bp > div.text > h5 {
+	margin-top: 40px;
+	color: #fff;
+	color: #f1c40f;
+	font-weight: 700;
+	font-size: 55px;
+	line-height: 1.4em
+}
+section.bp > div.text > i {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	display: block;
+	height: 5pc;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 5pc;
+	opacity: .8
+}
+section.bp > div.text > i > b {
+	margin: 0 10px;
+	background-image: -webkit-linear-gradient(#fdef00, #bbaf00);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fdef00), to(#bbaf00));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fdef00), to(#bbaf00));
+	background-image: -moz-linear-gradient(#fdef00, #bbaf00);
+	background-image: -o-linear-gradient(#fdef00, #bbaf00);
+	background-image: linear-gradient(#fdef00, #bbaf00);
+	color: #fdef00;
+	font-size: 52px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
+}
+section.bp > div.text > b {
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	display: block;
+	height: 5pc;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 28px;
+	line-height: 5pc;
+	opacity: .8
+}
+section.bp > div.text.noimage {
+	margin-left: 0;
+	width: 100%
+}

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+meta.cssInfo {
+	name: 'ds.css';
+	author: 'NearSaint';
+	time: '2017.0724';
+}
+section.ds {
+	z-index: 99;
+	background: #333
+}
+section.ds,
+section.ds > div.video {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%
+}
+section.ds > div.video {
+	display: block
+}
+section.ds > div.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 40px;
+	width: 100%;
+	height: 100%;
+	background-image: -webkit-linear-gradient(left, #000, transparent 70%, transparent);
+	background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(70%, transparent), to(transparent));
+	background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(70%, transparent), to(transparent));
+	background-image: -moz-linear-gradient(left, #000, transparent 70%, transparent);
+	background-image: -o-linear-gradient(left, #000, transparent 70%, transparent);
+	background-image: linear-gradient(left, #000, transparent 70%, transparent);
+	text-shadow: 1px 2px 6px #000;
+	opacity: .95
+}
+section.ds > div.text > div {
+	position: relative;
+	padding: 20px 0;
+	height: 150px
+}
+section.ds > div.text > div > i {
+	display: block;
+	margin: 0 20px;
+	width: 110px;
+	height: 110px;
+	border: 3px solid #fff;
+	-webkit-border-radius: 75pt;
+	-moz-border-radius: 75pt;
+	border-radius: 75pt;
+	background-color: #ccc;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat
+}
+section.ds > div.text > div > i[sex='1'] {
+	border-color: #00a0e9
+}
+section.ds > div.text > div > i[sex='2'] {
+	border-color: #e4007f
+}
+section.ds > div.text > div > h5 {
+	position: absolute;
+	top: 50%;
+	left: 10pc;
+	color: #fff;
+	font-weight: 700;
+	font-size: 60px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+section.ds > div.text > h5 {
+	margin-top: 40px;
+	width: 50%;
+	color: #fff;
+	color: #ff1abc;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 1.4em
+}
+section.ds > div.text > h5 > b {
+	margin: 0 20px;
+	color: #fff;
+	font-size: 60px
+}
+section.ds > div.text > i {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	display: block;
+	height: 5pc;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 5pc;
+	opacity: .8
+}
+section.ds > div.text > i > b {
+	margin: 0 10px;
+	background-image: -webkit-linear-gradient(#ff1abc, #e71aff);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff1abc), to(#e71aff));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff1abc), to(#e71aff));
+	background-image: -moz-linear-gradient(#ff1abc, #e71aff);
+	background-image: -o-linear-gradient(#ff1abc, #e71aff);
+	background-image: linear-gradient(#ff1abc, #e71aff);
+	color: #ff1abc;
+	text-shadow: none;
+	font-size: 52px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent
+}
+section.ds > div.text > b {
+	position: absolute;
+	right: 40px;
+	bottom: 20px;
+	display: block;
+	height: 5pc;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 28px;
+	line-height: 5pc;
+	opacity: .8
+}

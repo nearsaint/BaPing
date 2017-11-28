@@ -1,0 +1,427 @@
+@charset "UTF-8";
+body {
+	background: #000;
+}
+
+body> section {
+	position: relative;
+	z-index: 1;
+}
+
+
+/*====== bg ===================================================*/
+
+body> section.bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	overflow: hidden;
+}
+
+body> section.bg > video {
+	position: absolute;
+}
+
+body> section.bg > div.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+
+/*====== bp ===================================================*/
+
+section.bp {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.90);
+}
+
+section.bp > div.img {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+}
+
+section.bp > div.img > span {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: all 10s linear;
+	-moz-transition: all 10s linear;
+	-o-transition: all 10s linear;
+	-webkit-transition: all 10s linear;
+	animation: mymove 10s infinite;
+	-webkit-animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+	from {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-o-transform: scale(.8);
+		-m-transform: scale(.8);
+		transform: scale(.8);
+	}
+	to {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-o-transform: scale(1.2);
+		-m-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+}
+
+section.bp > div.text {
+	height: 100%;
+	width: calc(50% - 40px);
+	padding: 40px 40px 40px 0;
+	margin-left: calc(50% + 40px);
+	position: relative;
+}
+
+section.bp > div.text > div {
+	height: 150px;
+	position: relative;
+}
+
+section.bp > div.text > div > i {
+	display: block;
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+	border: 3px solid #fff;
+	background-color: #ccc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+section.bp > div.text > div > i[sex="1"] {
+	border-color: #00a0e9;
+}
+
+section.bp > div.text > div > i[sex="2"] {
+	border-color: #e4007f;
+}
+
+section.bp > div.text > div > h5 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 190px;
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+}
+
+section.bp > div.text > h5 {
+	margin-top: 40px;
+	color: #fff;
+	font-size: 65px;
+	font-weight: bold;
+	line-height: 1.4em;
+}
+
+section.bp > div.text > i {
+	position: absolute;
+	display: block;
+	height: 80px;
+	bottom: 40px;
+	left: 40px;
+	font-size: 36px;
+	padding-top: 40px;
+	font-weight: bold;
+	color: #fff;
+	opacity: .8;
+	font-style: normal;
+}
+
+section.bp > div.text > i > b {
+	margin: 0 10px;
+	font-size: 52px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #fdef00;
+	background-image: -webkit-linear-gradient(#fdef00, #bbaf00);
+	background-image: -o-linear-gradient(#fdef00, #bbaf00);
+	background-image: -moz-linear-gradient(#fdef00, #bbaf00);
+	background-image: linear-gradient(#fdef00, #bbaf00);
+}
+
+section.bp > div.text > b {
+	position: absolute;
+	display: block;
+	height: 80px;
+	bottom: 40px;
+	right: 40px;
+	font-size: 28px;
+	padding-top: 40px;
+	font-weight: bold;
+	color: #fff;
+	opacity: .8;
+	font-style: normal;
+}
+
+
+/*====== header ===============================================*/
+
+section.header {
+	height: 68px;
+	width: 100%;
+	padding: 0 30px;
+	border-bottom: 1px solid #333;
+	background: rgba(0, 0, 0, 0.15);
+}
+
+section.header > h5.name {
+	color: #fff;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 68px;
+}
+
+section.header > i.copyright {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 90px;
+	font-style: normal;
+	color: #ccc;
+}
+
+
+/*====== content ==============================================*/
+
+section.content {
+	height: calc(100% - 68px);
+	width: 100%;
+	padding: 20px 30px 0;
+}
+
+section.content > div.left {
+	height: 100%;
+	width: 70%;
+	float: left;
+	margin: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+}
+
+div.left > .chatBox {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+
+div.left > .chatBox > ul {
+	height: auto;
+	width: 100%;
+}
+
+div.left > .chatBox > ul > li {
+	margin: 0 0 20px;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+}
+
+div.left > .chatBox > ul > li > div {
+	height: 100px;
+	position: relative;
+}
+
+div.left > .chatBox > ul > li > div > i {
+	display: block;
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	border: 3px solid #fff;
+	background-color: #ccc;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+div.left > .chatBox > ul > li > div > i[sex="1"] {
+	border-color: #00a0e9;
+}
+
+div.left > .chatBox > ul > li > div > i[sex="2"] {
+	border-color: #e4007f;
+}
+
+div.left > .chatBox > ul > li > div > h5 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 120px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.left > .chatBox > ul > li > div > b {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 15px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #fff;
+	opacity: .8;
+}
+
+div.left > .chatBox > ul > li > h6 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding-left: 120px;
+	margin-bottom: 20px;
+}
+
+div.left > .chatBox > ul > li > img {
+	max-height: 300px;
+	max-width: 200px;
+	margin: 0 0 20px 120px;
+}
+
+div.left > .chatBox > ul > li > b {
+	display: block;
+	width: 100%;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: right;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #fdef00;
+	background-image: -webkit-linear-gradient(#fdef00, #bbaf00);
+	background-image: -o-linear-gradient(#fdef00, #bbaf00);
+	background-image: -moz-linear-gradient(#fdef00, #bbaf00);
+	background-image: linear-gradient(#fdef00, #bbaf00);
+}
+
+section.content > div.right {
+	height: 100%;
+	width: calc(30% - 20px);
+	margin-left: calc(70% + 20px);
+}
+
+section.content > div.right > ul.imgBox {
+	overflow: hidden;
+	position: relative;
+	min-height: 500px;
+	width: 100%;
+}
+
+section.content > div.right > ul.imgBox > li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #333;
+	z-index: 1;
+	border-radius: 10px;
+}
+
+section.content > div.right > ul.imgBox > li:first-child {
+	z-index: 999;
+	animation: imgBoxMove 6s;
+	-webkit-animation: imgBoxMove 6s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes imgBoxMove {
+	from {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		-m-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		-m-transform: scale(1);
+		transform: scale(1);
+		-webkit-filter: blur(0);
+		/* Chrome, Safari, Opera */
+		filter: blur(0);
+		opacity: 1;
+	}
+	to {
+		-webkit-transform: scale(1.4);
+		-moz-transform: scale(1.4);
+		-o-transform: scale(1.4);
+		-m-transform: scale(1.4);
+		transform: scale(1.4);
+		-webkit-filter: blur(3px);
+		/* Chrome, Safari, Opera */
+		filter: blur(3px);
+		opacity: 0;
+	}
+}
+
+section.content > div.right > ul.imgBox > li:last-child {
+	animation: none !important;
+	-webkit-animation: none !important;
+}
+
+section.content > div.right > div.qrCode {
+	height: calc(100% - 520px);
+	max-height: 350px;
+	min-height: 300px;
+	background: rgba(255, 255, 255, 0.9);
+	margin-top: 20px;
+	padding: 10px 10px 60px;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+}
+
+section.content > div.right > div.qrCode > span {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	display: block;
+	font-size: 28px;
+	color: #333;
+}
+
+section.content > div.right > div.qrCode > img {
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	opacity: .8;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>关于 - 香蕉互娱</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/about.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="about">
+		<div class="bg"></div>
+		<div class="header">
+			<a class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+			<span>关于我们</span>
+		</div>
+		<div class="content">
+			<div class="avarat">
+				<i style="background-image:url(images/updata/logoIcon.png);"></i>
+				<h5>Balabala Fun</h5>
+			</div>
+			<div class="content">
+				<h5><i class="fa fa-flag" aria-hidden="true"></i> 香蕉互娱团队，专注于酒吧场景下的娱乐互动。打造出霸屏、打赏、群红包、竞拍等特色互动功能。<br><br>广州八瓶信息科技有限公司致力于打造“香蕉互娱”服务平台，为酒吧、餐吧、音乐吧等企业提供现场互动系统－上墙霸屏、打赏等增值服务。</h5>
+				<h5><i class="fa fa-phone" aria-hidden="true"></i> 13710367242</h5>
+				<h5><i class="fa fa-location-arrow" aria-hidden="true"></i> 广州市天河区棠东东路远洋创意园</h5>
+			</div>
+		</div>
+	</section>
+
+	<!--Include jquery -->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+	<script>
+		//=====================
+		//
+		//       ready
+		//
+		//=====================
+		$(document).ready(function() {
+			var btn = $('section.history > div.content > ul.list > li');
+			btn.on('touchstart', function() {
+				$(this).addClass('active');
+			});
+			btn.on('touchend', btn, function() {
+				$(this).removeClass('active');
+			});
+		});
+
+	</script>
+</body>
+
+</html>

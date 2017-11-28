@@ -1,0 +1,171 @@
+@charset 'UTF-8';
+{
+	/* 
+ 	* name: history.css
+	* author：Saint Near
+ 	* edit: 2017.06.14
+	*/
+}
+
+*[sex='1'] {
+	border: 1px solid #00a0e9;
+}
+
+*[sex='2'] {
+	border: 1px solid #fe557b;
+}
+body {
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+section.history{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+section.history > div.mask{
+	background: rgba(0,0,0,0.9);
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+section.history > div.bg{
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/money-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 150px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+section.history > .header{
+	height: 42px;
+	width: 100%;
+	position: relative;
+}
+section.history > .header > a.back{
+	display: block;
+	position: absolute;
+	height: 42px;
+	width: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+	font-size: 2.4rem;
+}
+section.history > .header > span{
+	height: 42px;
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	line-height: 42px;
+	color: #fff;
+	font-size: 1.6rem;
+}
+section.history > div.content{
+	height: calc(100% - 42px);
+	width: 100%;
+	overflow: hidden;
+}
+section.history > div.content > div.avarat{
+	height: 140px;
+	width: 100%;
+	position: relative;
+	padding: 20px 0;
+}
+section.history > div.content > div.avarat > i{
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 200px;
+}
+section.history > div.content > div.avarat > h5{
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: #333;
+	font-size: 1.6rem;
+	margin: 10px 0;
+}
+section.history > div.content > ul.list{
+	margin-top: 20px;
+	padding: 0;
+	display: block;
+	width: 100%;
+	overflow-y: scroll;
+	height: calc(100% - 160px);
+}
+section.history > div.content > ul.list > h5{
+	height: 24px;
+	line-height: 24px;
+	margin-bottom: 5px;
+	font-size: 1.2rem;
+	color: #ccc;
+	padding-left: 20px;
+}
+section.history > div.content > ul.list > li{
+	padding: 0 0 0 20px;
+}
+section.history > div.content > ul.list > li.active{
+	background: #eee;
+}
+section.history > div.content > ul.list > li > a{
+	display: block;
+	height: 82px;
+	width: 100%;
+	position: relative;
+	border-top: 1px solid #eee;
+	padding: 10px 10px 10px 70px;
+}
+section.history > div.content > ul.list > li > a > i{
+	height: 50px;
+	width: 50px;
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+section.history > div.content > ul.list > li > a > h5{
+	font-size: 1.4rem;
+	color: #333;
+	line-height: 22px;
+	font-weight: bold;
+}
+section.history > div.content > ul.list > li > a > span{
+	display: block;
+	line-height: 20px;
+	font-size: 1.2rem;
+	color: #666;
+	font-weight: 200;
+}
+section.history > div.content > ul.list > li > a > b{
+	color: #ccc;
+	display: block;
+	height: 100%;
+	line-height: 82px;
+	right: 20px;
+	top: 0;
+	position: absolute;
+	font-size: 1.6rem;
+}

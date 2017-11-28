@@ -1,0 +1,147 @@
+@charset 'UTF-8';
+{
+	/* 
+ 	* name: about.css
+	* author：Saint Near
+ 	* edit: 2017.06.14
+	*/
+}
+*[sex='1'] {
+	border: 1px solid #00a0e9;
+}
+*[sex='2'] {
+	border: 1px solid #fe557b;
+}
+body {
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+section.about {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+section.about > div.mask {
+	background: rgba(0, 0, 0, 0.9);
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+section.about > div.bg {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/money-bg.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center bottom;
+	height: 150px;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+section.about > .header {
+	height: 42px;
+	width: 100%;
+	position: relative;
+}
+section.about > .header > a.back {
+	display: block;
+	position: absolute;
+	height: 42px;
+	width: 42px;
+	text-align: center;
+	line-height: 42px;
+	color: #fff;
+	font-size: 2.4rem;
+}
+section.about > .header > span {
+	height: 42px;
+	width: -webkit-calc(100% - 100px);
+	width: -moz-calc(100% - 100px);
+	width: calc(100% - 100px);
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	line-height: 42px;
+	color: #fff;
+	font-size: 1.6rem;
+}
+section.about > div.content {
+	height: -webkit-calc(100% - 42px);
+	height: -moz-calc(100% - 42px);
+	height: calc(100% - 42px);
+	width: 100%;
+	overflow: hidden;
+}
+section.about > div.content > div.avarat {
+	height: 140px;
+	width: 100%;
+	position: relative;
+	padding: 20px 0;
+}
+section.about > div.content > div.avarat > i {
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 70% 70%;
+	-moz-background-size: 70%;
+	-o-background-size: 70%;
+	background-size: 70%;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+	background-color: #333;
+}
+section.about > div.content > div.avarat > h5 {
+	text-align: center;
+	display: block;
+	width: 100%;
+	color: #333;
+	font-size: 1.6rem;
+	margin: 10px 0;
+}
+section.about > div.content > div.content {
+	margin-top: 20px;
+	height: -webkit-calc(100% - 140px);
+	height: -moz-calc(100% - 140px);
+	height: calc(100% - 140px);
+	overflow-y: scroll;
+	padding: 0 0 40px 20px;
+}
+section.about > div.content > div.content > h5 {
+	display: block;
+	border-top: 1px solid #eee;
+	padding: 20px 20px 20px 40px;
+	position: relative;
+	line-height: 20px;
+	color: #333;
+	font-size: 1.2rem;
+	min-height: 60px;
+}
+section.about > div.content > div.content > h5 > i {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 35px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 1.6rem;
+	color: #ccc;
+}

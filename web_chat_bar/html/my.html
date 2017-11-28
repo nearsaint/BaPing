@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>我的 - 香蕉互娱</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/my.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="my">
+		<div class="mask"></div>
+		<div class="bg"></div>
+		<div class="header">
+			<a class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+			<span>我的</span>
+		</div>
+		<div class="content">
+			<div class="avarat">
+				<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+				<a><i class="fa fa-camera" aria-hidden="true"></i></a>
+				<input class="avarat" type="file" accept="image/jpg,image/jpeg,image/png" />
+			</div>
+			<ul class="list">
+				<li>
+					<a>
+						<i class="fa fa-user" aria-hidden="true"></i>
+						<span>昵称<b>来自微信</b></span>
+						<h5>Herman</h5>
+					</a>
+				</li>
+				<li>
+					<a>
+						<i class="fa fa-venus-mars" aria-hidden="true"></i>
+						<span>性别<b>来自微信</b></span>
+						<h5>男</h5>
+					</a>
+				</li>
+				<li>
+					<a>
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<span>城市<b>来自微信</b></span>
+						<h5>广东广州</h5>
+					</a>
+				</li>
+				<li>
+					<a class="Mylabel">
+						<i class="fa fa-code" aria-hidden="true"></i>
+						<span>签名<b>点击编辑</b></span>
+						<h6>我是酒吧的一枝独秀，喝的是寂寞。PS:我车上有瓶红牛，有兴趣微信联系我 “herman”。</h6>
+						<b class="fa"></b>
+					</a>
+					<div class="inputContainer animated flipInX">
+						<i class="fa fa-code" aria-hidden="true"></i>
+						<label>
+							<span>签名</span>
+							<input class="myLabelValue" type='text' placeholder="输入您的个人签名" value="">
+						</label>
+						<div class="bt">
+							<a class="closeBtn"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+							<a class="submitBtn"><i class="fa fa-check-circle" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!--Include jquery -->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+	<script>
+		//=====================
+		//
+		//       ready
+		//
+		//=====================
+		$(document).ready(function() {
+
+			$(document).on('click', '.Mylabel', function() {
+				$(this).parent('li').addClass('active');
+				$('.mask').fadeIn();
+			});
+			$(document).on('click', '.closeBtn', function() {
+				$('.list > li').removeClass('active');
+				$('.mask').fadeOut();
+			});
+			$(document).on('click', '.submitBtn', function() {
+				var myLabelValue = $('.myLabelValue')[0].value;
+				console.log(myLabelValue);
+				if (myLabelValue == '') {
+					$('.Mylabel').find('h6').html('这个同学很懒，什么都没留！');
+				} else {
+					$('.Mylabel').find('h6').html(myLabelValue);
+				}
+
+				$('.list > li').removeClass('active');
+				$('.mask').fadeOut();
+			});
+		});
+
+	</script>
+</body>
+
+</html>

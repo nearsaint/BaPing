@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>含七吧 - 香蕉互娱</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- avatar -->
+	<link href="css/avatar.css" rel="stylesheet">
+	<!-- Begin emoji-picker Stylesheets -->
+	<link href="lib/css/emoji.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- 左侧栏 -->
+	<section class="nav">
+		<ul>
+			<i class="avarat" money="1" sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+			<span class="name">Herman</span>
+			<b class="location">广东广州</b>
+
+			<li><a>我的</a></li>
+			<li><a id="siliao">私聊</a></li>
+			<li><a id="hudong">互动</a></li>
+			<li><a>钱包</a></li>
+			<li><a>设置</a></li>
+			<li><a>关于</a></li>
+			<i class="copyright">Copyright © 2017 BalabalFun</i>
+		</ul>
+		<a class="bg" id="navBackToChat"></a>
+	</section>
+	<!-- end .nav -->
+
+	<section class="bodyBox">
+		<!-- 大厅 -->
+		<div class="chatBox index box animated">
+			<div class="title">
+				<a class="btn-icon btn-meun btn-left" id="chatGoToNav"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<a class="btn-icon btn-chat btn-right" id="chatGoToList"><i class="liao" aria-hidden="true">聊</i><b></b></a>
+				<a class="btn-icon btn-chat btn-right-2" id="chatGoToGame"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
+				<a class="text">
+					<span class="img" style="background-image: url(images/updata/logoIcon.png);"></span>
+					<span>广州含七舔西吧</span>
+				</a>
+			</div>
+			<!-- end .title -->
+			<div class="content">
+				<div id="chatScroller">
+					<ul class="chatList" id="thelist">
+						<li id="pullDown">
+							<span class="flip">加载历史信息</span>
+							<div class="loading">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+						<li class="">
+							<i sex="1" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b money="1"></b></i>
+							<div>
+								<span>Hebe小公仔</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>来喝酒啊！臭HI们，我系342台！</span>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chat-my">
+							<i sex="1" money="3" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<div>
+								<span>Hebe小公仔</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！</span>
+										<img class="userImgMsg" src="#">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="">
+							<i sex="1" red="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<div>
+								<span>Hebe小公仔</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊！</span>
+										<img class="userImgMsg" src="images/updata/testImg.jpg">
+										<a class="bpForTa">为TA霸屏</a>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chat-my">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Hebe小公仔</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！</span>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatBp">
+							<i sex="2" money="1" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<div>
+								<span>Hebe小公仔</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span><b>重金霸屏60秒</b>你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！</span>
+										<img class="userImgMsg" src="images/updata/testImg.jpg">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatBp chat-my">
+							<i sex="2" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Hebe小公仔</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span><b>为<i sex="2">丑HI女</i><br>重金霸屏60秒</b>你有种别跑！</span>
+										<img class="userImgMsg" src="images/updata/testImg2.jpg">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatHb">
+							<i sex="2" red="1" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<div>
+								<span>丑HI女</span>
+								<div class="chatBubble">
+									<div class="content">
+										<a class="redBag">
+											<b></b>
+											<span>端午快乐！大屌们</span>
+											<i>领取红包</i>
+										</a>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatHb chat-my">
+							<i sex="2" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>丑HI女</span>
+								<div class="chatBubble">
+									<div class="content">
+										<a class="redBag">
+											<b></b>
+											<span>端午快乐！大屌们端午快乐！大屌们端午快乐！大屌们</span>
+											<i>领取红包</i>
+										</a>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatDs chat-my">
+							<i sex="1" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<div>
+								<span>Hebe</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span><b>给<i sex="2">丑HI女</i><br>
+										打赏超级跑车</b>屌臭啊 ！</span>
+										<img src="images/updata/testImgDs.png">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatDs">
+							<i sex="1" money="1" class="avarat" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<div>
+								<span>Hebe</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span><b>给<i>全程服务员</i><br>
+										打赏超级跑车</b>屌臭啊 ！</span>
+										<img src="images/updata/testImgDs.png">
+									</div>
+									<span class="chatTime">11-23<br>23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li id="pullUp">
+							<div class="loading">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- end .chatScroller -->
+
+				<div class="dpBox animated bounceInDown">
+					<div class="left">
+						<span style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+					</div>
+					<div class="right">
+						<i class="avarat" sex='1' style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+						<span class="name">Herman</span>
+						<h5>这就是我，不一样的焰火😧😖😰！！我在你左边亲爱的精津</h5>
+						<b class="time">重精霸屏<i>5</i>秒</b>
+					</div>
+				</div>
+				<!-- end .dpBox 大屏 -->
+			</div>
+			<!-- end .content -->
+			<div class="inputBar index" id="inputBar" data-tap-disabled="true">
+				<div class="inputbar">
+					<a class="tools"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+					<div class="input">
+						<a class="imgMassage">
+							<span class="mask"><i class="fa fa-spinner" aria-hidden="true"></i></span>
+							<span style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</a>
+						<textarea placeholder="上墙内容" data-emojiable="true" data-emoji-input="unicode"></textarea>
+					</div>
+					<a class="sumbit"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+					<b>10s</b><div class="loading"><i class="fa fa-spinner" aria-hidden="true"></i></div></a>
+					<div class="clr"></div>
+				</div>
+				<!-- end .inputbar -->
+				<div class="toolbar">
+					<ul>
+						<li><a class="imgMsg"><i></i></a>
+							<input class="imgMsg" type="file" accept="image/jpg,image/jpeg,image/png" />
+						</li>
+						<li><a class="bp"><i></i></a></li>
+						<li><a class="ds"><i></i></a></li>
+						<li><a class="hb"><i></i></a></li>
+						<li><a class="sr"><i></i></a></li>
+					</ul>
+				</div>
+				<!-- end .toolbar -->
+				<div class="bpbar toolbar-box">
+					<ul>
+						<li class="title">
+							<a class="bp icon"><i></i></a>
+							<h5>重金霸屏</h5>
+							<a class="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+							<div class="clr"></div>
+						</li>
+						<li>
+							<div class="img">
+								<div class="imgbox">
+									<a class="imgMassage">
+										<span class="mask"><i class="fa fa-spinner" aria-hidden="true"></i></span>
+										<span style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</a>
+									<a class="text">添加图片</a>
+								</div>
+								<div class="btbox">
+									<a><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+									<input class="imgUpdata" type="file" accept="image/jpg,image/jpeg,image/png" />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<textarea placeholder="霸屏文字(限30字,选填)" data-emojiable="true" data-emoji-input="unicode"></textarea>
+							</div>
+						</li>
+						<li>
+							<div class="select">
+								<select>
+									<option>选择霸屏时长</option>
+									<option>10秒　　￥10.00</option>
+									<option>20秒　　￥20.00</option>
+									<option>30秒　　￥30.00</option>
+									<option>60秒　　￥58.00</option>
+									<option>100秒　　￥90.00</option>
+								</select>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+						</li>
+						<li>
+							<h6>需要支付<b>￥88.00</b>,霸屏不支持退款</h6>
+							<a class='sumbit' id="testBtn-bp" href="#">重金霸屏<div class="loading"><i class="fa fa-spinner"></i></div></a>
+						</li>
+					</ul>
+				</div>
+				<!-- end .bpbar -->
+				<div class="hbbar toolbar-box">
+					<ul>
+						<li class="title">
+							<a class="hb icon"><i></i></a>
+							<h5>红包</h5>
+							<a class="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+							<div class="clr"></div>
+						</li>
+						<li>
+							<div class="input">
+								<input type='number' placeholder="输入金额1-500">
+								<span>元</span>
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<input type='number' placeholder="输入红包个数1-50个">
+								<span>个</span>
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<textarea placeholder="恭喜发财,大吉大利" data-emojiable="true" data-emoji-input="unicode"></textarea>
+							</div>
+						</li>
+						<li>
+							<h6>需要支付<b>￥88.00</b>,红包不支持退款</h6>
+							<a class='sumbit' href="#">塞红包</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end .hbbar -->
+				<div class="dsbar toolbar-box">
+					<ul>
+						<li class="title">
+							<a class="ds icon"><i></i></a>
+							<h5>打赏</h5>
+							<a class="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+							<div class="clr"></div>
+						</li>
+						<li>
+							<div class="select">
+								<select>
+									<option>选择打赏对象</option>
+									<option>现场乐队</option>
+									<option>主唱歌手</option>
+									<option>全程观众</option>
+									<option>全程美女</option>
+									<option>全程帅哥</option>
+									<option>服务员</option>
+									<option>现场DJ</option>
+								</select>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+						</li>
+						<li>
+							<div class="select">
+								<select>
+									<option>选择打赏礼品 (霸屏20秒)</option>
+									<option>豪车　　　￥20.00</option>
+									<option>动人玫瑰　　￥25.00</option>
+									<option>生日蛋糕　　￥30.00</option>
+									<option>人气流星　　￥58.00</option>
+									<option>皇冠　　　　￥90.00</option>
+								</select>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<textarea placeholder="打赏语(限30字内,选填)" data-emojiable="true" data-emoji-input="unicode"></textarea>
+							</div>
+						</li>
+						<li>
+							<h6>需要支付<b>￥88.00</b>,打赏不支持退款</h6>
+							<a class='sumbit' href="#">打赏</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end .dsbar -->
+				<div class="srbar toolbar-box">
+					<ul>
+						<li class="title">
+							<a class="sr icon"><i></i></a>
+							<h5>生日霸屏</h5>
+							<a class="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+							<div class="clr"></div>
+						</li>
+						<li>
+							<div class="img">
+								<div class="imgbox">
+									<a class="imgMassage">
+										<span class="mask"><i class="fa fa-spinner" aria-hidden="true"></i></span>
+										<span style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</a>
+									<a class="text">选择寿星照片</a>
+								</div>
+								<div class="btbox">
+									<a><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+									<input class="imgUpdata" type="file" accept="image/jpg,image/jpeg,image/png" />
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<input type='text' placeholder="寿星姓名">
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<textarea placeholder="生日祝福(限30字,选填)" data-emojiable="true" data-emoji-input="unicode"></textarea>
+							</div>
+						</li>
+						<li>
+							<h6>需要支付<b>￥88.00</b>,生日霸屏不支持退款</h6>
+							<a class='sumbit' href="#">生日快乐</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end .srbar -->
+			</div>
+			<!-- end .inputBar -->
+		</div>
+		<!-- end .chatBox index -->
+
+		<!-- 列表 -->
+		<div class="listBox box animated">
+			<div class="title">
+				<a class="btn-icon btn-meun btn-left" id="listBackToChat"><i class="fa  fa-arrow-left" aria-hidden="true"></i></a>
+				<div class="tap">
+					<a class="chatINbtn active">私聊</a>
+					<a class="tuhaoINbtn">土豪榜</a>
+					<a class="redINbtn">红人榜</a>
+					<a class="userINbtn">用户</a>
+					<div class="clr"></div>
+				</div>
+			</div>
+			<!-- end .title -->
+			<div class="content chatListContent ">
+				<div class="tiper hiden">暂无用户信息</div>
+				<ul class="">
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！今晚去莱奔斯基，要5要！今晚去莱奔斯基，要5要！今晚去莱奔斯基，要5要！今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="time">2017-06-01</b>
+							<h5 class="msg">今晚去莱奔斯基，要5要！ 我请客</h5>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end .chatListContent -->
+			<div class="content userListContent hiden">
+				<div class="sort">
+					<i class="fa fa-filter" aria-hidden="true"></i>
+					<label>
+						<select>
+							<option value="显示全部">显示全部</option>
+							<option value="只显示女性">只显示女性</option>
+							<option value="只显示男性">只显示男性</option>
+						</select>
+					</label>
+				</div>
+				<div class="tiper hiden">暂无用户信息</div>
+				<ul>
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="11" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="12" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="13" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="11" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="12" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="13" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" money="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" red="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="avarat" sex="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<span class="name">Herman</span>
+							<b class="tiper">广东广州</b>
+						</a>
+					</li>
+					<div class="clr"></div>
+				</ul>
+			</div>
+			<!-- end .userListContent -->
+		</div>
+		<!-- end .userlistBox -->
+
+		<!-- 游戏 -->
+		<div class="gameBox box animated">
+			<div class="title">
+				<a class="btn-icon btn-meun btn-left" id="gameBackToChat"><i class="fa  fa-arrow-left" aria-hidden="true"></i></a>
+				<span>互动</span>
+			</div>
+			<!-- end .title -->
+			<ul>
+				<li><a class="saima">赛马游戏</a></li>
+				<li><a class="saiche">赛车游戏</a></li>
+				<li><a class="yaoyiyao">摇一摇</a></li>
+				<div class="clr"></div>
+			</ul>
+		</div>
+		<!-- end .gamelistBox -->
+	</section>
+	<!-- end .bodyBox -->
+
+	<!-- 用户信息/酒吧信息 -->
+	<section class="info">
+		<div class="content user">
+			<a class="closebtn"><i class="fa fa-close" aria-hidden="true"></i></a>
+			<a class="img">
+				<i class="avarat" sex="1" money="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+			</a>
+
+			<h3 class="name" sex="1">爱汁如命的Herman</h3>
+			<h4 class="location">广东 广州</h4>
+			<h5 class="marking">我是酒吧的一枝独秀，喝的是寂寞。PS:我车上有瓶红牛，有兴趣微信联系我 “herman”。</h5>
+			<ul>
+				<li><a><i class="fa fa-commenting" aria-hidden="true"></i> 私聊</a></li>
+				<li><a><i class="fa fa-gift" aria-hidden="true"></i> 送礼</a></li>
+				<div class="clr"></div>
+			</ul>
+		</div>
+		<div class="content bar">
+			<a class="closebtn"><i class="fa fa-close" aria-hidden="true"></i></a>
+			<img class="userImgMsg" src="images/updata/logoIcon.png">
+			<h3 class="name">广州含七舔西吧</h3>
+			<h4 class="location">广东 广州 越秀 广州大道67号</h4>
+			<h5 class="marking">我们酒吧只接受放得开的淫人荡妇！<br>特价餐食咸金骨+冻宁七 67元，还有痛风套餐为你们准备！</h5>
+			<ul>
+				<li><a><i class="fa fa-location-arrow" aria-hidden="true"></i> 导航</a></li>
+			</ul>
+		</div>
+		<div class="bg"></div>
+	</section>
+	<!-- end .info -->
+
+	<!-- 红包弹出 -->
+	<section class="redBagPopup">
+		<div class="content redbag">
+			<a class="closebtn"><i class="fa fa-close" aria-hidden="true"></i></a>
+
+			<a class="img">
+				<i class="avarat" sex="1" money="1" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"><b></b></i>
+			</a>
+			<h3 class="name"><b class="name">herman</b><b>的红包</b></h3>
+			<h5 class="marking">端午快乐！大屌们端午快乐！大屌们端午快乐！臭HI！</h5>
+			<div class="open"><a href="#" class="openRedBag"><b>抢</b><i class="fa fa-spinner" aria-hidden="true" style="display: none;"></i></a></div>
+			<i class="bg"></i>
+			<span class="detail" style="display:none"><i>你抢到</i>100.00<b>元</b></span>
+			<a href="#" class="hand">查看领取详情</a>
+		</div>
+		<!-- end .redbag -->
+		<div class="bg"></div>
+	</section>
+	<!-- end .redBagPopup -->
+
+	<!-- 大图 -->
+	<section class="chatMsg_img">
+	</section>
+	<!-- end .chatMsg-img-->
+
+	<!-- 背景 -->
+	<section class="bg" style="background-image: url(images/updata/bg-01.png);"></section>
+	<!-- end .bg -->
+
+
+	<!--Include jquery -->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap-3.3.7.min.js "></script>
+	<!-- Include emoji-picker JavaScript -->
+	<script src="lib/js/config.js"></script>
+	<script src="lib/js/util.js"></script>
+	<script src="lib/js/jquery.emojiarea.js"></script>
+	<script src="lib/js/emoji-picker.js"></script>
+	<!--Include iscroll-->
+	<script src="js/iscroll-4.2.5.js"></script>
+	<!--Include pinchzoom-->
+	<script src="js/pinchzoom.min.js"></script>
+	<script>
+		//=====================
+		//
+		//       聊天
+		//
+		//=====================
+
+
+		//======气泡框高度改变
+		(function($, h, c) {
+			var a = $([]),
+				e = $.resize = $.extend($.resize, {}),
+				i,
+				k = "setTimeout",
+				j = "resize",
+				d = j + "-special-event",
+				b = "delay",
+				f = "throttleWindow";
+			e[b] = 250;
+			e[f] = true;
+			$.event.special[j] = {
+				setup: function() {
+					if (!e[f] && this[k]) {
+						return false;
+					}
+					var l = $(this);
+					a = a.add(l);
+					$.data(this, d, {
+						w: l.width(),
+						h: l.height()
+					});
+					if (a.length === 1) {
+						g();
+					}
+				},
+				teardown: function() {
+					if (!e[f] && this[k]) {
+						return false;
+					}
+					var l = $(this);
+					a = a.not(l);
+					l.removeData(d);
+					if (!a.length) {
+						clearTimeout(i);
+					}
+				},
+				add: function(l) {
+					if (!e[f] && this[k]) {
+						return false;
+					}
+					var n;
+
+					function m(s, o, p) {
+						var q = $(this),
+							r = $.data(this, d);
+						r.w = o !== c ? o : q.width();
+						r.h = p !== c ? p : q.height();
+						n.apply(this, arguments);
+					}
+					if ($.isFunction(l)) {
+						n = l;
+						return m;
+					} else {
+						n = l.handler;
+						l.handler = m;
+					}
+				}
+			};
+
+			function g() {
+				i = h[k](function() {
+						a.each(function() {
+							var n = $(this),
+								m = n.width(),
+								l = n.height(),
+								o = $.data(this, d);
+							if (m !== o.w || l !== o.h) {
+								n.trigger(j, [o.w = m, o.h = l]);
+							}
+						});
+						g();
+					},
+					e[b]);
+			}
+		})(jQuery, this);
+		//结束
+
+		//======表情
+		$(function() {
+			// Initializes and creates emoji set from sprite sheet
+			window.emojiPicker = new EmojiPicker({
+				emojiable_selector: '[data-emojiable=true]',
+				assetsPath: 'lib/img/',
+				popupButtonClasses: 'fa fa-smile-o'
+			});
+			// Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+			// You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+			// It can be called as many times as necessary; previously converted input fields will not be converted again
+			window.emojiPicker.discover();
+		});
+		//结束
+
+		//======加载更多
+		var myScroll,
+			pullDownEl,
+			pullDownOffset,
+			pullUpEl,
+			pullUpOffset,
+			generatedCount = 0;
+
+
+		var init_ = {
+
+			pullDownAction: function() {
+				console.log('up');
+				setTimeout(function() {
+					myScroll.refresh();
+				}, 1000);
+			},
+
+			pullUpAction: function() {
+				console.log('down');
+				setTimeout(function() {
+					myScroll.refresh();
+				}, 1000);
+			},
+			scroll_loaded: function() {
+				console.log('loaded');
+				pullDownEl = $('#pullDown'); //document.getElementById('pullDown');//$('#pullDown');
+				pullDownOffset = parseInt(pullDownEl.height()); //pullDownEl.offsetHeight;
+				pullUpEl = $('#pullUp');
+				pullUpOffset = parseInt(pullUpEl.height());
+
+				myScroll = new iScroll($('#chatScroller')[0], {
+					scrollbars: true,
+					mouseWheel: true,
+					interactiveScrollbars: true,
+					shrinkScrollbars: 'scale',
+					fadeScrollbars: true,
+					bounce: true,
+					useTransition: true, //表示是否使用css3中的过渡效果，默认为true;
+					topOffset: pullDownOffset, //pullDown区间高度
+					hScrollbar: true, //false隐藏水平方向上的滚动条
+					vScrollbar: false, // false 隐藏垂直方向上的滚动条
+					onRefresh: function() {
+						if (pullDownEl.hasClass('loading')) {
+							add_remove_next('loading', 'flip', pullDownEl, '.pullDownLabel', 'Pull down to load more...', 0);
+						} else if (pullUpEl.hasClass('loading')) {
+							add_remove_next('loading', 'flip', pullUpEl, '.pullUpLabel', 'Pull up to refresh...', 0);
+						}
+					},
+					onScrollMove: function() {
+						console.log('on_scroll_move');
+						$('div.box.chatBox > div.content ul.chatList > li').removeClass('active');
+						if (this.y > 5 && !pullDownEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullDownEl, '.pullDownLabel', 'Release to load more...', 1);
+							this.minScrollY = 0;
+						} else if (this.y < 5 && pullDownEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullDownEl, '.pullDownLabel', 'Pull down to load more...', 0);
+							this.minScrollY = -pullDownOffset;
+						} else if (this.y < (this.maxScrollY - 5) && !pullUpEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullUpEl, '.pullUpLabel', 'Release to refresh...', 1);
+							this.maxScrollY = this.maxScrollY;
+						} else if (this.y > (this.maxScrollY + 5) && pullUpEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullUpEl, '.pullUpLabel', 'Pull up to refresh...', 0);
+							this.maxScrollY = pullUpOffset;
+						} else {
+							return false;
+						}
+					},
+					onScrollEnd: function() {
+						if (pullDownEl.hasClass('flip')) {
+							add_remove_next('loading', '', pullDownEl, '.pullDownLabel', 'Loading...', 1);
+							init_.pullDownAction();
+						} else if (pullUpEl.hasClass('flip')) {
+							add_remove_next('loading', '', pullUpEl, '.pullUpLabel', 'Loading...', 1);
+							init_.pullUpAction();
+						} else {
+							return false;
+						}
+					}
+				});
+
+				setTimeout(function() {
+					$('#chatScroller').css({
+						'left': '0'
+					});
+				}, 300);
+
+				function add_remove_next(c1, c2, dom_p, dom, txt, type) {
+					if (type == 1) {
+						dom_p.addClass(c1).find(dom).html(txt);
+					} else {
+						c2 ? dom_p.removeClass(c2) : '';
+						dom_p.removeClass(c1).find(dom).html(txt);
+					}
+				}
+
+			},
+			scroll_to_bottom: function() {
+				myScroll.scrollToElement($("#pullUp")[0], 300);
+			}
+		}
+
+		//结束
+
+		//=====================
+		//
+		//       ready
+		//
+		//=====================
+		$(document).ready(function() {
+			// 聊天======滚动/加载更多
+			init_.scroll_loaded();
+			//结束
+
+			// 聊天======呼出/关闭 输入工具条
+			$('div.inputbar a.tools').click(function() {
+				if ($(this).hasClass('open')) {
+					$(this).removeClass('open');
+					$(this).parents('div.inputBar').find('div.toolbar').hide();
+				} else {
+					$(this).addClass('open');
+					$(this).parents('div.inputBar').find('div.toolbar').fadeIn();
+				}
+			});
+			//结束
+
+			// 聊天======呼出输入框下功能菜单
+			$('div.toolbar a.bp').on('click', function() {
+				$(this).parents('div.inputBar').addClass('bp');
+				$(this).parents('div.inputBar').children('.toolbar').hide();
+			});
+			$('div.toolbar a.ds').on('click', function() {
+				$(this).parents('div.inputBar').addClass('ds');
+				$(this).parents('div.inputBar').children('.toolbar').hide();
+			});
+			$('div.toolbar a.hb').on('click', function() {
+				$(this).parents('div.inputBar').addClass('hb');
+				$(this).parents('div.inputBar').children('.toolbar').hide();
+			});
+			$('div.toolbar a.sr').on('click', function() {
+				$(this).parents('div.inputBar').addClass('sr');
+				$(this).parents('div.inputBar').children('.toolbar').hide();
+			});
+			$('div.inputBar li.title > a.closebtn').on('click', function() {
+				$(this).parents('div.inputBar').removeClass('bp').removeClass('hb').removeClass('ds').removeClass('sr');
+				$(this).parents('div.inputBar').children('.toolbar').show();
+			});
+			//结束
+
+			// 聊天======删输入框中图片
+			$('div.inputbar a.imgMassage').click(function() {
+				$(this).remove();
+			});
+			$('div.bpbar a.imgMassage').click(function() {
+				$(this).remove();
+			});
+			//结束
+
+			// 聊天======气泡框高度改变 与 滚动位置 
+			$(".inputBar").resize(function() {
+				var inputBarAddHeight = $('div.inputBar').height() - 42;
+				$(this).parents('div.chatBox').children('div.content').css({
+					height: 'calc(100% - ' + (inputBarAddHeight + 104) + 'px)'
+				});
+				myScroll.refresh();
+				myScroll.scrollToElement($("#pullUp")[0], 300);
+			});
+			$('.inputBar div.input').click(function() {
+				myScroll.scrollToElement($("#pullUp")[0], 300);
+				var bodyHeight = $(window).height();
+				$(window).scrollTop(bodyHeight);
+			});
+			//结束
+
+			// 聊天======点击大图/关闭大图/大图拖动
+			$('img.userImgMsg').on('click', function() {
+
+				var userImgMsgLocation = $(this)[0].src;
+				$('section.chatMsg_img').append("<div class='image pinch-zoom'><img/></div>");
+				$(".pinch-zoom > img").attr('src', userImgMsgLocation);
+				new RTP.PinchZoom($('.pinch-zoom'), {});
+
+				$('section.chatMsg_img').fadeIn();
+			});
+
+			$('section.chatMsg_img').click(function() {
+				$(this).fadeOut();
+				$('section.chatMsg_img > div').remove();
+			});
+			//结束
+
+
+			// 聊天======消息操作显示/隐藏
+
+			$('.chatList > li div.chatBubble > div.content').on('click', function() {
+				if ($(this).parents('.chatList > li').hasClass('chat-my')) {
+					$(this).parents('.chatList > li').addClass('active').siblings().removeClass('active');
+				} else {
+					$('.chatList > li').removeClass("active");
+				}
+				myScroll.refresh();
+			});
+			//结束
+
+			// 聊天======用户信息显示/隐藏
+			$(document).on('click', '.chatList > li > i', function() {
+				$('section.info').fadeIn();
+				$('section.info > div.content.user').slideDown();
+			});
+			//			$(document).on('click', 'section.info > div.bg', function() {
+			//
+			//				$('section.info').fadeOut();
+			//				$('section.info > div.content.user').slideUp();
+			//			});
+			$(document).on('click', 'section.info a.closebtn', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.user').slideUp();
+			});
+			$(document).on('touchend', 'section.info > div.bg', function() {
+				console.log('touch');
+				$('section.info').fadeOut();
+				$('section.info > div.content.user').slideUp();
+			});
+			//结束
+
+
+			// 聊天======酒吧信息显示/隐藏
+			$(document).on('click', '.chatBox.index > div.title > a.text', function() {
+				$('section.info').fadeIn();
+				$('section.info > div.content.bar').slideDown();
+
+			});
+			$(document).on('click', 'section.info > div.bg', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.bar').slideUp();
+			});
+			$(document).on('click', 'section.info a.closebtn', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.bar').slideUp();
+			});
+			//结束
+
+
+			// 聊天======红包信息显示/隐藏
+
+			$(document).on('click', 'li.chatHb a.redBag', function() {
+				$('section.redBagPopup').fadeIn();
+				$('section.redBagPopup > div.content.redbag').slideDown();
+
+			});
+			$(document).on('click', 'section.redBagPopup a.closebtn', function() {
+
+				$('section.redBagPopup').fadeOut();
+				$('section.redBagPopup > div.content.redbag').slideUp();
+			});
+			//结束
+
+			//列表切换
+			$(".listBox > .title > .tap > a").each(function(i) {
+				$(this).click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+					$(".listBox > .content").eq(i).fadeIn().siblings(".listBox > .content").hide();
+				});
+			});
+			//结束
+
+
+			//大厅往返列表
+			$(document).on('click', '#chatGoToList', function() {
+				$('section.bodyBox > div.chatBox').addClass("bounceOutLeft").fadeOut();
+				setTimeout(function() {
+					$('section.bodyBox > div.listBox').addClass("bounceInRight").fadeIn();
+				}, 50);
+				setTimeout(function() {
+					$('section.bodyBox > div.chatBox').removeClass("bounceOutLeft");
+					$('section.bodyBox > div.listBox').removeClass("bounceInRight");
+				}, 1000);
+
+			});
+			$(document).on('click', '#listBackToChat', function() {
+				$('section.bodyBox > div.listBox').addClass("bounceOutRight").fadeOut();
+				setTimeout(function() {
+					$('section.bodyBox > div.chatBox').addClass("bounceInLeft").fadeIn();
+				}, 50);
+				setTimeout(function() {
+					$('section.bodyBox > div.listBox').removeClass("bounceOutRight");
+					$('section.bodyBox > div.chatBox').removeClass("bounceInLeft");
+				}, 1000);
+			});
+			//结束
+
+			//大厅往返游戏
+			$(document).on('click', '#chatGoToGame', function() {
+				$('section.bodyBox > div.chatBox').addClass("bounceOutLeft").fadeOut();
+				setTimeout(function() {
+					$('section.bodyBox > div.gameBox').addClass("bounceInRight").fadeIn();
+				}, 50);
+				setTimeout(function() {
+					$('section.bodyBox > div.chatBox').removeClass("bounceOutLeft");
+					$('section.bodyBox > div.gameBox').removeClass("bounceInRight");
+				}, 1000);
+
+			});
+			$(document).on('click', '#gameBackToChat', function() {
+				$('section.bodyBox > div.gameBox').addClass("bounceOutRight").fadeOut();
+				setTimeout(function() {
+					$('section.bodyBox > div.chatBox').addClass("bounceInLeft").fadeIn();
+				}, 50);
+				setTimeout(function() {
+					$('section.bodyBox > div.gameBox').removeClass("bounceOutRight");
+					$('section.bodyBox > div.chatBox').removeClass("bounceInLeft");
+				}, 1000);
+			});
+			//结束
+
+			//大厅往返菜单
+			$(document).on('click', '#chatGoToNav', function() {
+				$('body > section.bg').fadeOut();
+				$('section.bodyBox > div.chatBox').stop().animate({
+					left: '60%'
+				});
+				$('body > section.nav').show();
+				$('body > section.nav').stop().animate({
+					left: '0'
+				});
+			});
+			$(document).on('click', '#navBackToChat', function() {
+				$('body > section.bg').fadeIn();
+				$('section.bodyBox > div.chatBox').stop().animate({
+					left: '0'
+				});
+				$('body > section.nav').stop().animate({
+					left: '-100%'
+				});
+				setTimeout(function() {
+					$('body > section.nav').hide();
+				}, 300)
+			});
+			//结束
+
+
+			//抢红包
+			var openRedBag = $('.openRedBag');
+			$(document).on('click', '.openRedBag', function() {
+				openRedBag.children('b').hide();
+				openRedBag.children('i').fadeIn();
+				setTimeout(function() {
+					openRedBag.parent('.open').fadeOut();
+					openRedBag.parents('.content.redbag').find('h5.marking').hide();
+					openRedBag.parents('.content.redbag').find('span.detail').fadeIn();
+				}, 2000);
+			});
+			//结束
+
+			//大屏小窗体 霸屏测试
+			$('#testBtn-bp').click(function() {
+				console.log('霸屏');
+				$('.inputBar').removeClass('bp');
+				$('.toolbar').show();
+				$('div.chatBox div.dpBox').fadeIn();
+				//				setTimeout(function() {
+				//					$('div.chatBox.box div.dpBox').fadeOut();
+				//				}, 6000);
+			});
+			//结束
+
+
+			//用户列表点击 测试
+			$('div.box.listBox > div.userListContent > ul > li').click(function() {
+				console.log('用户列表点击');
+				$('section.info').fadeIn();
+				$('section.info > div.content.user').slideDown();
+			});
+			//结束
+
+
+			//菜单 测试
+			$('div.box.listBox > div.userListContent > ul > li').click(function() {
+				console.log('用户列表点击');
+				$('section.info').fadeIn();
+				$('section.info > div.content.user').slideDown();
+			});
+			//结束
+
+
+			//菜单往列表
+			$(document).on('click', '#siliao', function() {
+				$('section.bodyBox > div.listBox').css('left', '60%').show();
+				$('section.bodyBox > div.chatBox').css('left', '0').hide();
+				$('body > section.bg').fadeIn();
+				$('body > section.nav').stop().animate({
+					left: '-100%'
+				});
+				$('section.bodyBox > div.listBox').stop().animate({
+					left: '0'
+				});
+				setTimeout(function() {
+					$('body > section.nav').hide();
+				}, 300)
+			});
+			//结束
+
+			//菜单往互动
+			$(document).on('click', '#hudong', function() {
+				$('section.bodyBox > div.gameBox').css('left', '60%').show();
+				$('section.bodyBox > div.chatBox').css('left', '0').hide();
+				$('body > section.bg').fadeIn();
+				$('body > section.nav').stop().animate({
+					left: '-100%'
+				});
+				$('section.bodyBox > div.gameBox').stop().animate({
+					left: '0'
+				});
+				setTimeout(function() {
+					$('body > section.nav').hide();
+				}, 300)
+			});
+			//结束
+
+			//不遮住输入框
+			//			var inputBar = $('div.inputBar'); // inputBar.on('click', function() { // setTimeout(function() { // inputBar.hide(); // $(window).scrollTop(100000); // inputBar.show(); // }, 300); // }); // //结束
+		});
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+meta.cssInfo {
+	name: 'avatar.css';
+	author: 'NearSaint';
+	time: '2017.0724';
+}
+.avarat {
+	position: relative
+}
+.avarat > b {
+	position: absolute;
+	top: -30%;
+	left: -30%;
+	z-index: 1;
+	display: block;
+	width: 160%;
+	height: 160%;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat
+}
+.avarat[money='1'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-12.png)!important
+}
+.avarat[money='11'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-01.png)!important
+}
+.avarat[money='12'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-02.png)!important
+}
+.avarat[money='13'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-03.png)!important
+}
+.avarat[red='1'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-11.png)
+}
+.avarat[red='11'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-04.png)
+}
+.avarat[red='12'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-05.png)
+}
+.avarat[red='13'] > b {
+	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-06.png)
+}

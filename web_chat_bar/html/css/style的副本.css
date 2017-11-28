@@ -1,0 +1,2502 @@
+@charset 'UTF-8';
+{
+	/* 
+ 	* name: style.css
+	* author：Saint Near
+ 	* edit: 2017.05.20
+	*/
+}
+
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 49, 50, 1);
+}
+
+*[sex='1'] {
+	border: 1px solid #00a0e9;
+}
+
+*[sex='2'] {
+	border: 1px solid #fe557b;
+}
+
+section.bg {
+	/* ================================================================ *
+	 *
+	 *	bg  背景图 
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section.bg.colorful {
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a) !important;
+	-webkit-animation: hue 60s infinite linear;
+}
+
+@-webkit-keyframes hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+section.nav {
+	/* ================================================================ *
+	 *
+	 *	nav 左侧栏 
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	left: -100%;
+	z-index: 9999;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+section.nav > a.bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 40%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0);
+}
+
+section.nav > ul {
+	position: relative;
+	padding: 20px 20px;
+	width: 60%;
+	height: 100%;
+	color: #fff;
+}
+
+section.nav > ul > i.copyright {
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	color: #666;
+	text-align: center;
+	font-style: normal;
+	font-size: 1.0rem;
+}
+
+section.nav > ul > i.avarat {
+	display: block;
+	margin: 20px auto 10px;
+	width: 80px;
+	height: 80px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+section.nav > ul > i.avarat > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+section.nav > ul > span.name {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+	width: 100%;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 2rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.nav > ul > b.location {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 50px;
+	width: 100%;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 100;
+	font-size: 1.4rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.nav > ul > li {
+	margin-bottom: 15px;
+	width: 100%;
+	text-align: center;
+}
+
+section.nav > ul > li > a {
+	display: block;
+	width: 100%;
+	height: 32px;
+	color: #999;
+	font-size: 1.6rem;
+	line-height: 31px;
+}
+
+section.nav > ul > li > a:hover,
+section.nav > ul > li > a:focus,
+section.nav > ul > li > a:active {
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+section.bodyBox {
+	position: relative;
+	overflow: hidden;
+	/* ================================================================ *
+	 *
+	 *	bodyBox 主窗体 
+	 *
+	 * ================================================================ */
+	width: 100%;
+	height: 100%;
+	-webkit-transition: margin 0.3s;
+	-moz-transition: margin 0.3s;
+	-o-transition: margin 0.3s;
+	transition: margin 0.3s;
+}
+
+section.bodyBox > div.box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	background: rgba(255, 255, 255, .96);
+}
+
+@media (max-width: 320px) {}
+
+div.box > div.title {
+	position: relative;
+	width: 100%;
+}
+
+div.box > div.title > .btn-icon {
+	position: absolute;
+	top: 0;
+	display: block;
+	padding: 6px;
+	width: 42px;
+	height: 42px;
+	color: #333;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 30px;
+	line-height: 30px;
+}
+
+div.box > div.title > .btn-icon > i {
+	line-height: 30px;
+}
+
+div.box > div.title > .btn-icon > b {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	display: block;
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: red;
+}
+
+div.box > div.title > .btn-icon.btn-left {
+	left: 0;
+}
+
+div.box > div.title > .btn-icon.btn-right {
+	right: 0;
+}
+
+div.box > div.title > .btn-icon.btn-right-2 {
+	right: 42px;
+}
+
+div.box > div.title > .btn-icon:hover,
+div.box > div.title > .btn-icon:active,
+div.box > div.title > .btn-icon:focus {
+	color: #f39c12;
+}
+
+div.box > div.title > a.text {
+	display: block;
+	margin: 0 25%;
+	padding: 6px 20px;
+	min-height: 42px;
+	width: 50%;
+}
+
+div.box > div.title > a.text > span {
+	display: block;
+}
+
+div.box > div.title > a.text > span:first-child {
+	width: 30px;
+	height: 30px;
+}
+
+div.box > div.title > a.text > span.img {
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div.box > div.title > a.text > span.img[sex] {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+div.box > div.title > a.text > span:last-child {
+	overflow: hidden;
+	padding: 0x;
+	width: 100% !important;
+	height: 20px;
+	color: #999;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 1.2rem;
+	line-height: 20px;
+
+	-o-text-overflow: ellipsis;
+}
+
+div.box.chatBox {
+	/* ================================================================ *
+	 *
+	 *	chat box  聊天大厅
+	 *
+	 * ================================================================ */
+	display: block;
+}
+
+div.box.chatBox > div.content {
+	height: -webkit-calc(100% - 114px);
+	height: -moz-calc(100% - 114px);
+	height: calc(100% - 114px);
+}
+
+div.box.chatBox > div.content.hasToolBar {
+	height: -webkit-calc(100% - 156px);
+	height: -moz-calc(100% - 156px);
+	height: calc(100% - 156px);
+}
+
+div.box.chatBox > div.content div#chatScroller {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	margin-left: -5px;
+	padding: 0 5px;
+	width: -webkit-calc(100% + 10px);
+	width: -moz-calc(100% + 10px);
+	width: calc(100% + 10px);
+	height: 100%;
+}
+
+div.box.chatBox > div.content ul.chatList {
+	-webkit-overflow-scrolling: touch;
+}
+
+div.box.chatBox > div.content ul.chatList::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li {
+	position: relative;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+div.box.chatBox > div.content ul.chatList > li > i {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div.box.chatBox > div.content ul.chatList > li > div {
+	padding: 0 0 0 56px;
+}
+
+div.box.chatBox > div.content ul.chatList > li > div > span {
+	display: block;
+	height: 23px;
+	color: #999;
+	font-size: 1.2rem;
+	line-height: 23px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble {
+	position: relative;
+	display: inline-block;
+	padding-right: 56px;
+	max-width: 100%;
+}
+
+div.box.chatBox > div.content ul.chatList div.edit {
+	display: none;
+	clear: both;
+}
+
+div.box.chatBox > div.content ul.chatList div.edit > a {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #ccc;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+div.box.chatBox > div.content ul.chatList > li > div:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content {
+	display: inline-block;
+	padding: 13px 15px;
+	-webkit-border-radius: 0 23px 23px 23px;
+	-moz-border-radius: 0 23px 23px 23px;
+	border-radius: 0 23px 23px 23px;
+	background-color: #e9ecf1;
+	color: #8693a4;
+	font-size: 1.2rem;
+	line-height: 20px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > span {
+	display: block;
+	min-height: 20px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-all;
+	line-height: 20px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > span > b {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > img {
+	margin: 5px 0;
+	max-width: 100%;
+	width: auto;
+	height: 100px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa {
+	display: block;
+	margin-top: 10px;
+	padding: 0 20px;
+	height: 32px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #8693a4;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa:hover,
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa:active,
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa:focus {
+	background: #333;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > span.chatTime {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	display: inline-block;
+	width: 46px;
+	color: #999;
+	text-align: center;
+	font-size: 1.2rem;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > span.chatTime > b {
+	display: block;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my > i {
+	display: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my > div > span {
+	display: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.edit {
+	text-align: right;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.chatBubble {
+	float: right;
+	padding-right: 0;
+	padding-left: 56px;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.chatBubble > div.content {
+	-webkit-border-radius: 23px 23px 0 23px;
+	-moz-border-radius: 23px 23px 0 23px;
+	border-radius: 23px 23px 0 23px;
+	background-color: #b3d465;
+	color: #fff;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.chatBubble > span.chatTime {
+	left: 0;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatBp div.chatBubble > div.content {
+	background: -moz-linear-gradient(left top, #f1c40f, #fff100);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#f1c40f), to(#fff100));
+	background: -o-linear-gradient(left top, #f1c40f, #fff100);
+	color: #fff;
+}
+
+div.box.chatBox > div.content ul.chatList > li div.chatBubble > div.content > span > b > i {
+	margin: 0 5px;
+	border: none;
+	font-style: normal;
+}
+
+div.box.chatBox > div.content ul.chatList > li div.chatBubble > div.content > span > b > i[sex='1'] {
+	color: #00a0e9;
+}
+
+div.box.chatBox > div.content ul.chatList > li div.chatBubble > div.content > span > b > i[sex='2'] {
+	color: #fe557b;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content {
+	background: -moz-linear-gradient(left top, #fa0103, #860c39);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#fa0103), to(#860c39));
+	background: -o-linear-gradient(left top, #fa0103, #860c39);
+	color: #fff;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a {
+	position: relative;
+	display: block;
+	margin: -13px -15px;
+	padding: 100px 13px 40px;
+	min-height: 100px;
+	width: 150px;
+	text-align: center;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a > b {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	left: 0;
+	display: block;
+	height: 58px;
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/chatHb-bg.png);
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a > span {
+	display: block;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a > i {
+	color: #333;
+	font-style: normal;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatDs div.chatBubble > div.content {
+	background: -moz-linear-gradient(left top, #8701ae, #e900cb);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#8701ae), to(#e900cb));
+	background: -o-linear-gradient(left top, #8701ae, #e900cb);
+	color: #fff;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatBp div.chatBubble,
+div.box.chatBox > div.content ul.chatList > li.chatDs div.chatBubble {
+	width: 100%;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatBp div.chatBubble > .content,
+div.box.chatBox > div.content ul.chatList > li.chatDs div.chatBubble > .content {
+	width: 100%;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown {
+	padding: 0;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullUp {
+	padding: 0;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown span.flip,
+div.box.chatBox > div.content ul.chatList > li#pullUp span.flip {
+	display: none;
+	color: #999;
+	text-align: center;
+	font-size: 12px;
+	opacity: 0;
+	-webkit-transition: opacity 10s;
+	-moz-transition: opacity 10s;
+	-o-transition: opacity 10s;
+	transition: opacity 10s;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown.flip span.flip,
+div.box.chatBox > div.content ul.chatList > li#pullUp.flip span.flip {
+	display: block;
+	opacity: 1;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown div.loading,
+div.box.chatBox > div.content ul.chatList > li#pullUp div.loading {
+	display: none;
+	padding: 0;
+	text-align: center;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown.loading div.loading,
+div.box.chatBox > div.content ul.chatList > li#pullUp.loading div.loading {
+	display: block;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullUp.flip div.loading {
+	display: block;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span {
+	display: inline-block;
+	margin: 3px;
+	width: 6px;
+	height: 6px;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	background: #ffdc69;
+	vertical-align: middle;
+	-webkit-animation: loading 1s infinite alternate;
+	-moz-animation: loading 1s infinite alternate;
+	-o-animation: loading 1s infinite alternate;
+	animation: loading 1s infinite alternate;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span:nth-of-type(2) {
+	background: #ffdd68;
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	animation-delay: .6s;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span:nth-of-type(3) {
+	background: #ffd340;
+	-webkit-animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-o-animation-delay: .8s;
+	animation-delay: .8s;
+}
+
+div.box.chatBox > div.content ul.chatList > li.loading span:nth-of-type(4) {
+	background: #ffca18;
+	-webkit-animation-delay: 1.0s;
+	-moz-animation-delay: 1.0s;
+	-o-animation-delay: 1.0s;
+	animation-delay: 1.0s;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span:nth-of-type(5) {
+	background: #ffc500;
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	-o-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+
+@-webkit-keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+div.box.chatBox > div.content ul.chatList > li.active div.edit {
+	/* 消息编辑 */
+	display: block;
+}
+
+section.bodyBox > div.chatBox > div.content > div.dpBox {
+	/* ================================================================ *
+	 *
+	 *	 bodyBox > chatBox > content > dpBox  主窗体 > 大厅 > 大屏
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 65px;
+	right: 5px;
+	left: 5px;
+	z-index: 99;
+	display: none;
+	overflow: hidden;
+	padding: 2px;
+	width: -webkit-calc(100% - 10px);
+	width: -moz-calc(100% - 10px);
+	width: calc(100% - 10px);
+	height: 200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.9);
+}
+
+div.chatBox.box > div.content > div.dpBox > .left {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+div.chatBox.box > div.content > div.dpBox > .left > span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right {
+	position: relative;
+	margin-left: 50%;
+	padding: 10px;
+	width: 50%;
+	height: 100%;
+	color: #fff;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right.noimage {
+	margin-left: 0;
+	width: 100%;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right > i.avarat {
+	display: block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right > span.name {
+	display: block;
+	margin-left: 40px;
+	height: 32px;
+	font-weight: bold;
+	font-size: 1.4rem;
+	line-height: 32px;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right > h5 {
+	display: block;
+	margin-top: 5px;
+	width: 100%;
+	font-weight: 100;
+	font-size: 1.2rem;
+	line-height: 20px;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right > b.time {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-weight: 100;
+	font-size: 1.2rem;
+}
+
+div.chatBox.box > div.content > div.dpBox > .right > b.time > i {
+	margin: 0 3px;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.4rem;
+}
+
+section.bodyBox > div.box.listBox {
+	/* ================================================================ *
+	 *
+	 *	 bodyBox > listBox  主窗体 > 列表
+	 *
+	 * ================================================================ */
+	display: none;
+}
+
+section.bodyBox > div.box.listBox div.content > div.tiper {
+	padding-right: 10px;
+	color: #666;
+	text-align: center;
+	font-weight: 200;
+	font-size: 1.4rem;
+}
+
+section.bodyBox > div.box.listBox > div.title {
+	text-align: center;
+}
+
+section.bodyBox > div.box.listBox > div.title > div.tap {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 6px 0 0;
+}
+
+section.bodyBox > div.box.listBox > div.title > div.tap > a {
+	display: inline-block;
+	float: left;
+	margin: 0 5px;
+	width: 50%;
+	width: 50px;
+	height: 34px;
+	color: #333;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 32px;
+}
+
+section.bodyBox > div.box.listBox > div.title > div.tap > a.active {
+	border-bottom: 2px solid #f39c12;
+	color: #f39c12;
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+div.box.listBox > div.chatListContent {
+	overflow-y: scroll;
+	padding: 10px 0 10px 10px;
+	height: -webkit-calc(100% - 54px);
+	height: -moz-calc(100% - 54px);
+	height: calc(100% - 54px);
+}
+
+div.box.listBox > div.chatListContent > ul::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background: none;
+}
+
+div.box.listBox > div.chatListContent > ul > li {
+	position: relative;
+	padding: 0;
+	height: 66px;
+	border-top: 1px solid #eee;
+}
+
+div.box.listBox > div.chatListContent > ul > li:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a {
+	position: relative;
+	display: block;
+	margin-left: -10px;
+	padding: 8px 10px 8px 70px;
+	width: -webkit-calc(100% + 10px);
+	width: -moz-calc(100% + 10px);
+	width: calc(100% + 10px);
+	height: 100%;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a:hover,
+div.box.listBox > div.chatListContent > ul > li > a:focus,
+div.box.listBox > div.chatListContent > ul > li > a:active {
+	background-color: #eee;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > i.avarat {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > span.name {
+	margin-bottom: 6px;
+	color: #333;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 25px;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > b.time {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	color: #666;
+	font-weight: 100;
+	font-size: 1.2rem;
+	line-height: 25px;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > h5.msg {
+	overflow: hidden;
+	color: #999;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 25px;
+
+	-o-text-overflow: ellipsis;
+}
+
+div.box.listBox > div.userListContent {
+	overflow-y: scroll;
+	padding: 10px 0 10px 0;
+	height: -webkit-calc(100% - 45px);
+	height: -moz-calc(100% - 45px);
+	height: calc(100% - 45px);
+}
+
+div.box.listBox > div.userListContent > div.sort {
+	position: relative;
+	overflow-x: scroll;
+	padding: 5px 10px;
+	width: 100%;
+	height: 42px;
+	line-height: 32px;
+}
+
+div.box.listBox > div.userListContent > div.sort > i {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	display: block;
+	width: 32px;
+	height: 32px;
+	color: #999;
+	text-align: center;
+	line-height: 32px;
+}
+
+div.box.listBox > div.userListContent > div.sort > label {
+	width: 100%;
+	height: 32px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #eee;
+}
+
+div.box.listBox > div.userListContent > div.sort select {
+	display: block;
+	padding: 0 15px;
+	width: 100%;
+	height: 32px;
+	outline: none;
+	border: none;
+	background: none;
+	color: #999;
+}
+
+div.box.listBox > div.userListContent > ul {
+	padding: 10px;
+	width: 100%;
+}
+
+div.box.listBox > div.userListContent > ul > li {
+	float: left;
+	padding: 5px 10px;
+	width: 33.33%;
+}
+
+div.box.listBox > div.userListContent > ul > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+div.box.listBox > div.userListContent > ul > li > a > i.avarat {
+	display: block;
+	margin: 0 auto 6px;
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div.box.listBox > div.userListContent > ul > li > a > span.name {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 20px;
+	color: #333;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1.4rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+div.box.listBox > div.userListContent > ul > li > a > b.tiper {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 20px;
+	color: #333;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 100;
+	font-size: 1.2rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.bodyBox > div.box.gameBox {
+	/* ================================================================ *
+	 *
+	 *	 bodyBox > listBox  主窗体 > 游戏
+	 *
+	 * ================================================================ */
+	display: none;
+}
+
+section.bodyBox > div.box.gameBox > div.title > span {
+	display: block;
+	margin-bottom: 20px;
+	padding: 0 60px;
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 42px;
+}
+
+section.bodyBox > div.box.gameBox > ul {
+	width: 100%;
+}
+
+section.bodyBox > div.box.gameBox > ul > li {
+	float: left;
+	padding: 10px 5px 20px;
+	width: 33.3333%;
+	text-align: center;
+}
+
+section.bodyBox > div.box.gameBox > ul > li > a {
+	display: block;
+	padding: 60px 0 0;
+	width: 100%;
+	height: 100%;
+	background-position: top center;
+	-webkit-background-size: 56px 56px;
+	-moz-background-size: 56px;
+	-o-background-size: 56px;
+	background-size: 56px;
+	background-repeat: no-repeat;
+	color: #333;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+div.chatBox > div.inputBar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar  聊天大厅输入框
+	 *
+	 * ================================================================ */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	min-height: 52px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	background: #fff;
+}
+
+div.chatBox > div.inputBar > div.inputbar {
+	min-height: 52px;
+}
+
+div.chatBox > div.inputBar.bp > div.inputbar,
+div.chatBox > div.inputBar.ds > div.inputbar,
+div.chatBox > div.inputBar.hb > div.inputbar,
+div.chatBox > div.inputBar.sr > div.inputbar {
+	display: none;
+}
+
+div.chatBox > div.inputBar textarea {
+	display: none;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a {
+	display: block;
+	float: left;
+	margin: 6px;
+	width: 40px;
+	height: 40px;
+	color: #8693a4;
+	text-align: center;
+	font-size: 2.8rem;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.tools.open > i:before {
+	content: '\f13a';
+}
+
+div.chatBox > div.inputBar > div.inputbar > a:hover,
+div.chatBox > div.inputBar > div.inputbar > a:active,
+div.chatBox > div.inputBar > div.inputbar > a:focus {
+	color: #bdc3c7;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit {
+	position: relative;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #f39c12;
+	color: #fff;
+	font-size: 1.6rem;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit:hover,
+div.chatBox > div.inputBar > div.inputbar > a.sumbit:focus,
+div.chatBox > div.inputBar > div.inputbar > a.sumbit:active {
+	background: #f1c40f;
+	font-size: 1.4rem;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit > b {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	background: #ccc;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit.disabled > b {
+	display: block;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit > div.loading {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit > div.loading > i {
+	font-size: 2rem;
+	-webkit-animation: maskChange 2s linear infinite;
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 6px 0;
+	padding-right: 40px;
+	min-height: 40px;
+	width: -webkit-calc(100% - 104px);
+	width: -moz-calc(100% - 104px);
+	width: calc(100% - 104px);
+	outline: none;
+	border: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input > a.imgMassage {
+	position: relative;
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 2px;
+	width: 50px;
+	height: 30px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	background: #eee;
+}
+
+div.chatBox > div.inputBar a.imgMassage > span.mask {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 28px !important;
+	height: 28px !important;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	line-height: 28px;
+	-webkit-animation: maskChange 2s linear infinite;
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input > a.imgMassage > span {
+	display: inline-block;
+	float: left;
+	margin-right: 4px;
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #333;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@-webkit-keyframes maskChange {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input > a.imgMassage > i {
+	display: inline-block;
+	height: 26px;
+	color: #ccc;
+	line-height: 26px;
+}
+
+div.chatBox > div.inputBar > div.toolbar {
+	display: none;
+	padding: 6px 0;
+	height: 53px;
+	border-top: 1px solid #eee;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li {
+	position: relative;
+	display: inline-block;
+	margin: 0 6px;
+	width: 40px;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-color: #fff;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.imgMsg {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-imgMsg.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > input.imgMsg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999em;
+	opacity: 0;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.bp {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-bp.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.ds {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-ds.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.hb {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-hb.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.sr {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-srbp.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.ds.gift {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-lw.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar-box {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > toolbar  聊天大厅输入框下功能条
+	 *
+	 * ================================================================ */
+	display: none;
+}
+
+div.chatBox > div.inputBar.bp > div.bpbar,
+div.chatBox > div.inputBar.hb > div.hbbar,
+div.chatBox > div.inputBar.ds > div.dsbar,
+div.chatBox > div.inputBar.sr > div.srbar {
+	display: block;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li {
+	position: relative;
+	padding: 0 10px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li:last-child {
+	padding: 0 10px;
+	border-bottom: none;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li.title > a.icon {
+	display: block;
+	float: left;
+	margin: 20px 0;
+	width: 40px;
+	height: 40px;
+	border-color: #fff;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li.title > h5 {
+	display: inline-block;
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 80px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li.title > a.closebtn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #333;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > h6 {
+	color: #ccc;
+	text-align: center;
+	font-size: 12px;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > a.sumbit {
+	position: relative;
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+	height: 42px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #f39c12;
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 42px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > a.sumbit > div.loading {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > a.sumbit > div.loading > i {
+	-webkit-animation: maskChange 2s linear infinite;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.input {
+	position: relative;
+	display: block;
+	margin: 6px 0;
+	padding-right: 40px;
+	min-height: 40px;
+	width: 100%;
+	outline: none;
+	border: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.select {
+	position: relative;
+	margin: 6px 0;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.select > select {
+	display: block;
+	padding: 0;
+	width: 100%;
+	height: 40px;
+	outline: none;
+	border: none;
+	background: none;
+	color: #8693a4;
+	line-height: 40px;
+	position: relative;
+	z-index: 999;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.select > i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 40px;
+	height: 100%;
+	background: #fff;
+	color: #8693a4;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.bpbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > bpbar  聊天大厅输入框霸屏功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li.title {
+	border-top: 2px solid #f1c40f;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li.title > a.bp {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-bp.png);
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit {
+	background: #f1c40f;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit:focus {
+	background: #f39c12;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img {
+	position: relative;
+	margin: 6px 0;
+	padding-right: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > .btbox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > .btbox > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #8693a4;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > .btbox > input.imgUpdata[type='file'] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	background: none;
+	text-indent: -9999em;
+	opacity: 0;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a {
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	height: 30px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	background: #eee;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.text {
+	padding: 0 15px;
+	color: #8693a4;
+	line-height: 30px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.imgMassage {
+	position: relative;
+	padding: 2px;
+	width: 50px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.imgMassage > span {
+	display: inline-block;
+	float: left;
+	margin-right: 4px;
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #333;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.imgMassage > i {
+	display: inline-block;
+	height: 26px;
+	color: #ccc;
+	line-height: 26px;
+}
+
+div.chatBox > div.inputBar > div.hbbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > hbbar  聊天大厅输入框红包功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li.title {
+	border-top: 2px solid #e74c3c;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li.title > a.hb {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-hb.png);
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit {
+	background: #e74c3c;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit:focus {
+	background: #c0392b;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > div.input > input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	outline: none;
+	border: none;
+	background: none;
+	color: #8693a4;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > div.input > span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	color: #8693a4;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.8rem;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.dsbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > dsbar  聊天大厅输入框打赏功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li.title {
+	border-top: 2px solid #e900ca;
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li.title > a.ds {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-ds.png);
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li.title > a.ds.gift {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-lw.png);
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit {
+	background: #e900ca;
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit:focus {
+	background: #8701ae;
+}
+
+div.chatBox > div.inputBar > div.srbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > srbar  聊天大厅输入框生日功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li.title {
+	border-top: 2px solid #e5789e;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li.title > a.sr {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/icon-srbp.png);
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit {
+	background: #e5789e;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit:focus {
+	background: #bd4e67;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img {
+	position: relative;
+	margin: 6px 0;
+	padding-right: 40px;
+	width: 100%;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > .btbox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > .btbox > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #8693a4;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > .btbox > input.imgUpdata[type='file'] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	background: none;
+	text-indent: -9999em;
+	opacity: 0;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a {
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	height: 30px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	background: #eee;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.text {
+	padding: 0 15px;
+	color: #8693a4;
+	line-height: 30px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.imgMassage {
+	position: relative;
+	padding: 2px;
+	width: 50px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.imgMassage > span {
+	display: inline-block;
+	float: left;
+	margin-right: 4px;
+	width: 26px;
+	height: 26px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #333;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.imgMassage > i {
+	display: inline-block;
+	height: 26px;
+	color: #ccc;
+	line-height: 26px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.input > input {
+	display: block;
+	width: 100%;
+	height: 40px;
+	outline: none;
+	border: none;
+	background: none;
+	color: #8693a4;
+	line-height: 40px;
+}
+
+section.chatMsg_img {
+	/* ================================================================ *
+	 *
+	 *	chatMsg_img  显示大图
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	padding: 2px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .9);
+}
+
+section.chatMsg_img div.pinch-zoom-container {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+section.chatMsg_img div.image {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+section.chatMsg_img div.image > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+section.info {
+	/* ================================================================ *
+	 *
+	 *	info  用户商家详情
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+section.info > div.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.86);
+}
+
+section.info > div.content.user {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: none;
+	padding-bottom: 80px;
+	width: 80%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #fff;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+section.info > div.content.user > a.closebtn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	color: #333;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+section.info > div.content.user > img {
+	display: block;
+	margin: 40px auto 20px;
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.info > div.content.user > a.img {
+	display: block;
+	margin: 40px auto 20px;
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+section.info > div.content.user > a.img > i {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.info > div.content.user > h3.name {
+	overflow: hidden;
+	margin: 0 0 10px;
+	padding: 0 10px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1.8rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.info > div.content.user > h3.name[sex="1"] {
+	border: none;
+	color: #00a0e9;
+}
+
+section.info > div.content.user > h3.name[sex="2"] {
+	border: none;
+	color: #fe557b;
+}
+
+section.info > div.content.user > h4.location {
+	overflow: hidden;
+	margin: 0 0 20px;
+	padding: 0 10px;
+	color: #999;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 100;
+	font-size: 1.4rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.info > div.content.user > h5.marking {
+	margin: 0 0 10px;
+	padding: 0 20px;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+	font-weight: 100;
+	font-size: 1.4rem;
+	line-height: 20px;
+}
+
+section.info > div.content.user > ul {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 41px;
+	border-top: 1px solid #eee;
+}
+
+section.info > div.content.user > ul > li {
+	float: left;
+	width: 50%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+section.info > div.content.user > ul > li > a {
+	display: block;
+	height: 40px;
+	color: #333;
+	text-align: center;
+	line-height: 40px;
+}
+
+section.info > div.content.user > ul > li:first-child {
+	border-right: 1px solid #eee;
+}
+
+section.info > div.content.bar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: none;
+	padding-bottom: 80px;
+	width: 80%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #fff;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+section.info > div.content.bar > a.closebtn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	color: #333;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+section.info > div.content.bar > img {
+	display: block;
+	margin: 40px auto 20px;
+	max-width: 80%;
+	max-height: 100px;
+	width: auto;
+	height: auto;
+}
+
+section.info > div.content.bar > h3.name {
+	overflow: hidden;
+	margin: 0 0 10px;
+	padding: 0 10px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1.8rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.info > div.content.bar > h4.location {
+	margin: 0 0 20px;
+	padding: 0 10px;
+	color: #999;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.3rem;
+}
+
+section.info > div.content.bar > h5.marking {
+	margin: 0 0 10px;
+	padding: 0 20px;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+	font-weight: 100;
+	font-size: 1.4rem;
+	line-height: 20px;
+}
+
+section.info > div.content.bar > ul {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 41px;
+	border-top: 1px solid #eee;
+}
+
+section.info > div.content.bar > ul > li {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+section.info > div.content.bar > ul > li > a {
+	display: block;
+	height: 40px;
+	color: #333;
+	text-align: center;
+	line-height: 40px;
+}
+
+section.redBagPopup {
+	/* ================================================================ *
+	 *
+	 *	redBagPopup  红包弹出层
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+section.redBagPopup > div.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.86);
+}
+
+section.redBagPopup > div.content.redbag {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: none;
+	overflow: hidden;
+	padding-bottom: 80px;
+	width: 80%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: -moz-linear-gradient(left top, #fa0103, #860c39);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#fa0103), to(#860c39));
+	background: -o-linear-gradient(left top, #fa0103, #860c39);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+section.redBagPopup > div.content.redbag > i.bg {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	z-index: -1;
+	display: block;
+	margin-left: -500px;
+	width: 1000px;
+	height: 1000px;
+	border: 3px rgba(245, 217, 50, 1) solid;
+	-webkit-border-radius: 2000px;
+	-moz-border-radius: 2000px;
+	border-radius: 2000px;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+section.redBagPopup > div.content.redbag.redbag.redbag-null > i.bg {
+	border: 3px rgba(243, 229, 181, 1) solid;
+}
+
+section.redBagPopup > div.content.redbag > a.closebtn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 40px;
+}
+
+section.redBagPopup > div.content.redbag > img {
+	display: block;
+	margin: 40px auto 20px;
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.redBagPopup > div.content.redbag > a.img {
+	display: block;
+	margin: 40px auto 20px;
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+section.redBagPopup > div.content.redbag > a.img > i {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+section.redBagPopup > div.content.redbag > h3.name {
+	overflow: hidden;
+	margin: 0 0 10px;
+	padding: 0 10px;
+	width: 100%;
+	color: rgba(227, 219, 115, 1);
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 1.6rem;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.redBagPopup > div.content.redbag > h3.name > b {
+	display: inline-block;
+	width: 58px;
+	text-align: right;
+	font-style: normal;
+	line-height: 16px;
+}
+
+section.redBagPopup > div.content.redbag > h3.name > b.name {
+	overflow: hidden;
+	max-width: -webkit-calc(100% - 58px) !important;
+	max-width: -moz-calc(100% - 58px) !important;
+	max-width: calc(100% - 58px) !important;
+	width: auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 14px;
+
+	-o-text-overflow: ellipsis;
+}
+
+section.redBagPopup > div.content.redbag > h5.marking {
+	margin: 0 0 60px;
+	padding: 0 40px;
+	color: rgba(243, 229, 181, 1);
+	text-align: center;
+	font-weight: bold;
+	font-weight: 100;
+	font-size: 1.4rem;
+	line-height: 20px;
+}
+
+section.redBagPopup > div.content.redbag > div.open {
+	position: absolute;
+	bottom: 52px;
+	left: 0;
+	width: 100%;
+	height: 56px;
+}
+
+section.redBagPopup > div.content.redbag > div.open > a > i {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #333;
+	text-align: center;
+	line-height: 56px;
+	-webkit-animation: maskChange 2s linear infinite;
+}
+
+section.redBagPopup > div.content.redbag > span.detail {
+	position: relative;
+	display: block;
+	margin: 0 auto 60px;
+	color: #fff;
+	text-align: center;
+	font-size: 3rem;
+}
+
+section.redBagPopup > div.content.redbag > span.detail > i {
+	margin-right: 10px;
+	color: #fff;
+	font-weight: 200px;
+	font-style: normal;
+	font-size: 1.4rem;
+}
+
+section.redBagPopup > div.content.redbag > span.detail > b {
+	margin-left: 10px;
+	color: #fff;
+	font-weight: 200px;
+	font-style: normal;
+	font-size: 1.4rem;
+}
+
+section.redBagPopup > div.content.redbag.redbag-null > div.open {
+	display: none;
+}
+
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag {
+	display: block;
+	margin: 0 auto;
+	width: 56px;
+	height: 56px;
+	-webkit-border-radius: 1000px;
+	-moz-border-radius: 1000px;
+	border-radius: 1000px;
+	background: rgba(245, 217, 50, 1);
+	color: #fff;
+	text-align: center;
+	font-size: 2.6rem;
+	line-height: 56px;
+}
+
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag:hover,
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag:focus,
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag:active {
+	background: rgba(243, 229, 181, 1);
+}
+
+section.redBagPopup > div.content.redbag > a.hand {
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	width: 100%;
+	color: rgba(243, 229, 181, 1);
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.avarat {
+	/* ================================================================ *
+	 *
+	 *	avarat  头像边框
+	 *
+	 * ================================================================ */
+	position: relative;
+}
+
+.avarat > b {
+	position: absolute;
+	top: -30%;
+	left: -30%;
+	z-index: 1;
+	display: block;
+	width: 160%;
+	height: 160%;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.avarat[money="1"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-12.png) !important;
+}
+
+.avarat[money="11"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-01.png) !important;
+}
+
+.avarat[money="12"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-02.png) !important;
+}
+
+.avarat[money="13"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-03.png) !important;
+}
+
+.avarat[red="1"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-11.png);
+}
+
+.avarat[red="11"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-04.png);
+}
+
+.avarat[red="12"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-05.png);
+}
+
+.avarat[red="13"] > b {
+	background-image: url(http://balabalafun.b0.upaiyun.com/chat_phone/images/avatar-06.png);
+}

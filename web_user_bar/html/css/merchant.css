@@ -1,0 +1,1821 @@
+	@charset "UTF-8";
+	section.content {
+		width: 100%;
+	}
+	
+	section.content div.box {
+		border-radius: 10px;
+		overflow: hidden;
+		background-color: #fff;
+		margin-bottom: 20px;
+		position: relative;
+		padding: 15px 15px 0;
+		transition: box-shadow 0.3s;
+	}
+	
+	section.content div.box:hover,
+	section.content div.box:focus,
+	section.content div.box:active {}
+	
+	section.content div.box > div.title {
+		height: 28px;
+		line-height: 28px;
+		font-size: 18px;
+		font-weight: bold;
+		color: #999;
+		margin-bottom: 20px;
+		padding-left: 10px;
+	}
+	
+	section.content div.box > div.title > a {
+		float: right;
+		color: #ccc;
+	}
+	
+	section.content div.box > div.title > a:hover {
+		color: #333;
+	}
+	
+	a.bt {
+		display: inline-block;
+		height: 30px;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 30px;
+		padding: 0 20px;
+		margin: 0;
+		border: none;
+		border-radius: 50px;
+		color: #555;
+		background: #F1C40F;
+	}
+	
+	a.bt:hover,
+	a.bt:focus,
+	a.bt:active {
+		color: #000;
+		background: #cbb524;
+	}
+	
+	a.btIcon {
+		display: inline-block;
+		height: 30px;
+		font-size: 18px;
+		line-height: 30px;
+		width: 30px;
+		color: #999;
+		text-align: center;
+	}
+	
+	a.btIcon:hover {
+		color: #F1C40F;
+	}
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*===============================================================
+*
+*
+*   总览
+*
+*
+*==============================================================*/
+	
+	div.box.barTitle {
+		width: 100%;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: #fff;
+	}
+	
+	div.box.barTitle > .mask {
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+	}
+	
+	div.box.barTitle > div.content {
+		position: absolute;
+		z-index: 2;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		display: block;
+		padding: 20px;
+	}
+	
+	div.box.barTitle > div.content > div.top {
+		height: 30px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	
+	div.box.barTitle > div.content > div.top > div.barLocation {
+		font-size: 12px;
+		width: 180px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		float: left;
+	}
+	
+	div.box.barTitle > div.content > div.top > div.barBt {
+		float: right;
+	}
+	
+	div.box.barTitle > div.content > div.top > div.barBt > a {
+		margin-left: 20px;
+		float: left;
+	}
+	
+	div.box.barTitle > div.content > div.bottom {
+		height: 100px;
+		padding-left: 20px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > div.barLogo {
+		height: 100%;
+		width: 300px;
+		float: left;
+		background-image: url(../images/index/logo-htl.png);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate {
+		float: right;
+		width: 540px;
+		text-align: right;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate > li {
+		float: left;
+		width: 180px;
+		text-align: center;
+		border-left: 1px solid #999;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate > li:first-child {
+		border: none;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate > li > h6 {
+		margin: 0 0 10px;
+		font-size: 24px;
+		line-height: 25px;
+		overflow: hidden;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate > li > h5 {
+		margin: 0;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate > li > h5 > a {
+		display: inline-block;
+		margin-left: 8px;
+		color: #F1C40F;
+		cursor: pointer;
+	}
+	
+	div.box.barTitle > div.content > div.bottom > ul.barDate > li > h5 > a:hover {
+		color: #cbb524;
+	}
+	/****************************************************************/
+	
+	div.box.barApp > div.content > ul.app {
+		width: 100%;
+	}
+	
+	div.box.barApp > div.content > ul.app > li {
+		width: 50%;
+		float: left;
+		margin-bottom: 20px;
+		padding: 0 10px;
+	}
+	
+	div.box.barApp > div.content > ul.app > li.daping {
+		width: 100%;
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div {
+		border-radius: 10px;
+		height: 80px;
+		width: 100%;
+		background: #000;
+		position: relative;
+	}
+	
+	div.box.barApp > div.content > ul.app > li.daping > div {
+		height: 120px;
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div > div.bt {
+		height: 30px;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		margin-top: -15px;
+		z-index: 4;
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div > div.bt > a {
+		float: left;
+		margin-left: 10px;
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div > div.bt > a.btIcon {
+		color: #fff;
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div > div.bt > a.btIcon:hover,
+	div.box.barApp > div.content > ul.app > li > div > div.bt > a.btIcon:active,
+	div.box.barApp > div.content > ul.app > li > div > div.bt > a.btIcon:focus {
+		color: #F1C40F;
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div > div.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left center;
+		border-radius: 10px;
+		z-index: 1;
+	}
+	
+	div.box.barApp > div.content > ul.app > li.daping > div > div.bg {
+		background-image: url(../images/index/daping.png);
+		background-size: contain;
+	}
+	
+	div.box.barApp > div.content > ul.app > li.saima > div > div.bg {
+		background-image: url(../images/index/saima.png);
+	}
+	
+	div.box.barApp > div.content > ul.app > li.saiche > div > div.bg {
+		background-image: url(../images/index/saiche.png);
+	}
+	
+	div.box.barApp > div.content > ul.app > li.yaoyiyao > div > div.bg {
+		background-image: url(../images/index/yaoyiyao.png);
+	}
+	
+	div.box.barApp > div.content > ul.app > li > div > h5 {
+		display: block;
+		position: absolute;
+		transform: translateY(-50%);
+		left: 20px;
+		top: 50%;
+		color: #fff;
+		line-height: 1;
+		font-size: 18px;
+		z-index: 4;
+	}
+	/****************************************************************/
+	
+	div.box.dateCanvas canvas {
+		width: 100% !important;
+		height: auto !important;
+		margin-bottom: 15px;
+	}
+	/****************************************************************/
+	/* 
+.bootstrap-switch {
+	height: 28px;
+	width: 56px !important;
+	border-radius: 30px;
+	overflow: hidden;
+}
+
+.bootstrap-switch.bootstrap-switch-on > div {
+	background: #F1C40F;
+}
+
+.bootstrap-switch.bootstrap-switch-off > div {
+	background: #ccc;
+}
+
+.bootstrap-switch > div {
+	background: #fff;
+	height: 100%;
+	transition: all 0.3s;
+}
+
+.bootstrap-switch span {
+	text-indent: -999em;
+	border-radius: 14px;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+}
+
+.bootstrap-switch input.switch {
+	display: none;
+}
+
+.bootstrap-switch span.bootstrap-switch-label {
+	background: #fff;
+} */
+	/****************************************************************/
+	/****************************************************************/
+	/****************************************************************/
+	/****************************************************************/
+	/****************************************************************/
+	/* 超小屏幕（手机，小于 580px） */
+	
+	@media (max-width: 579px) {
+		div.box.barTitle > div.content > div.top {
+			display: none;
+		}
+		div.box.barTitle {
+			height: 230px;
+		}
+		div.box.barTitle > div.content > div.bottom {
+			height: 180px;
+		}
+		div.box.barTitle > div.content > div.bottom > div.barLogo {
+			height: 100px;
+			width: 200px;
+			position: absolute;
+			top: 20px;
+			left: 50%;
+			margin-left: -100px;
+		}
+		div.box.barTitle > div.content > div.bottom > ul.barDate {
+			left: 50%;
+			right: auto;
+			transform: translateX(-50%);
+			zoom: 0.62;
+		}
+		div.box.barApp > div.content > ul.app > li.daping > div > div.bg {
+			background-size: cover;
+		}
+		div.box.barApp > div.content > ul.app > li {
+			width: 100%;
+		}
+		div.box.barApp > div.content > ul.app > li .btOpne {
+			display: none;
+		}
+		div.box.dateCanvas > div.content {
+			overflow-x: scroll;
+		}
+		div.box.dateCanvas > div.content canvas {
+			width: auto !important;
+			height: 300px !important;
+		}
+	}
+	/* 小屏幕（平板，大于等于 580px） */
+	
+	@media (min-width: 580px) and (max-width: 992px) {
+		div.box.barTitle {
+			height: 270px;
+		}
+		div.box.barTitle > div.content > div.bottom {
+			height: 180px;
+		}
+		div.box.barTitle > div.content > div.bottom > div.barLogo {
+			height: 100px;
+			width: 200px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin-left: -100px;
+		}
+		div.box.barTitle > div.content > div.bottom > ul.barDate {
+			left: 50%;
+			right: auto;
+			transform: translateX(-50%);
+			zoom: 0.8;
+		}
+		div.box.barApp > div.content > ul.app > li.daping > div > div.bg {
+			background-size: cover;
+		}
+		div.box.barApp > div.content > ul.app > li {
+			width: 100%;
+		}
+		div.box.barApp > div.content > ul.app > li .btOpne {
+			display: none;
+		}
+		div.box.dateCanvas > div.content {
+			overflow-x: scroll;
+		}
+		div.box.dateCanvas > div.content canvas {
+			width: auto !important;
+			height: 300px !important;
+		}
+	}
+	/* 中等屏幕（桌面显示器，大于等于 992px） */
+	
+	@media (min-width: 993px) and (max-width: 1200px) {
+		div.box.barTitle > div.content > div.bottom > ul.barDate {
+			zoom: 0.8;
+		}
+		div.box.barApp > div.content > ul.app > li.daping > div > div.bg {
+			background-size: cover;
+		}
+	}
+	/* 大屏幕（大桌面显示器，大于等于 1200px） */
+	
+	@media (min-width: 1200px) and (max-width: 1600px) {
+		div.box.barApp > div.content > ul.app > li.daping > div > div.bg {
+			background-size: cover;
+		}
+	}
+	
+	@media (min-width: 1600px) {}
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*===============================================================
+*
+*
+*   设置
+*
+*
+*==============================================================*/
+	
+	section.content > .settingBox {
+		padding: 0 !important;
+	}
+	
+	section.content > .settingBox > ul.meun {
+		height: 62px;
+		line-height: 61px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	
+	section.content > .settingBox > ul.meun > h5 {
+		display: inline-block;
+		margin: 20px 20px 20px 0;
+		border-right: 1px solid #ccc;
+		line-height: 21px;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 0 20px;
+		float: left;
+	}
+	
+	section.content > .settingBox > ul.meun > .dropdown {
+		display: none;
+	}
+	
+	section.content > .settingBox > ul.meun > li {
+		float: left;
+		padding: 0 5px;
+	}
+	
+	section.content > .settingBox > ul.meun > li > a {
+		display: block;
+		padding: 0 15px;
+		margin: 15px 0;
+		color: #999;
+		font-size: 13px;
+		line-height: 31px;
+		border-radius: 50px;
+	}
+	
+	section.content > .settingBox > ul.meun > li > a:hover,
+	section.content > .settingBox > ul.meun > li > a:focus,
+	section.content > .settingBox > ul.meun > li > a:active {
+		color: #000;
+		background: #f1f1f1;
+	}
+	
+	section.content > .settingBox > ul.meun > li.active > a {
+		font-size: 14px;
+		background: #F1C40F;
+		color: #333;
+	}
+	
+	section.content > .settingBox > ul.content {
+		padding-left: 20px;
+	}
+	
+	section.content > .settingBox > ul.optionList > li {
+		border-bottom: 1px solid #f1f1f1;
+		border-left-color: #fff;
+		padding: 10px 0;
+		position: relative;
+		transition: background 0.3s, border-color 0.5s
+	}
+	
+	section.content > .settingBox > ul.optionList > li:hover {
+		margin-left: -20px;
+		width: calc(100% + 20px);
+		border-left: 10px solid #F1C40F;
+		padding-left: 10px;
+		background: #f9f9f9;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.name {
+		float: left;
+		width: 20%;
+		min-width: 100px;
+		text-align: left;
+		margin: 20px 0;
+		line-height: 20px;
+		padding-left: 20px;
+		color: #000;
+		font-weight: bold;
+		font-size: 16px;
+		border-right: 1px solid #ccc;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option {
+		float: left;
+		width: 80%;
+		min-width: 200px;
+		text-align: left;
+		line-height: 40px;
+		margin: 10px 0;
+		padding-left: 20px;
+		color: #999;
+		font-size: 14px;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > span {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-right: 80px;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > span > b {
+		margin-right: 20px;
+		font-weight: 100;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > span > a {
+		margin: 0 10px;
+		font-weight: 100;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul {
+		display: block;
+		width: 100%;
+		margin-top: 20px;
+		padding-right: 20px;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li {
+		display: block;
+		width: 100px;
+		height: 100px;
+		float: left;
+		padding: 5px;
+		border: 1px solid #ccc;
+		background: #fff;
+		margin-right: 10px;
+		transition: border-color .3s;
+		position: relative;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li > .loadingImg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li > .loadingImg > span {
+		width: 20px;
+		height: 20px;
+		border: 1px rgba(255, 255, 255, 1) solid;
+		z-index: 2;
+		display: block;
+		top: 50%;
+		margin: -10px auto 0;
+		position: relative;
+		-webkit-animation: fill_color 5s linear infinite;
+		-moz-animation: fill_color 5s linear infinite;
+		animation: fill_color 5s linear infinite;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li > .loadingImg > span:after {
+		width: 4px;
+		height: 4px;
+		position: absolute;
+		content: "";
+		background-color: rgba(255, 255, 255, 1);
+		top: -8px;
+		left: 0px;
+		-webkit-animation: square_check 1s ease-in-out infinite;
+		-moz-animation: square_check 1s ease-in-out infinite;
+		animation: square_check 1s ease-in-out infinite;
+	}
+	
+	@-webkit-keyframes square_check {
+		25% {
+			left: 22px;
+			top: -8px;
+		}
+		50% {
+			left: 22px;
+			top: 22px;
+		}
+		75% {
+			left: -9px;
+			top: 22px;
+		}
+		100% {
+			left: -9px;
+			top: -7px;
+		}
+	}
+	
+	@-moz-keyframes square_check {
+		25% {
+			left: 22px;
+			top: -8px;
+		}
+		50% {
+			left: 22px;
+			top: 22px;
+		}
+		75% {
+			left: -9px;
+			top: 22px;
+		}
+		100% {
+			left: -9px;
+			top: -7px;
+		}
+	}
+	
+	@keyframes square_check {
+		25% {
+			left: 22px;
+			top: -8px;
+		}
+		50% {
+			left: 22px;
+			top: 22px;
+		}
+		75% {
+			left: -9px;
+			top: 22px;
+		}
+		100% {
+			left: -9px;
+			top: -7px;
+		}
+	}
+	
+	@-webkit-keyframes fill_color {
+		0% {
+			box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+		}
+		100% {
+			box-shadow: inset 0px -20px 0px 0px rgba(255, 255, 255, 1);
+		}
+	}
+	
+	@-moz-keyframes fill_color {
+		0% {
+			box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+		}
+		100% {
+			box-shadow: inset 0px -20px 0px 0px rgba(255, 255, 255, 1);
+		}
+	}
+	
+	@keyframes fill_color {
+		0% {
+			box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.1);
+		}
+		100% {
+			box-shadow: inset 0px -20px 0px 0px rgba(255, 255, 255, 1);
+		}
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li:hover {
+		border-color: #333;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li.active {
+		border-color: #2ECC71;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li > a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-color: #ccc;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.media > li > a > i {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: #fff;
+		text-shadow: 0 0 2px #000;
+		font-size: 16px;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > div.qrCode {
+		height: 200px;
+		width: 200px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		margin-top: 20px;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > div.qrCode > img {
+		height: 100%;
+		width: 100%;
+		background-color: #ccc;
+		border: none;
+		outline: none;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.text > li {
+		float: left;
+		padding: 0 10px 0 30px;
+		line-height: 32px;
+		background: #f0f0f0;
+		margin: 3px 20px 3px 0;
+		position: relative;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.option > ul.text > li > i {
+		position: absolute;
+		height: 32px;
+		text-align: center;
+		line-height: 32px;
+		width: 32px;
+		display: block;
+		top: 0;
+		left: 0;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.edit {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		height: 40px;
+		width: 40px;
+		display: block;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.edit > a {
+		text-align: center;
+		line-height: 40px;
+		font-size: 26px;
+		color: #eee;
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+	
+	section.content > .settingBox > ul.optionList > li:hover > div.edit > a {
+		color: #000;
+	}
+	
+	section.content > .settingBox > ul.optionList > li > div.edit > a:hover {
+		color: #F1C40F;
+	}
+	/*========= popover ===========================================*/
+	
+	section.editPopover {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		display: none;
+	}
+	
+	section.editPopover > div.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		z-index: 1;
+	}
+	
+	section.editPopover > div.popoverDiv {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 540px;
+		max-width: calc(100% - 30px);
+		border-radius: 10px;
+		padding-bottom: 52px;
+		background: #fff;
+		z-index: 2;
+	}
+	
+	section.editPopover > div.popoverDiv > div.title {
+		height: 62px;
+		line-height: 61px;
+		border-bottom: 1px solid #eee;
+		padding: 0 20px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.bt {
+		height: 52px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-top: 1px solid #eee;
+		padding-right: 20px;
+		text-align: right;
+	}
+	
+	section.editPopover > div.popoverDiv > div.bt > a {
+		display: inline-block;
+		margin: 10px 0 10px 5px;
+		text-align: center;
+		line-height: 30px;
+		color: #333;
+		border-radius: 5px;
+		font-size: 14px;
+		padding: 0 15px;
+		border: 1px solid #ccc;
+	}
+	
+	section.editPopover > div.popoverDiv > div.bt > a.submit {
+		color: #fff;
+		background-color: #2ECC71;
+		border-color: #2ECC71;
+	}
+	
+	section.editPopover > div.popoverDiv > div.bt > a.cancel {
+		color: #333;
+		background-color: #fff;
+		border-color: #ccc;
+	}
+	
+	section.editPopover > div.popoverDiv > div.bt > a.submit:hover,
+	section.editPopover > div.popoverDiv > div.bt > a.submit:active,
+	section.editPopover > div.popoverDiv > div.bt > a.submit:focus {
+		background-color: #27AE60;
+		border-color: #27AE60;
+		color: #fff;
+	}
+	
+	section.editPopover > div.popoverDiv > div.bt > a.cancel:hover,
+	section.editPopover > div.popoverDiv > div.bt > a.cancel:active,
+	section.editPopover > div.popoverDiv > div.bt > a.cancel:focus {
+		background-color: #BDC3C7;
+		border-color: #BDC3C7;
+		color: #fff;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content {
+		padding: 0;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div {
+		display: block;
+		padding: 20px;
+		border-bottom: 1px solid #eee;
+		width: 100%;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div:last-child {
+		border-bottom: none;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > label {
+		height: 42px;
+		width: 100%;
+		position: relative;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > label > span {
+		display: block;
+		float: left;
+		height: 100%;
+		line-height: 24px;
+		font-size: 14px;
+		padding: 0;
+		margin-right: 10px;
+		max-width: 200px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > label > input {
+		height: 100%;
+		display: inline-block;
+		border: 1px solid #ccc;
+		padding: 5px 10px;
+		border-radius: 10px;
+		outline: none;
+		background: none;
+		width: 100%;
+		color: #333;
+		font-weight: 100;
+		font-size: 14px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > label > a,
+	section.editPopover > div.popoverDiv > div.content > div.input > label > button {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		height: 32px;
+		line-height: 32px;
+		padding: 0 8px;
+		background: #F1C40F;
+		border: none;
+		outline: none;
+		border-radius: 10px;
+		color: #fff;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > label > a:hover,
+	section.editPopover > div.popoverDiv > div.content > div.input > label > a:active,
+	section.editPopover > div.popoverDiv > div.content > div.input > label > a:focus,
+	section.editPopover > div.popoverDiv > div.content > div.input > label > button:hover,
+	section.editPopover > div.popoverDiv > div.content > div.input > label > button:active,
+	section.editPopover > div.popoverDiv > div.content > div.input > label > button:focus {
+		background: #F39C12;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > span {
+		font-size: 12px;
+		color: #ccc;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div {
+		height: 42px;
+		width: 100%;
+		border-radius: 10px;
+		position: relative;
+		display: inline-block;
+		max-width: 100%;
+		margin-bottom: 5px;
+		font-weight: 700;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > span {
+		display: inline-block;
+		line-height: 42px;
+		margin-left: 20px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > div.switch {
+		height: 34px;
+		width: 64px;
+		min-width: auto !important;
+		margin: 4px 0;
+		border-radius: 50px;
+		border: none;
+		float: left;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > div.switch > div {
+		height: 100%;
+		width: 150%;
+		padding: 2px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > div.switch > div.switch-on {
+		background: #F1C40F;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > div.switch > div.switch-off {
+		background: #ccc;
+		left: calc(-50% + 2px);
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > div.switch > div > label {
+		height: 30px;
+		width: 30px;
+		border-radius: 50px;
+		background-color: #fff;
+		background-image: none;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > div > div.switch > div > span {
+		height: 30px;
+		width: 30px;
+		background: none;
+		text-indent: -999em;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > ul.text {
+		width: 100%;
+		overflow-y: scroll;
+		max-height: 300px;
+		margin: 20px 0 0;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > ul.text > li {
+		float: left;
+		margin: 3px 10px 3px 0;
+		font-size: 12px;
+		background: #f1f1f1;
+		padding: 3px 10px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.input > ul.text > li > a {
+		margin-left: 10px;
+		font-size: 14px;
+		color: #C0392B;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > span {
+		color: #ccc;
+		font-size: 12px;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul {
+		width: 100%;
+		max-height: 300px;
+		overflow-y: scroll;
+		margin: 10px 0 0;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li {
+		margin: 10px 0;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > label {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		border-radius: 5px;
+		padding: 10px 15px;
+		height: 49px;
+		color: #333;
+		border: 1px solid #ccc;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li:hover > label {
+		border-color: #999;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > label > span {
+		display: block;
+		line-height: 29px;
+		font-size: 13px;
+		float: left;
+		width: 35%;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > label > input {
+		width: 20%;
+		margin: 0 5px;
+		border: 1px solid #eee;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > label > div {
+		float: right;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > div {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		border-radius: 5px;
+		padding: 10px 15px;
+		height: 49px;
+		color: #333;
+		border: 1px solid #ccc;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li:hover > div {
+		border-color: #999;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > div > span {
+		display: block;
+		line-height: 29px;
+		font-size: 13px;
+		float: left;
+		width: 35%;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > div > input {
+		width: 20%;
+		margin: 0 5px;
+		border: 1px solid #eee;
+	}
+	
+	section.editPopover > div.popoverDiv > div.content > div.checkbox > ul > li > div > div {
+		float: right;
+	}
+	/*========= contentTabel ======================================*/
+	
+	section.content > .settingBox > div.searchbar {
+		margin-bottom: 20px;
+		width: 100%;
+		height: 42px;
+		padding: 0 20px;
+	}
+	
+	section.content > .settingBox > div.searchbar > label {
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		height: 42px;
+		max-width: 100%;
+		width: 400px;
+		position: relative;
+	}
+	
+	section.content > .settingBox > div.searchbar > label:hover,
+	section.content > .settingBox > div.searchbar > label:active,
+	section.content > .settingBox > div.searchbar > label:focus {
+		border-color: #F1C40F;
+	}
+	
+	section.content > .settingBox > div.searchbar > label > input {
+		background: none;
+		border: none;
+		outline: none;
+		height: 100%;
+		width: calc(100% - 42px);
+		padding: 5px 20px;
+		line-height: 30px;
+		font-weight: 100;
+		font-size: 13px;
+	}
+	
+	section.content > .settingBox > div.searchbar > label > a > i {
+		font-size: 18px;
+		color: #333;
+	}
+	
+	section.content > .settingBox > div.choosedatebar {
+		margin-bottom: 20px;
+		width: 100%;
+		height: 42px;
+		padding: 0 20px;
+	}
+	
+	section.content > .settingBox > div.choosedatebar > label {
+		border: 1px solid #ccc;
+		border-radius: 10px;
+		height: 42px;
+		max-width: 100%;
+		width: 400px;
+		position: relative;
+	}
+	
+	section.content > .settingBox > div.choosedatebar > label:hover,
+	section.content > .settingBox > div.choosedatebar > label:active,
+	section.content > .settingBox > div.choosedatebar > label:focus {
+		border-color: #F1C40F;
+	}
+	
+	section.content > .settingBox > div.choosedatebar > label > input {
+		background: none;
+		border: none;
+		outline: none;
+		height: 100%;
+		width: calc(50% - 28px);
+		padding: 5px 20px;
+		line-height: 30px;
+		font-weight: 100;
+		font-size: 13px;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.choosedatebar > label > a > i {
+		font-size: 18px;
+		color: #333;
+	}
+	
+	.datepicker .table-condensed td.active {
+		background-color: #F1C40F !important;
+		background-image: none !important;
+	}
+	
+	section.content > .settingBox > div.contentTable {
+		margin: 0 20px;
+		width: calc(100% - 40px);
+	}
+	
+	section.content > .settingBox > div.contentTable > table {
+		font-size: 13px;
+		width: 100%;
+	}
+	
+	section.content > .settingBox > div.contentTable tr {
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+		color: #666;
+		display: inline-table
+	}
+	
+	section.content > .settingBox > div.contentTable tr:hover,
+	section.content > .settingBox > div.contentTable tr:focus,
+	section.content > .settingBox > div.contentTable tr:active {
+		background: #f9f9f9;
+	}
+	
+	section.content > .settingBox > div.contentTable tr:first-child {
+		background: #333;
+		color: #fff;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+	
+	section.content > .settingBox > div.contentTable tr:last-child {
+		border: none;
+	}
+	
+	section.content > .settingBox > div.contentTable th,
+	section.content > .settingBox > div.contentTable td {
+		padding: 10px;
+		line-height: 20px;
+		display: inline-block
+	}
+	
+	section.content > .settingBox > div.contentTable th.check,
+	section.content > .settingBox > div.contentTable td.check {
+		width: 5%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.userid,
+	section.content > .settingBox > div.contentTable td.userid,
+	section.content > .settingBox > div.contentTable th.chatid,
+	section.content > .settingBox > div.contentTable td.chatid {
+		width: 10%;
+		text-align: left;
+	}
+	
+	section.content > .settingBox > div.contentTable td.userid > span,
+	section.content > .settingBox > div.contentTable td.chatid > span {
+		display: inline-block;
+		height: 40px;
+		width: 100%;
+		line-height: 40px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.username,
+	section.content > .settingBox > div.contentTable td.username {
+		width: 15%;
+	}
+	
+	section.content > .settingBox > div.contentTable td.username > img {
+		background-color: #ccc;
+		display: inline-block;
+		margin-right: 5px;
+		height: 40px;
+		width: 40px;
+		border: 2px solid #ccc;
+		border-radius: 50px;
+		float: left;
+	}
+	
+	section.content > .settingBox > div.contentTable td.username > img[sex="1"] {
+		border-color: #00a0e9;
+	}
+	
+	section.content > .settingBox > div.contentTable td.username > img[sex="2"] {
+		border-color: #fe557b;
+	}
+	
+	section.content > .settingBox > div.contentTable td.username > span {
+		width: calc(100% - 45px);
+		height: 40px;
+		line-height: 40px;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.usercity,
+	section.content > .settingBox > div.contentTable td.usercity {
+		width: 10%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercity > span {
+		display: inline-block;
+		height: 40px;
+		width: 100%;
+		line-height: 40px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.usercontent {
+		width: 50%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercontent {
+		width: 50%;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercontent > img {
+		height: 100px;
+		width: 100px;
+		max-width: 100%;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercontent > i {
+		font-style: normal;
+		margin-left: 10px;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercontent > i.bp {
+		color: #F39C12;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercontent > i.ds {
+		color: #9B59B6;
+	}
+	
+	section.content > .settingBox > div.contentTable td.usercontent > i.hb {
+		color: #E74C3C;
+	}
+	
+	section.content > .settingBox > div.contentTable th.controltime,
+	section.content > .settingBox > div.contentTable td.controltime,
+	section.content > .settingBox > div.contentTable th.denialtime,
+	section.content > .settingBox > div.contentTable td.denialtime,
+	section.content > .settingBox > div.contentTable th.logintime,
+	section.content > .settingBox > div.contentTable td.logintime,
+	section.content > .settingBox > div.contentTable th.signtime,
+	section.content > .settingBox > div.contentTable td.signtime,
+	section.content > .settingBox > div.contentTable th.time,
+	section.content > .settingBox > div.contentTable td.time {
+		width: 10%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.contentTable td.logintime > span,
+	section.content > .settingBox > div.contentTable td.signtime > span,
+	section.content > .settingBox > div.contentTable td.time > span {
+		width: 100%;
+		line-height: 40px;
+		height: 40px;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.controltip,
+	section.content > .settingBox > div.contentTable td.controltip {
+		width: 50%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: left;
+	}
+	
+	section.content > .settingBox > div.contentTable th.denialtip,
+	section.content > .settingBox > div.contentTable td.denialtip {
+		width: 40%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: left;
+	}
+	
+	section.content > .settingBox > div.contentTable th.usertip,
+	section.content > .settingBox > div.contentTable td.usertip {
+		width: 30%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: left;
+	}
+	
+	section.content > .settingBox > div.contentTable td.controltip > span,
+	section.content > .settingBox > div.contentTable td.denialtip > span,
+	section.content > .settingBox > div.contentTable td.usertip > span {
+		display: inline-block;
+		height: 40px;
+		width: 100%;
+		line-height: 40px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.userpay,
+	section.content > .settingBox > div.contentTable td.userpay,
+	section.content > .settingBox > div.contentTable th.payobject,
+	section.content > .settingBox > div.contentTable td.payobject,
+	section.content > .settingBox > div.contentTable th.paytime,
+	section.content > .settingBox > div.contentTable td.paytime {
+		width: 25%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.contentTable th.userpay > span,
+	section.content > .settingBox > div.contentTable td.userpay > span,
+	section.content > .settingBox > div.contentTable th.payobject > span,
+	section.content > .settingBox > div.contentTable td.payobject > span,
+	section.content > .settingBox > div.contentTable th.paytime > span,
+	section.content > .settingBox > div.contentTable td.paytime > span {
+		display: inline-block;
+		height: 40px;
+		width: 100%;
+		line-height: 40px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	section.content > .settingBox > div.contentTable th.tools,
+	section.content > .settingBox > div.contentTable td.tools {
+		width: 10%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.contentTable td.tools > a {
+		display: inline-block;
+		height: 29px;
+		width: 29px;
+		line-height: 29px;
+		text-align: center;
+		font-size: 16px;
+		color: #999;
+		margin: 0 5px;
+	}
+	
+	section.content > .settingBox > div.contentTable th.paydate,
+	section.content > .settingBox > div.contentTable td.paydate,
+	section.content > .settingBox > div.contentTable th.paymoney,
+	section.content > .settingBox > div.contentTable td.paymoney {
+		width: 20%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.contentTable th.tixianpay,
+	section.content > .settingBox > div.contentTable td.tixianpay,
+	section.content > .settingBox > div.contentTable th.tixianstate,
+	section.content > .settingBox > div.contentTable td.tixianstate,
+	section.content > .settingBox > div.contentTable th.tixiantime,
+	section.content > .settingBox > div.contentTable td.tixiantime {
+		width: 33.33%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > div.contentTable td.tools > a:hover,
+	section.content > .settingBox > div.contentTable td.tools > a:active,
+	section.content > .settingBox > div.contentTable td.tools > a:focus {
+		color: #C0392B;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar {
+		margin-bottom: 20px;
+		background: #eee;
+		margin-top: 5px;
+		height: 52px;
+		border-radius: 0 0 10px 10px;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page {
+		height: 32px;
+		margin: 10px 20px;
+		float: left;
+		max-width: 45%;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page > a,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page > span {
+		display: inline-block;
+		height: 32px;
+		width: 32px;
+		line-height: 32px;
+		text-align: center;
+		background: #fff;
+		border-radius: 10px;
+		color: #999;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page > a:hover,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page > a:active,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page > a:focus {
+		background: #BDC3C7;
+		color: #333;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.page > span {
+		background: #F1C40F;
+		color: #fff;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt {
+		height: 32px;
+		margin: 10px 20px;
+		float: right;
+		max-width: 45%;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a {
+		display: inline-block;
+		margin-left: 10px;
+		font-size: 13px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		padding: 0 15px;
+		border-radius: 10px;
+		background: #fff;
+		color: #666;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a:hover,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a:active,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a:focus {
+		background: #7F8C8D;
+		color: #fff;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.detelBt {
+		background: #E74C3C;
+		color: #fff;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.detelBt:hover,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.detelBt:active,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.detelBt:focus {
+		background: #C0392B;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.blackBt {
+		background: #34495E;
+		color: #fff;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.blackBt:hover,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.blackBt:active,
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a.blackBt:focus {
+		background: #000;
+	}
+	
+	section.content > .settingBox > div.contentTable > div.toolbar > div.bt > a > i {
+		margin-right: 5px;
+	}
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	
+	@media (max-width: 992px) {
+		section.content > .settingBox > ul.meun > li {
+			display: none;
+		}
+		section.content > .settingBox > ul.optionList > li > div.name {
+			min-width: 100%;
+			border: none;
+			padding: 0;
+			margin: 10px 0;
+		}
+		section.content > .settingBox > ul.optionList > li > div.option {
+			padding: 0;
+			margin: 10px 0;
+		}
+		section.content > .settingBox > ul.optionList > li > div.option > span {
+			padding: 0;
+		}
+		section.content > .settingBox > ul.optionList > li > div.edit {
+			right: 10px;
+		}
+		section.content > .settingBox > ul.meun > .dropdown {
+			position: absolute;
+			top: 0px;
+			right: 10px;
+			display: block;
+		}
+		section.content > .settingBox > ul.meun > .dropdown > button {
+			border: none;
+		}
+		section.content > .settingBox > ul.meun > .dropdown .dropdown-menu {
+			right: 0;
+			left: auto;
+		}
+		section.content > .settingBox > ul.meun > .dropdown .dropdown-menu > .active > a {
+			background: #F1C40F;
+		}
+		section.content > .settingBox > ul.meun > .dropdown .dropdown-menu > li > a {
+			padding: 10px 20px;
+		}
+		section.content > .settingBox > div.contentTable {
+			margin: 0;
+			width: 100%;
+		}
+		section.content > .settingBox > div.contentTable tr:first-child {
+			border-radius: 0;
+		}
+		section.content > .settingBox > div.contentTable > div.toolbar {
+			border-radius: 0;
+			margin: 0;
+			background: #fff;
+		}
+		section.content > .settingBox > div.contentTable > table {
+			font-size: 12px;
+		}
+		section.content > .settingBox > div.contentTable td.username > img {
+			height: 50px;
+			width: 50px;
+			display: block;
+		}
+		section.content > .settingBox > div.contentTable td.username > span {
+			width: 100%;
+		}
+		section.content > .settingBox > div.contentTable td.usercontent > img {
+			height: 50px;
+			width: 50px;
+		}
+		section.content > .settingBox > div.contentTable td.tools > a {
+			display: block;
+			margin: 0;
+		}
+		section.content > .settingBox > div.contentTable th.logintime,
+		section.content > .settingBox > div.contentTable td.logintime,
+		section.content > .settingBox > div.contentTable th.signtime,
+		section.content > .settingBox > div.contentTable td.signtime,
+		section.content > .settingBox > div.contentTable th.time,
+		section.content > .settingBox > div.contentTable td.time,
+		section.content > .settingBox > div.contentTable th.check,
+		section.content > .settingBox > div.contentTable td.check,
+		section.content > .settingBox > div.contentTable th.userid,
+		section.content > .settingBox > div.contentTable td.userid,
+		section.content > .settingBox > div.contentTable th.chatid,
+		section.content > .settingBox > div.contentTable td.chatid {
+			width: 0%;
+			display: none;
+		}
+		section.content > .settingBox > div.contentTable > div.toolbar > div.bt {
+			display: none;
+		}
+		section.content > .settingBox > div.contentTable > div.toolbar > div.page {
+			max-width: 100%;
+		}
+	}
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*=============================================================*/
+	/*========= massage ======================================*/
+	
+	section.content > .settingBox > ul.msgList {
+		margin-bottom: 40px;
+	}
+	
+	section.content > .settingBox > ul.msgList > li {
+		height: 62px;
+		border-bottom: 1px dashed #ccc;
+		padding: 0;
+	}
+	
+	section.content > .settingBox > ul.msgList > li {
+		height: 62px;
+		border-bottom: 1px dashed #ccc;
+		padding: 0;
+	}
+	
+	section.content > .settingBox > ul.msgList > li a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 5px 15px;
+	}
+	
+	section.content > .settingBox > ul.msgList > li a > span {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		color: #666;
+		font-size: 14px;
+		font-weight: 100;
+	}
+	
+	section.content > .settingBox > ul.msgList > li.raw a > span {
+		font-weight: bold;
+		color: #000;
+	}
+	
+	section.content > .settingBox > ul.msgList > li a > i {
+		display: block;
+		height: 20px;
+		line-height: 20px;
+		font-style: normal;
+		font-size: 12px;
+		color: #ccc;
+	}
+	
+	section.content > .settingBox > ul.msgList > div.page {
+		height: 32px;
+		margin: 40px 0px 20px -10px;
+		max-width: 100%;
+		text-align: center;
+	}
+	
+	section.content > .settingBox > ul.msgList > div.page > a,
+	section.content > .settingBox > ul.msgList > div.page > span {
+		display: inline-block;
+		height: 32px;
+		width: 32px;
+		line-height: 32px;
+		text-align: center;
+		background: #eee;
+		border-radius: 10px;
+		color: #999;
+	}
+	
+	section.content > .settingBox > ul.msgList > div.page > a:hover,
+	section.content > .settingBox > ul.msgList > div.page > a:active,
+	section.content > .settingBox > ul.msgList > div.page > a:focus {
+		background: #BDC3C7;
+		color: #333;
+	}
+	
+	section.content > .settingBox > ul.msgList > div.page > span {
+		background: #F1C40F;
+		color: #fff;
+	}
+	
+	section.content > .settingBox > div.msgcontent {
+		padding: 40px;
+	}
+	
+	section.content > .settingBox > div.msgcontent > h3 {
+		font-size: 32px;
+		margin-bottom: 10px;
+	}
+	
+	section.content > .settingBox > div.msgcontent > h4 {
+		font-size: 14px;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		color: #999;
+		border-bottom: 1px dashed #ccc;
+	}
+	
+	section.content > .settingBox > div.msgcontent > h5 {
+		font-size: 15px;
+		line-height: 24px;
+		text-indent: 2em;
+	}

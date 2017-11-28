@@ -1,0 +1,1386 @@
+  @charset "UTF-8";
+  meta.cssInfo {
+  	name: style;
+  	author: NearSaint;
+  	edit: 2017.06.28;
+  }
+  body {
+  	overflow: hidden;
+  	background: #000
+  }
+  body > section {
+  	position: relative;
+  	z-index: 1
+  }
+  body > section.bg {
+  	top: 0;
+  	right: 0;
+  	left: 0;
+  	z-index: 0;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 100%
+  }
+  body > section.bg,
+  body > section.bg > video {
+  	position: absolute
+  }
+  body > section.bg > div.mask {
+  	background: rgba(0, 0, 0, .3)
+  }
+  body > section.bg > div.mask,
+  section.bp {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%
+  }
+  section.bp {
+  	right: 0;
+  	z-index: 99;
+  	overflow: hidden;
+  	background: rgba(0, 0, 0, .95)
+  }
+  section.bp.container {
+  	padding: 0!important;
+  	width: 100%!important
+  }
+  section.bp.container div#slider {
+  	-webkit-box-sizing: border-box!important;
+  	-moz-box-sizing: border-box!important;
+  	box-sizing: border-box!important;
+  	-webkit-border-radius: 0!important;
+  	-moz-border-radius: 0!important;
+  	border-radius: 0!important;
+  	background: 0 0!important;
+  	-webkit-box-shadow: none!important;
+  	-moz-box-shadow: none!important;
+  	box-shadow: none!important;
+  	-ms-box-sizing: border-box!important
+  }
+  section.bp > div.img {
+  	float: left;
+  	display: block;
+  	overflow: hidden;
+  	padding: 0!important;
+  	width: 50%;
+  	height: 100%
+  }
+  section.bp > div.img > div {
+  	position: relative;
+  	display: block;
+  	width: 100%!important;
+  	height: 100%!important;
+  	background-position: center;
+  	background-repeat: no-repeat
+  }
+  section.bp > div.img > div div.surface {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translateY(-50%) translateX(-50%);
+  	-moz-transform: translateY(-50%) translateX(-50%);
+  	-ms-transform: translateY(-50%) translateX(-50%);
+  	-o-transform: translateY(-50%) translateX(-50%);
+  	transform: translateY(-50%) translateX(-50%)
+  }
+  section.bp > div.img > div div.images {
+  	margin: 0 auto
+  }
+  section.bp > div.img > div div.image1,
+  section.bp > div.img > div div.image2 {
+  	width: 100%!important;
+  	height: 100%!important;
+  	background-position: center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-repeat: no-repeat
+  }
+  section.bp > div.text {
+  	position: relative;
+  	margin-left: 50%;
+  	padding: 20px;
+  	width: 50%;
+  	height: 100%
+  }
+  section.bp > div.text > div {
+  	position: relative;
+  	padding: 20px 0;
+  	height: 150px
+  }
+  section.bp > div.text > div > i {
+  	display: block;
+  	margin: 0 20px;
+  	width: 110px;
+  	height: 110px;
+  	border: 3px solid #fff;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	background-color: #ccc;
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat
+  }
+  section.bp > div.text > div > i[sex='1'] {
+  	border-color: #00a0e9
+  }
+  section.bp > div.text > div > i[sex='2'] {
+  	border-color: #e4007f
+  }
+  section.bp > div.text > div > h5 {
+  	position: absolute;
+  	top: 50%;
+  	left: 10pc;
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 60px;
+  	-webkit-transform: translateY(-50%);
+  	-moz-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);
+  	transform: translateY(-50%)
+  }
+  section.bp > div.text > h5 {
+  	margin-top: 40px;
+  	color: #fff;
+  	color: #f1c40f;
+  	font-weight: 700;
+  	font-size: 55px;
+  	line-height: 1.4em
+  }
+  section.bp > div.text > i {
+  	position: absolute;
+  	bottom: 20px;
+  	left: 20px;
+  	display: block;
+  	height: 5pc;
+  	color: #fff;
+  	font-weight: 700;
+  	font-style: normal;
+  	font-size: 36px;
+  	line-height: 5pc;
+  	opacity: .8
+  }
+  section.bp > div.text > i > b {
+  	margin: 0 10px;
+  	background-image: -webkit-linear-gradient(#fdef00, #bbaf00);
+  	background-image: -webkit-gradient(linear, left top, left bottom, from(#fdef00), to(#bbaf00));
+  	background-image: -webkit-gradient(linear, left top, left bottom, from(#fdef00), to(#bbaf00));
+  	background-image: -moz-linear-gradient(#fdef00, #bbaf00);
+  	background-image: -o-linear-gradient(#fdef00, #bbaf00);
+  	background-image: linear-gradient(#fdef00, #bbaf00);
+  	color: #fdef00;
+  	font-size: 52px;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent
+  }
+  section.bp > div.text > b {
+  	position: absolute;
+  	right: 40px;
+  	bottom: 20px;
+  	display: block;
+  	height: 5pc;
+  	color: #fff;
+  	font-weight: 700;
+  	font-style: normal;
+  	font-size: 28px;
+  	line-height: 5pc;
+  	opacity: .8
+  }
+  section.ds {
+  	z-index: 99;
+  	background: #333
+  }
+  section.ds,
+  section.ds > div.video {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	left: 0;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 100%
+  }
+  section.ds > div.video {
+  	display: block
+  }
+  section.ds > div.text {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	padding: 40px;
+  	width: 100%;
+  	height: 100%;
+  	background-image: -webkit-linear-gradient(left, #000, transparent 70%, transparent);
+  	background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(70%, transparent), to(transparent));
+  	background-image: -webkit-gradient(linear, left top, right top, from(#000), color-stop(70%, transparent), to(transparent));
+  	background-image: -moz-linear-gradient(left, #000, transparent 70%, transparent);
+  	background-image: -o-linear-gradient(left, #000, transparent 70%, transparent);
+  	background-image: linear-gradient(left, #000, transparent 70%, transparent);
+  	text-shadow: 1px 2px 6px #000;
+  	opacity: .95
+  }
+  section.ds > div.text > div {
+  	position: relative;
+  	padding: 20px 0;
+  	height: 150px
+  }
+  section.ds > div.text > div > i {
+  	display: block;
+  	margin: 0 20px;
+  	width: 110px;
+  	height: 110px;
+  	border: 3px solid #fff;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	background-color: #ccc;
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat
+  }
+  section.ds > div.text > div > i[sex='1'] {
+  	border-color: #00a0e9
+  }
+  section.ds > div.text > div > i[sex='2'] {
+  	border-color: #e4007f
+  }
+  section.ds > div.text > div > h5 {
+  	position: absolute;
+  	top: 50%;
+  	left: 10pc;
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 60px;
+  	-webkit-transform: translateY(-50%);
+  	-moz-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);
+  	transform: translateY(-50%)
+  }
+  section.ds > div.text > h5 {
+  	margin-top: 40px;
+  	width: 50%;
+  	color: #fff;
+  	color: #ff1abc;
+  	font-weight: 700;
+  	font-size: 50px;
+  	line-height: 1.4em
+  }
+  section.ds > div.text > h5 > b {
+  	margin: 0 20px;
+  	color: #fff;
+  	font-size: 60px
+  }
+  section.ds > div.text > i {
+  	position: absolute;
+  	bottom: 20px;
+  	left: 20px;
+  	display: block;
+  	height: 5pc;
+  	color: #fff;
+  	font-weight: 700;
+  	font-style: normal;
+  	font-size: 36px;
+  	line-height: 5pc;
+  	opacity: .8
+  }
+  section.ds > div.text > i > b {
+  	margin: 0 10px;
+  	background-image: -webkit-linear-gradient(#ff1abc, #e71aff);
+  	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff1abc), to(#e71aff));
+  	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff1abc), to(#e71aff));
+  	background-image: -moz-linear-gradient(#ff1abc, #e71aff);
+  	background-image: -o-linear-gradient(#ff1abc, #e71aff);
+  	background-image: linear-gradient(#ff1abc, #e71aff);
+  	color: #ff1abc;
+  	text-shadow: none;
+  	font-size: 52px;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent
+  }
+  section.ds > div.text > b {
+  	position: absolute;
+  	right: 40px;
+  	bottom: 20px;
+  	display: block;
+  	height: 5pc;
+  	color: #fff;
+  	font-weight: 700;
+  	font-style: normal;
+  	font-size: 28px;
+  	line-height: 5pc;
+  	opacity: .8
+  }
+  section.header {
+  	padding: 0 30px;
+  	width: 100%;
+  	height: 68px;
+  	border-bottom: 1px solid #333;
+  	background: rgba(0, 0, 0, .15)
+  }
+  section.header > h5.name {
+  	float: left;
+  	margin-right: 60px;
+  	color: #fff;
+  	font-weight: 700;
+  	font-size: 28px;
+  	line-height: 68px
+  }
+  section.header > h5.name.center {
+  	float: none;
+  	margin-right: 0;
+  	display: inline-block;
+  	position: fixed;
+  	top: 0;
+  	left: 50%;
+  	-webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);
+  	transform: translateX(-50%);
+  }
+  section.header > i.copyright {
+  	position: absolute;
+  	top: 50%;
+  	right: 90px;
+  	color: #ccc;
+  	font-style: normal;
+  	font-size: 14px;
+  	-webkit-transform: translateY(-50%);
+  	-moz-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);
+  	transform: translateY(-50%)
+  }
+  section.header > marquee {
+  	display: inline-block;
+  	width: auto;
+  	height: 100%;
+  	color: #fff;
+  	font-size: 42px;
+  	line-height: 68px
+  }
+  section.header > marquee > span {
+  	margin-left: 200px
+  }
+  section.header > marquee > span:first-child {
+  	margin-left: 60px!important
+  }
+  section.content {
+  	padding: 20px 20px 0;
+  	width: 100%;
+  	height: -webkit-calc(100% - 68px);
+  	height: -moz-calc(100% - 68px);
+  	height: calc(100% - 68px)
+  }
+  section.content > div.chatBoxContainer {
+  	position: absolute;
+  	top: 20px;
+  	right: auto;
+  	left: 20px;
+  	overflow: hidden;
+  	margin: 0;
+  	width: -webkit-calc(100% - 460px);
+  	width: -moz-calc(100% - 460px);
+  	width: calc(100% - 460px);
+  	height: 100%;
+  	border: none;
+  	-webkit-border-radius: 0;
+  	-moz-border-radius: 0;
+  	border-radius: 0;
+  	background: 0 0
+  }
+  section.content > div.chatBoxContainer.noSide {
+  	right: 20px;
+  	left: 20px;
+  	width: -webkit-calc(100% - 40px);
+  	width: -moz-calc(100% - 40px);
+  	width: calc(100% - 40px)
+  }
+  section.content.rightChatBoxContainer > div.chatBoxContainer {
+  	right: 20px;
+  	left: auto
+  }
+  div.chatBoxContainer > .chatBox {
+  	overflow: hidden;
+  	padding: 0;
+  	width: 100%;
+  	height: 100%
+  }
+  div.chatBoxContainer > .chatBox > ul {
+  	width: 100%;
+  	height: 100%;
+  	font-size: 1pc
+  }
+  div.chatBoxContainer > .chatBox > ul > li {
+  	margin: 0 0 20px;
+  	padding: 20px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	background: hsla(0, 0%, 100%, .3)
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div {
+  	position: relative;
+  	height: 75pt
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div > i {
+  	display: block;
+  	width: 75pt;
+  	height: 75pt;
+  	border: 3px solid #fff;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	background-color: #ccc;
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div > i[sex='1'] {
+  	border-color: #00a0e9
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div > i[sex='2'] {
+  	border-color: #e4007f
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div > h5 {
+  	left: 90pt;
+  	font-size: 50px
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div > b,
+  div.chatBoxContainer > .chatBox > ul > li > div > h5 {
+  	position: absolute;
+  	top: 50%;
+  	color: #fff;
+  	font-weight: 700;
+  	-webkit-transform: translateY(-50%);
+  	-moz-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);
+  	transform: translateY(-50%)
+  }
+  div.chatBoxContainer > .chatBox > ul > li > div > b {
+  	right: 15px;
+  	font-size: 28px;
+  	opacity: .8
+  }
+  div.chatBoxContainer > .chatBox > ul > li > h6 {
+  	margin-bottom: 20px;
+  	padding-left: 90pt;
+  	color: #fff;
+  	color: #ecf0f1;
+  	font-weight: 700;
+  	font-size: 1.4em;
+  	line-height: 1.4em
+  }
+  div.chatBoxContainer > .chatBox.openColor > ul > li > h6 {
+  	background-image: -webkit-linear-gradient(left, #fff, #fff);
+  	-webkit-background-clip: text;
+  	-webkit-background-size: 200% 100%;
+  	-webkit-text-fill-color: transparent
+  }
+  div.chatBoxContainer > .chatBox > ul > li.on_wall > h6 {
+  	color: #f1c40f
+  }
+  div.chatBoxContainer > .chatBox.openColor > ul > li.on_wall > h6 {
+  	background-image: -webkit-linear-gradient(left, #f1c40f, #fff000 10%, #fff 20%, #fff000 30%, #cbb524 40%, #f1c40f 50%, #fff000 60%, #fff 70%, #fff000 80%, #cbb524 90%, #f1c40f);
+  	-webkit-animation: on_wall_font 1s infinite linear
+  }
+  div.chatBoxContainer > .chatBox > ul > li.on_hongbao > h6 {
+  	color: #e74c3c
+  }
+  div.chatBoxContainer > .chatBox.openColor > ul > li.on_hongbao > h6 {
+  	background-image: -webkit-linear-gradient(left, #c0392b, #e74c3c 10%, red 20%, #fff 30%, red 40%, #c0392b 50%, #e74c3c 60%, red 70%, #fff 80%, red 90%, #c0392b);
+  	-webkit-animation: on_wall_font 3s infinite linear
+  }
+  div.chatBoxContainer > .chatBox > ul > li.on_gift > h6 {
+  	color: #f949ff
+  }
+  div.chatBoxContainer > .chatBox.openColor > ul > li.on_gift > h6 {
+  	background-image: -webkit-linear-gradient(left, #ff1abc, #e71aff 10%, #c554ff 20%, #fff 30%, #c554ff 40%, #ff1abc 50%, #e71aff 60%, #c554ff 70%, #fff 80%, #c554ff 90%, #ff1abc);
+  	-webkit-animation: on_wall_font 6s infinite linear
+  }
+  @-webkit-keyframes on_wall_font {
+  	0% {
+  		background-position: 0 0
+  	}
+  	to {
+  		background-position: -100% 0
+  	}
+  }
+  div.chatBoxContainer > .chatBox > ul > li > img {
+  	margin: 0 0 20px 90pt;
+  	max-width: 200px;
+  	max-height: 300px
+  }
+  div.chatBoxContainer > .chatBox > ul > li > b {
+  	display: block;
+  	width: 100%;
+  	background-image: -webkit-linear-gradient(#fdef00, #bbaf00);
+  	background-image: -webkit-gradient(linear, left top, left bottom, from(#fdef00), to(#bbaf00));
+  	background-image: -webkit-gradient(linear, left top, left bottom, from(#fdef00), to(#bbaf00));
+  	background-image: -moz-linear-gradient(#fdef00, #bbaf00);
+  	background-image: -o-linear-gradient(#fdef00, #bbaf00);
+  	background-image: linear-gradient(#fdef00, #bbaf00);
+  	text-align: right;
+  	font-size: 2pc;
+  	line-height: 2pc;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent
+  }
+  section.content > div.sideContainer {
+  	position: absolute;
+  	top: 20px;
+  	right: 20px;
+  	width: 25pc;
+  	height: 100%
+  }
+  section.content.rightChatBoxContainer > div.sideContainer {
+  	right: auto;
+  	left: 20px
+  }
+  section.content > div.sideContainer > ul.imgBox {
+  	position: relative;
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	left: 0;
+  	overflow: hidden;
+  	margin-bottom: 20px;
+  	width: 100%;
+  	height: 500px
+  }
+  section.content > div.sideContainer.topQrCode > ul.imgBox {
+  	top: 340px
+  }
+  section.content > div.sideContainer > ul.imgBox > li {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  	width: 100%;
+  	height: 100%;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	background-color: #333;
+  	background-position: center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-repeat: no-repeat
+  }
+  section.content > div.sideContainer > ul.imgBox > li:first-child {
+  	z-index: 999
+  }
+  section.content > div.sideContainer > div.qrCode {
+  	position: absolute;
+  	top: 520px;
+  	right: 0;
+  	left: 0;
+  	margin-bottom: 20px;
+  	padding: 10px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	background: hsla(0, 0%, 100%, .9);
+  	text-align: center
+  }
+  section.content > div.sideContainer.topQrCode > div.qrCode {
+  	top: 0
+  }
+  section.content > div.sideContainer > div.qrCode > div#qrcode {
+  	width: 300px;
+  	height: 300px
+  }
+  section.content > div.sideContainer > div.qrCode > span {
+  	position: absolute;
+  	top: 50%;
+  	right: 10px;
+  	display: block;
+  	width: 55px;
+  	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  	color: #333;
+  	text-align: center;
+  	text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+  	font-size: 24px;
+  	line-height: 28px;
+  	-webkit-transform: translateY(-50%);
+  	-moz-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);
+  	transform: translateY(-50%);
+  	-webkit-animation: hue 3s infinite linear;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent
+  }
+  @-webkit-keyframes hue {
+  	0% {
+  		-webkit-filter: hue-rotate(0)
+  	}
+  	to {
+  		-webkit-filter: hue-rotate(-360deg)
+  	}
+  }
+  section.content > div.sideContainer > div.qrCode > img {
+  	width: auto;
+  	height: auto;
+  	max-width: 100%;
+  	max-height: 100%;
+  	opacity: .8
+  }
+  section.content > div.sideContainer > div.qrCode > div {
+  	background-repeat: no-repeat;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-position: center;
+  	height: 320px;
+  	width: 320px;
+  	position: relative;
+  	-webkit-border-radius: 8px;
+  	-moz-border-radius: 8px;
+  	border-radius: 8px;
+  }
+  section.content > div.sideContainer > div.qrCode > div > span {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-webkit-transform: translateX(-50%) translateY(-50%);
+  	-moz-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	-o-transform: translateX(-50%) translateY(-50%);
+  	transform: translateX(-50%) translateY(-50%);
+  	background-repeat: no-repeat;
+  	-webkit-background-size: 45px 45px;
+  	-moz-background-size: 45px;
+  	-o-background-size: 45px;
+  	background-size: 45px;
+  	background-position: center;
+  	display: block;
+  	height: 50px;
+  	width: 50px;
+  	-webkit-border-radius: 8px;
+  	-moz-border-radius: 8px;
+  	border-radius: 8px;
+  	background-color: #333;
+  }
+  div.join {
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	height: 60%
+  }
+  div.join,
+  div.join > div.mark {
+  	position: absolute;
+  	width: 100%
+  }
+  div.join > div.mark {
+  	z-index: 1;
+  	height: 100%;
+  	background-color: transparent;
+  	background-image: -webkit-linear-gradient(bottom, #000, transparent 70%, transparent);
+  	background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(70%, transparent), to(transparent));
+  	background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(70%, transparent), to(transparent));
+  	background-image: -moz-linear-gradient(bottom, #000, transparent 70%, transparent);
+  	background-image: -o-linear-gradient(bottom, #000, transparent 70%, transparent);
+  	background-image: linear-gradient(bottom, #000, transparent 70%, transparent);
+  	opacity: 1
+  }
+  div.join > div.avatar {
+  	position: absolute;
+  	bottom: 40px;
+  	left: 50%;
+  	z-index: 2;
+  	margin-left: -250px;
+  	width: 500px;
+  	height: 500px;
+  	-webkit-animation: 1.3s bounceIn;
+  	-moz-animation: 1.3s bounceIn;
+  	-o-animation: 1.3s bounceIn;
+  	animation: 1.3s bounceIn
+  }
+  div.join > div.avatar > div {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  	width: 500px;
+  	height: 500px;
+  	background-image: url(http://upyunoss.balabalafun.cn/on_wall/images/bg-gold.png);
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat
+  }
+  div.join > div.avatar.avatarColor > div {
+  	background-image: url(http://upyunoss.balabalafun.cn/on_wall/images/bg-color.png)
+  }
+  div.join > div.avatar > span {
+  	top: 180px;
+  	z-index: 2;
+  	width: 10pc;
+  	height: 10pc;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover
+  }
+  div.join > div.avatar > i,
+  div.join > div.avatar > span {
+  	position: absolute;
+  	left: 50%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	-webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);
+  	transform: translateX(-50%)
+  }
+  div.join > div.avatar > i {
+  	top: 140px;
+  	z-index: 3;
+  	width: 15pc;
+  	height: 15pc;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain
+  }
+  div.join > div.avatar.avatarGold > i {
+  	background-image: url(http://upyunoss.balabalafun.cn/on_wall/images/avatar-side-gold.png)
+  }
+  div.join > div.avatar.avatarColor > i {
+  	background-image: url(http://upyunoss.balabalafun.cn/on_wall/images/avatar-side-color.png)
+  }
+  div.join > div.avatar > b {
+  	position: absolute;
+  	top: 20pc;
+  	left: 50%;
+  	z-index: 4;
+  	display: block;
+  	padding: 0 15px;
+  	height: 40px;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	background: #00a0e9;
+  	color: #fff;
+  	font-size: 20px;
+  	line-height: 40px;
+  	-webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);
+  	transform: translateX(-50%)
+  }
+  div.join > div.avatar > b[sex='2'] {
+  	background: #e5004f
+  }
+  @-webkit-keyframes bounceIn {
+  	0%,
+  	20%,
+  	40%,
+  	60%,
+  	80%,
+  	to {
+  		-webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+  	}
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: scale3d(.3, .3, .3);
+  		transform: scale3d(.3, .3, .3)
+  	}
+  	20% {
+  		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+  		transform: scale3d(1.1, 1.1, 1.1)
+  	}
+  	40% {
+  		-webkit-transform: scale3d(.9, .9, .9);
+  		transform: scale3d(.9, .9, .9)
+  	}
+  	60% {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+  		transform: scale3d(1.03, 1.03, 1.03)
+  	}
+  	80% {
+  		-webkit-transform: scale3d(.97, .97, .97);
+  		transform: scale3d(.97, .97, .97)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1, 1, 1);
+  		transform: scale3d(1, 1, 1)
+  	}
+  }
+  @-moz-keyframes bounceIn {
+  	0%,
+  	20%,
+  	40%,
+  	60%,
+  	80%,
+  	to {
+  		-webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		-moz-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+  	}
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: scale3d(.3, .3, .3);
+  		-moz-transform: scale3d(.3, .3, .3);
+  		transform: scale3d(.3, .3, .3)
+  	}
+  	20% {
+  		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+  		-moz-transform: scale3d(1.1, 1.1, 1.1);
+  		transform: scale3d(1.1, 1.1, 1.1)
+  	}
+  	40% {
+  		-webkit-transform: scale3d(.9, .9, .9);
+  		-moz-transform: scale3d(.9, .9, .9);
+  		transform: scale3d(.9, .9, .9)
+  	}
+  	60% {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+  		-moz-transform: scale3d(1.03, 1.03, 1.03);
+  		transform: scale3d(1.03, 1.03, 1.03)
+  	}
+  	80% {
+  		-webkit-transform: scale3d(.97, .97, .97);
+  		-moz-transform: scale3d(.97, .97, .97);
+  		transform: scale3d(.97, .97, .97)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1, 1, 1);
+  		-moz-transform: scale3d(1, 1, 1);
+  		transform: scale3d(1, 1, 1)
+  	}
+  }
+  @-o-keyframes bounceIn {
+  	0%,
+  	20%,
+  	40%,
+  	60%,
+  	80%,
+  	to {
+  		-webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		-o-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+  	}
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: scale3d(.3, .3, .3);
+  		transform: scale3d(.3, .3, .3)
+  	}
+  	20% {
+  		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+  		transform: scale3d(1.1, 1.1, 1.1)
+  	}
+  	40% {
+  		-webkit-transform: scale3d(.9, .9, .9);
+  		transform: scale3d(.9, .9, .9)
+  	}
+  	60% {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+  		transform: scale3d(1.03, 1.03, 1.03)
+  	}
+  	80% {
+  		-webkit-transform: scale3d(.97, .97, .97);
+  		transform: scale3d(.97, .97, .97)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1, 1, 1);
+  		transform: scale3d(1, 1, 1)
+  	}
+  }
+  @keyframes bounceIn {
+  	0%,
+  	20%,
+  	40%,
+  	60%,
+  	80%,
+  	to {
+  		-webkit-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		-moz-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		-o-animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  		animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+  	}
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: scale3d(.3, .3, .3);
+  		-moz-transform: scale3d(.3, .3, .3);
+  		transform: scale3d(.3, .3, .3)
+  	}
+  	20% {
+  		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+  		-moz-transform: scale3d(1.1, 1.1, 1.1);
+  		transform: scale3d(1.1, 1.1, 1.1)
+  	}
+  	40% {
+  		-webkit-transform: scale3d(.9, .9, .9);
+  		-moz-transform: scale3d(.9, .9, .9);
+  		transform: scale3d(.9, .9, .9)
+  	}
+  	60% {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+  		-moz-transform: scale3d(1.03, 1.03, 1.03);
+  		transform: scale3d(1.03, 1.03, 1.03)
+  	}
+  	80% {
+  		-webkit-transform: scale3d(.97, .97, .97);
+  		-moz-transform: scale3d(.97, .97, .97);
+  		transform: scale3d(.97, .97, .97)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: scale3d(1, 1, 1);
+  		-moz-transform: scale3d(1, 1, 1);
+  		transform: scale3d(1, 1, 1)
+  	}
+  }
+  div.hb {
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	height: 60%
+  }
+  div.hb,
+  div.hb > div.mark {
+  	position: absolute;
+  	width: 100%
+  }
+  div.hb > div.mark {
+  	z-index: 1;
+  	height: 100%;
+  	background-color: transparent;
+  	background-image: -webkit-linear-gradient(bottom, #000, transparent 70%, transparent);
+  	background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(70%, transparent), to(transparent));
+  	background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(70%, transparent), to(transparent));
+  	background-image: -moz-linear-gradient(bottom, #000, transparent 70%, transparent);
+  	background-image: -o-linear-gradient(bottom, #000, transparent 70%, transparent);
+  	background-image: linear-gradient(bottom, #000, transparent 70%, transparent);
+  	opacity: 1
+  }
+  div.hb > div.avatar {
+  	bottom: -15px;
+  	left: 50%;
+  	z-index: 2;
+  	margin-left: -250px;
+  	-webkit-animation: 1.3s wobble;
+  	-moz-animation: 1.3s wobble;
+  	-o-animation: 1.3s wobble;
+  	animation: 1.3s wobble
+  }
+  div.hb > div.avatar,
+  div.hb > div.avatar > div {
+  	position: absolute;
+  	width: 500px;
+  	height: 500px
+  }
+  div.hb > div.avatar > div {
+  	top: 0;
+  	left: 0;
+  	z-index: 1;
+  	background-image: url(http://upyunoss.balabalafun.cn/on_wall/images/bg-hb.png);
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat
+  }
+  div.hb > div.avatar > span {
+  	top: 180px;
+  	z-index: 3;
+  	width: 10pc;
+  	height: 10pc;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover
+  }
+  div.hb > div.avatar > i,
+  div.hb > div.avatar > span {
+  	position: absolute;
+  	left: 50%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	-webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);
+  	transform: translateX(-50%)
+  }
+  div.hb > div.avatar > i {
+  	top: 140px;
+  	z-index: 2;
+  	width: 15pc;
+  	height: 15pc;
+  	background-image: url(http://upyunoss.balabalafun.cn/on_wall/images/avatar-side-hb.png);
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain
+  }
+  div.hb > div.avatar > b {
+  	position: absolute;
+  	top: 20pc;
+  	left: 50%;
+  	z-index: 4;
+  	display: block;
+  	padding: 0 15px;
+  	height: 40px;
+  	-webkit-border-radius: 75pt;
+  	-moz-border-radius: 75pt;
+  	border-radius: 75pt;
+  	background: #00a0e9;
+  	color: #fff;
+  	font-size: 20px;
+  	line-height: 40px;
+  	-webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-ms-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);
+  	transform: translateX(-50%)
+  }
+  div.hb > div.avatar > b[sex='2'] {
+  	background: #e5004f
+  }
+  div.hb > div.avatar > dd {
+  	position: absolute;
+  	top: -200px;
+  	left: 0;
+  	z-index: 4;
+  	overflow: hidden;
+  	width: 500px;
+  	height: 345px;
+  	background-image: url(http://balabalafun.b0.upaiyun.com/on_wall/images/bg-hb2.png);
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  	-webkit-animation: 2.3s fadeInUp;
+  	-moz-animation: 2.3s fadeInUp;
+  	-o-animation: 2.3s fadeInUp;
+  	animation: 2.3s fadeInUp
+  }
+  @-webkit-keyframes wobble {
+  	0% {
+  		-webkit-transform: none;
+  		transform: none
+  	}
+  	15% {
+  		-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  	}
+  	30% {
+  		-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  		transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  	}
+  	45% {
+  		-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  		transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  	}
+  	60% {
+  		-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  		transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  	}
+  	75% {
+  		-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  		transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  	}
+  }
+  @-moz-keyframes wobble {
+  	0%,
+  	to {
+  		-webkit-transform: none;
+  		-moz-transform: none;
+  		transform: none
+  	}
+  	15% {
+  		-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  		-moz-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  	}
+  	30% {
+  		-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  		-moz-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  		transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  	}
+  	45% {
+  		-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  		-moz-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  		transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  	}
+  	60% {
+  		-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  		-moz-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  		transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  	}
+  	75% {
+  		-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  		-moz-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  		transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  	}
+  	to {
+  		-webkit-transform: none;
+  		-moz-transform: none;
+  		transform: none
+  	}
+  }
+  @-o-keyframes wobble {
+  	0%,
+  	to {
+  		-webkit-transform: none;
+  		-o-transform: none;
+  		transform: none
+  	}
+  	15% {
+  		-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  	}
+  	30% {
+  		-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  		transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  	}
+  	45% {
+  		-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  		transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  	}
+  	60% {
+  		-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  		transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  	}
+  	75% {
+  		-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  		transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  	}
+  	to {
+  		-webkit-transform: none;
+  		-o-transform: none;
+  		transform: none
+  	}
+  }
+  @keyframes wobble {
+  	0%,
+  	to {
+  		-webkit-transform: none;
+  		-moz-transform: none;
+  		-o-transform: none;
+  		transform: none
+  	}
+  	15% {
+  		-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  		-moz-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  		transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)
+  	}
+  	30% {
+  		-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  		-moz-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  		transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)
+  	}
+  	45% {
+  		-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  		-moz-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  		transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)
+  	}
+  	60% {
+  		-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  		-moz-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  		transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)
+  	}
+  	75% {
+  		-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  		-moz-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  		transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)
+  	}
+  	to {
+  		-webkit-transform: none;
+  		-moz-transform: none;
+  		-o-transform: none;
+  		transform: none
+  	}
+  }
+  @-webkit-keyframes fadeInUp {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: translate3d(0, 100%, 0);
+  		transform: translate3d(0, 100%, 0)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: none;
+  		transform: none
+  	}
+  }
+  @-moz-keyframes fadeInUp {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: translate3d(0, 100%, 0);
+  		-moz-transform: translate3d(0, 100%, 0);
+  		transform: translate3d(0, 100%, 0)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: none;
+  		-moz-transform: none;
+  		transform: none
+  	}
+  }
+  @-o-keyframes fadeInUp {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: translate3d(0, 100%, 0);
+  		transform: translate3d(0, 100%, 0)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: none;
+  		-o-transform: none;
+  		transform: none
+  	}
+  }
+  @keyframes fadeInUp {
+  	0% {
+  		opacity: 0;
+  		-webkit-transform: translate3d(0, 100%, 0);
+  		-moz-transform: translate3d(0, 100%, 0);
+  		transform: translate3d(0, 100%, 0)
+  	}
+  	to {
+  		opacity: 1;
+  		-webkit-transform: none;
+  		-moz-transform: none;
+  		-o-transform: none;
+  		transform: none
+  	}
+  }
+  .avarat {
+  	position: relative
+  }
+  .avarat > b {
+  	position: absolute;
+  	top: -30%;
+  	left: -30%;
+  	z-index: 1;
+  	display: block;
+  	width: 160%;
+  	height: 160%;
+  	background-position: center;
+  	-webkit-background-size: contain;
+  	-moz-background-size: contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+  	background-repeat: no-repeat
+  }
+  .avarat[money='1'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-12.png)!important
+  }
+  .avarat[money='11'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-01.png)!important
+  }
+  .avarat[money='12'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-02.png)!important
+  }
+  .avarat[money='13'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-03.png)!important
+  }
+  .avarat[red='1'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-11.png)
+  }
+  .avarat[red='11'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-04.png)
+  }
+  .avarat[red='12'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-05.png)
+  }
+  .avarat[red='13'] > b {
+  	background-image: url(http://upyunoss.balabalafun.cn/chat_phone/images/avatar-06.png)
+  }
+  section.ds > div.text > div.image {
+  	float: left;
+  	margin-right: 40px;
+  	width: 340px;
+  	height: 500px
+  }
+  section.ds > div.text > div.image > span {
+  	display: block;
+  	width: 340px;
+  	height: 500px;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	background-position: center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-repeat: no-repeat
+  }
+  div.chatBoxContainer > .chatBox > ul > li.on_sr > h6 {
+  	color: #f949ff
+  }
+  div.chatBoxContainer > .chatBox.openColor > ul > li.on_sr > h6 {
+  	background-image: -webkit-linear-gradient(left, #ff1abc, #e71aff 10%, #c554ff 20%, #fff 30%, #c554ff 40%, #ff1abc 50%, #e71aff 60%, #c554ff 70%, #fff 80%, #c554ff 90%, #ff1abc);
+  	-webkit-animation: on_wall_font 6s infinite linear
+  }
+  section.bp > div.text.noimage {
+  	margin-left: 0;
+  	width: 100%
+  }
+  section.header > h5.name > img.logo {
+  	float: left;
+  	display: block;
+  	margin: 4px 20px 4px 0;
+  	width: auto;
+  	height: 60px
+  }
+  section.bg > div.bgImg {
+  	position: fixed;
+  	top: 0;
+  	right: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	background-position: center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background-repeat: no-repeat
+  }

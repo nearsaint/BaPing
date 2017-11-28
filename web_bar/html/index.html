@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 60px;">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>上墙 - 香蕉互娱</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- tools -->
+	<link href="css/tools.css" rel="stylesheet">
+	<!-- bootstrap-slider -->
+	<link href="css/bootstrap-slider.css" rel="stylesheet">
+	<!-- multi-switch -->
+	<link href="css/multi-switch.min.css" rel="stylesheet" type="text/css">
+	<link href="css/chatBoxBgRgba.css" rel="stylesheet" type="text/css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="loadingMask hiden">
+		<div class="copyright">Copyright©2017 BalabalaFun 香蕉互娱</div>
+		<div class="reload"><a href="#" title="重新加载"><i class="fa fa-repeat" aria-hidden="true"></i></a></div>
+		<div class="content">
+			<div class="logo">
+				<a><b></b><i></i></a>
+			</div>
+			<div class="loading">
+				<h2>大屏正在加载,请稍后</h2>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</section>
+	<!-- end section.loadingMask -->
+	<section class="tools-dp">
+		<a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+		<div class="meun">
+			<ul>
+				<li class="closeBt">
+					<a href="#">
+						<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="settingBt">
+					<a href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+						<span>界面设置</span>
+						<b class="fa fa-angle-down" aria-hidden="true"></b>
+					</a>
+					<ul class="meun">
+						<li><a href="#">消息</a>
+							<ul>
+								<li>
+									<span>
+											特殊信息渐变字体<b class="msgColorOpenSetting">关闭</b>
+										</span>
+
+									<input id="msgColorOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" />
+								</li>
+								<li>
+									<span>
+											字体大小<b class="fontSizeSetting">60px</b>
+										</span>
+
+
+									<input id="fontSizeSetting" type="text" data-slider-min="30" data-slider-max="100" data-slider-step="1" data-slider-value="60" />
+								</li>
+								<li>
+									<span>
+											信息数量<b class="msgQuantitySetting">15条</b>
+										</span>
+
+									<input id="msgQuantitySetting" type="text" data-slider-min="10" data-slider-max="20" data-slider-step="1" data-slider-value="15" />
+								</li>
+								<li>
+									<span>
+											滚动<b class="msgOpenSetting">开启</b>
+										</span>
+									<input id="msgOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" />
+								</li>
+								<li>
+									<span>
+											滚动时间<b class="msgSliderTimeSetting">5秒</b>
+										</span>
+
+									<input id="msgSliderTimeSetting" type="text" data-slider-min="5" data-slider-max="10" data-slider-step="1" data-slider-value="6" />
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">背景</a>
+							<ul>
+								<li>
+									<span>
+											动态背景<b class="screenBgSetting">开启</b>
+										</span>
+
+									<input id="screenBgSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" />
+								</li>
+								<li>
+									<span>
+											点缀<b class="screenEmbSetting">无</b>
+										</span>
+
+									<div class="chack">
+										<a class="active">无</a>
+										<a>雪花</a>
+										<a>星星</a>
+										<a>圆圈</a>
+									</div>
+								</li>
+
+								<li>
+									<span>
+											屏幕亮度<b class="screenLightSetting">10</b>
+										</span>
+
+									<input id="screenLightSetting" type="text" data-slider-min="2" data-slider-max="10" data-slider-step="1" data-slider-value="10" />
+								</li>
+
+
+								<li>
+									<span>
+											聊天窗透明<b class="screenBgChatTransparentSetting">3</b>
+										</span>
+									<input id="screenBgChatTransparentSetting" type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="3" />
+								</li>
+								<li>
+									<span>
+											聊天窗颜色<b class="screenBgChatSetting">1</b>
+										</span>
+
+									<input id="screenBgChatSetting" type="text" data-slider-min="1" data-slider-max="6" data-slider-step="1" data-slider-value="1" />
+								</li>
+							</ul>
+
+						</li>
+						<li><a href="#">音效</a>
+							<ul>
+
+								<li>
+									<span>
+											霸屏音效<b class="bpSoundOpenSetting">关闭</b>
+										</span>
+									<input id="bpSoundOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" />
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">布局</a>
+							<ul>
+								<li>
+									<span>只显示消息
+											<b class="justMsgOpenSetting">关闭</b>
+										</span>
+									<input id="justMsgOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" />
+								</li>
+								<li>
+									<span>二维码置顶
+											<b class="qrTopOpenSetting">关闭</b>
+										</span>
+									<input id="qrTopOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" />
+								</li>
+								<li>
+									<span>右侧聊天窗
+											<b class="chatboxRightOpenSetting">关闭</b>
+										</span>
+									<input id="chatboxRightOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="2" />
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">跑马灯</a>
+							<ul>
+
+								<li>
+									<span>
+											滚动<b class="pmdOpenSetting">开启</b>
+										</span>
+									<input id="pmdOpenSetting" type="checkbox" class="multi-switch" unchecked-value="2" checked-value="1" value="1" />
+								</li>
+								<li>
+									<span>
+											移动速度<b class="pmdSpeedSetting">2</b>
+										</span>
+
+									<input id="pmdSpeedSetting" type="text" data-slider-min="1" data-slider-max="5" data-slider-step="1" data-slider-value="2" /> -->
+								</li>
+								<li>
+									<span>
+											间隔<b class="pmdTimeSetting">200</b>
+										</span>
+
+									<input id="pmdTimeSetting" type="text" data-slider-min="200" data-slider-max="1000" data-slider-step="10" data-slider-value="200" /> -->
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dp">
+					<a href="#">
+						<i></i>
+						<span>上墙</span>
+					</a>
+				</li>
+				<li class="sm">
+					<a href="#">
+						<i></i>
+						<span>赛马游戏</span>
+					</a>
+				</li>
+				<li class="sc">
+					<a href="#">
+						<i></i>
+						<span>赛车游戏</span>
+					</a>
+				</li>
+				<li class="yy">
+					<a href="#">
+						<i></i>
+						<span>摇一摇</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mark"></div>
+	</section>
+	<section class="header">
+		<h5 class="name"><img class="logo" src="images/0.jpg">广州含七激情餐吧</h5>
+		<marquee scrollamount=8><span>我是第一条跑马灯</span><span>我是第二条跑马灯</span><span>我是第三条跑马灯</span></marquee>
+		<i class="copyright">@balabalaFun 香蕉互娱</i>
+	</section>
+	<!-- end .header -->
+
+	<section class="content">
+		<div class="chatBoxContainer">
+			<div class="chatBox">
+				<ul style="font-size:60px;">
+					<li class="on_chat">
+						<div>
+							<i class="avarat" style="background-image: url();" sex="1" money="1"><b></b></i>
+							<h5>1</h5>
+							<b>05-04 17:39</b>
+						</div>
+						<h6>祝我三姨妈的二儿子的大表哥生了个小孙子，大家干杯！</h6>
+					</li>
+					<li class="on_wall">
+						<div>
+							<i class="avarat" style="background-image: url();" sex="1" red="1"><b></b></i>
+							<h5>1</h5>
+							<b>05-04 17:39</b>
+						</div>
+						<h6>祝我三姨妈的二儿子的大表哥生了个小孙子，大家干杯！</h6>
+					</li>
+					<li class="on_hongbao">
+						<div>
+							<i style="background-image: url();" sex="1"></i>
+							<h5>1</h5>
+							<b>05-04 17:39</b>
+						</div>
+						<h6>祝我三姨妈的二儿子的大表哥生了个小孙子，大家干杯！</h6>
+					</li>
+					<li class="on_gift">
+						<div>
+							<i style="background-image: url();" sex="1"></i>
+							<h5>1</h5>
+							<b>05-04 17:39</b>
+						</div>
+						<h6>祝我三姨妈的二儿子的大表哥生了个小孙子，大家干杯！</h6>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- end .chatBoxContainer -->
+		<div class="sideContainer">
+			<ul class="imgBox">
+				<li style="
+	background-image: url(images/1.jpeg)">
+				</li>
+				<li style="
+	background-image: url(images/2.jpeg)">
+				</li>
+				<li style="
+	background-image: url(images/3.jpeg)">
+				</li>
+				<li style="
+	background-image: url(images/4.jpeg)">
+				</li>
+				<li style="
+	background-image: url(images/5.jpeg)">
+				</li>
+			</ul>
+			<div class="qrCode">
+				<div style="background-image: url(http://upyunoss.balabalafun.cn/uploads/2017/06/28/upload_b8fecr6ev1d5eougcco0wvn44181sv85.png)">
+					<span style="background-image: url(images/logoIcon.png);"></span>
+				</div>
+				<span>扫<br>描<br>二<br>维<br>码<br>加<br>入<br>互<br>动</span>
+			</div>
+		</div>
+		<!-- end .sideContainer -->
+
+		<div class="join hiden">
+			<div class="avatar avatarGold bounceIn">
+				<div></div>
+				<span style="
+	background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+				<i></i>
+				<b sex="1">herman</b>
+			</div>
+			<div class="mark"></div>
+		</div>
+		<!-- end .join -->
+
+		<div class="hb hiden">
+			<div class="avatar avatarGold bounceIn">
+				<div></div>
+				<span style="
+	background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+				<i></i>
+				<b sex="1">herman</b>
+				<dd></dd>
+			</div>
+			<div class="mark"></div>
+		</div>
+		<!-- end .hb -->
+
+	</section>
+	<!-- end .content -->
+
+
+	<section class="bp hiden">
+		<div class="img">
+			<span style="display:block; width: 100%; height:100%; background-size:cover;
+	background-image: url(images/1.jpeg)"></span>
+		</div>
+		<div class="text">
+			<div>
+				<i style="background-image: url();" sex="1"></i>
+				<h5>Remang</h5>
+			</div>
+			<h5>祝我三姨妈的二儿子的大表哥生了个小孙子，大家干杯！！！</h5>
+			<i>重金霸屏<b>64</b>秒</i>
+			<b>05-04 17:39</b>
+		</div>
+	</section>
+	<!-- end .bp -->
+
+	<section class="ds hiden">
+		<div class="video">
+			<video src="http://balabalafun.b0.upaiyun.com/on_wall/images/ds_cake.mp4" autoplay loop muted style="width:100%; height:auto;"></video>
+		</div>
+		<div class="text">
+			<div>
+				<i style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1"></i>
+				<h5>雷公</h5>
+			</div>
+			<!-- 生日霸屏 -->
+			<div class="image">
+				<span style='background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);'></span>
+			</div>
+			<!-- 生日霸屏结束 -->
+			<h5>打赏给<b>小小津</b>动人玫瑰<br>祝福你以后天天没bug！我爱你</h5>
+			<i>打赏动人玫瑰<b>20</b>秒</i>
+			<b>05-12 17:39</b>
+		</div>
+	</section>
+	<!-- end .ds -->
+
+	<section class="bg">
+		<div class="mask"></div>
+		<div class="bgImg" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></div>
+		<video class="hide" src="images/bg.mov" autoplay loop muted style="width:100%; height:auto;"></video>
+	</section>
+	<!-- end .bg -->
+
+
+	<!--Include jquery-->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap-3.3.7.min.js "></script>
+	<!--Include easing -->
+	<script src='js/jquery.easing.min.js'></script>
+	<!--Include slick -->
+	<script src='js/slick.min.js'></script>
+	<!--Include tools bootstrap-slider -->
+	<script src='js/bootstrap-slider.js'></script>
+	<!--Include tools multi-switch -->
+	<script src="js/multi-switch.js"></script>
+	<script>
+		var _setFont = function() {
+			var w = $(window).width();
+			var h = $(window).height();
+			var maxWidth = 1920;
+			var maxHeight = 960;
+			if (w >= h) {
+				var zoom = h / maxHeight;
+				if (w / h > 3 && w / maxWidth > 2) {
+					zoom += 0.1;
+				}
+				$('section.content').css({
+					zoom: zoom
+				});
+				$('section.bp').css({
+					zoom: zoom
+				});
+				$('section.ds').css({
+					zoom: zoom
+				});
+			} else {
+				var zoom = w / maxWidth;
+				$('section.content').css({
+					zoom: zoom
+				});
+				$('section.bp').css({
+					zoom: zoom
+				});
+				$('section.ds').css({
+					zoom: zoom
+				});
+			}
+		};
+		var _setVideo = function() {
+			var winW = $('.bg').width();
+			var winH = $('.bg').height();
+			var videoW = $('.bg > video').width();
+			var videoH = $('.bg > video').height();
+			var dirV = videoW / videoH;
+			var dir = winW / winH;
+
+			if (dirV <= dir) {
+				$('.bg > video').css({
+					width: winW,
+					height: 'auto',
+					left: 0,
+					top: '50%',
+					marginLeft: 0
+				});
+				var h = winW / dirV;
+				$('.bg > video').css({
+					marginTop: h / -2
+				});
+			} else {
+				$('.bg > video').css({
+					height: winH,
+					width: 'auto',
+					top: 0,
+					left: '50%',
+					marginTop: 0
+				});
+				var w = winH * dirV;
+				$('.bg > video').css({
+					marginLeft: w / -2
+				});
+			}
+		}
+		$(window).bind('resize', function() {
+			_setFont();
+			_setVideo();
+		});
+		$('.slider').slick({
+			autoplay: true,
+			autoplaySpeed: 3000,
+			draggable: true,
+			arrows: false,
+			dots: true,
+			fade: true,
+			speed: 900,
+			infinite: true,
+			cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+			touchThreshold: 100
+		});
+		$(function() {
+			var chatBox = $(".chatBox > ul");
+			var chatBoxLiH
+			var Trundle = function() {
+				chatBoxLiH = $(".chatBox > ul > li:first").height() + 60;
+				chatBox.animate({
+					marginTop: -1 * chatBoxLiH
+				}, 1200);
+				setTimeout(function() {
+					chatBox.append(chatBox.find("li:first"));
+					chatBox.animate({
+						marginTop: 0
+					}, 0)
+				}, 1200);
+			}
+			var setTrundle = setInterval(Trundle, 4200);
+			chatBox.hover(function() {
+				clearInterval(setTrundle);
+				setTrundle = null;
+			}, function() {
+				setTrundle = setInterval(Trundle, 4200);
+			});
+		});
+
+		$(function() {
+			var imgBox = $("ul.imgBox");
+			var imgBoxMove = function() {
+				imgBox.append(imgBox.find("li:first"));
+			}
+			var setTrundle = setInterval(imgBoxMove, 6000);
+		});
+
+
+		$(document).ready(function() {
+			_setFont();
+			setTimeout(function() {
+				_setVideo();
+			}, 250);
+
+			//跑马灯宽度
+			var marqueeOhterW = parseInt($('section.header > h5.name').width()) + 60 + 290;
+			console.log(marqueeOhterW);
+
+			$('section.header > marquee').css({
+				width: 'calc(100% - ' + marqueeOhterW + 'px)'
+			});
+
+			//界面设置下拉菜单
+			var settingBtContainer = $('section.tools-dp li.settingBt');
+			settingBtContainer.children('a').click(function() {
+				if (settingBtContainer.hasClass('active')) {
+					settingBtContainer.removeClass('active');
+					settingBtContainer.find('ul.meun').slideUp();
+				} else {
+
+					settingBtContainer.addClass('active');
+					settingBtContainer.find('ul.meun').slideDown();
+				}
+			});
+
+			//工具条呼出隐藏
+			var toolsDpContainer = $('section.tools-dp');
+			toolsDpContainer.children('a').click(function() {
+				toolsDpContainer.addClass('active');
+				toolsDpContainer.children('div.meun').animate({
+					right: 0
+				})
+			});
+			toolsDpContainer.find('li.closeBt > a').click(function() {
+
+				toolsDpContainer.children('div.meun').animate({
+					right: '-400px'
+				});
+				settingBtContainer.removeClass('active');
+				settingBtContainer.find('ul.meun').hide();
+			});
+
+			toolsDpContainer.find('div.mark').click(function() {
+
+				toolsDpContainer.removeClass('active');
+				toolsDpContainer.children('div.meun').animate({
+					right: '-400px'
+				});
+				settingBtContainer.removeClass('active');
+				settingBtContainer.find('ul.meun').hide();
+			});
+
+
+
+			//消息 - 特殊信息渐变字体
+			$('#msgColorOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#msgColorOpenSetting').val() == 1) {
+						$(".msgColorOpenSetting").text('开启');
+						$("section.content div.chatBox").addClass('openColor');
+					} else {
+						$(".msgColorOpenSetting").text('关闭');
+						$("section.content div.chatBox").removeClass('openColor');
+					}
+				}
+			});
+			//消息 - 字体大小
+			$("#fontSizeSetting").slider();
+			$("#fontSizeSetting").on("slide", function(slideEvt) {
+				$(".fontSizeSetting").text(slideEvt.value + 'px');
+				$('.chatBox > ul').css({
+					fontSize: slideEvt.value,
+				})
+			});
+
+
+			//消息 - 保存数量
+			$("#msgQuantitySetting").slider();
+			$("#msgQuantitySetting").on("slide", function(slideEvt) {
+				$(".msgQuantitySetting").text(slideEvt.value + '条');
+			});
+
+
+			//消息 - 滚动速度
+			$("#msgSliderTimeSetting").slider();
+			$("#msgSliderTimeSetting").on("slide", function(slideEvt) {
+				$(".msgSliderTimeSetting").text(slideEvt.value + '秒');
+			});;
+
+			//消息 - 滚动开关
+			$('#msgOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#msgOpenSetting').val() == 1) {
+						$(".msgOpenSetting").text('开启');
+						$("#msgSliderTimeSetting").slider("enable");
+
+					} else {
+						$(".msgOpenSetting").text('关闭');
+						$("#msgSliderTimeSetting").slider("disable");
+					}
+				}
+			});
+
+
+			//跑马灯 - 跑马灯开关
+			$('#pmdOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#pmdOpenSetting').val() == 1) {
+						$(".pmdOpenSetting").text('开启');
+						$("#pmdSpeedSetting").slider("enable");
+						$("#pmdTimeSetting").slider("enable");
+
+						$('section.header > marquee').show();
+					} else {
+						$(".pmdOpenSetting").text('关闭');
+						$("#pmdSpeedSetting").slider("disable");
+						$("#pmdTimeSetting").slider("disable");
+						$('section.header > marquee').hide();
+
+					}
+				}
+			});
+			//跑马灯 - 间隔
+			$("#pmdTimeSetting").slider();
+			$("#pmdTimeSetting").on("slide", function(slideEvt) {
+				$(".pmdTimeSetting").text(slideEvt.value + 'px');
+
+				$('section.header > marquee > span').css({
+					marginLeft: slideEvt.value,
+				});
+			});
+
+
+			//跑马灯 - 移动速度
+			$("#pmdSpeedSetting").slider({
+				formatter: function(value) {
+					return '新速度需要马仔跑完才看的见哦';
+				}
+			});
+			$("#pmdSpeedSetting").on("slide", function(slideEvt) {
+				$(".pmdSpeedSetting").text(slideEvt.value);
+				$('section.header > marquee').attr("scrollamount", slideEvt.value * 5);
+			});
+
+
+			//背景 - 亮度
+			$("#screenLightSetting").slider();
+			$("#screenLightSetting").on("slide", function(slideEvt) {
+				$(".screenLightSetting").text(slideEvt.value);
+				$('html').css({
+					filter: 'brightness(' + slideEvt.value / 10 + ')',
+				})
+			});
+
+			//背景 - 动态背景开关
+			$('#screenBgSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#screenBgSetting').val() == 1) {
+						$(".screenBgSetting").text('开启');
+
+					} else {
+						$(".screenBgSetting").text('关闭');
+					}
+				}
+			});
+			//背景 - 聊天窗背景透明 & 聊天窗背景黑白
+			var bgColor = 1;
+			var bgOpacity = 3;
+			var chatBoxUl = $('div.chatBoxContainer > .chatBox > ul');
+			$("#screenBgChatTransparentSetting").slider();
+			$("#screenBgChatSetting").slider();
+			$("#screenBgChatTransparentSetting").on("slide", function(slideEvt) {
+				$(".screenBgChatTransparentSetting").text(slideEvt.value);
+				bgOpacity = slideEvt.value;
+				chatBoxUl.attr('class', 'rgba_' + bgColor + '_' + bgOpacity);
+			});
+			$("#screenBgChatSetting").on("slide", function(slideEvt) {
+
+				$(".screenBgChatSetting").text(slideEvt.value);
+				bgColor = slideEvt.value;
+
+				chatBoxUl.attr('class', 'rgba_' + bgColor + '_' + bgOpacity);
+			});
+
+			//布局 - 只显示消息
+			$('#justMsgOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#justMsgOpenSetting').val() == 1) {
+						$(".justMsgOpenSetting").text('开启');
+						$('section.content > div.sideContainer').hide();
+						$('section.content > div.chatBoxContainer').addClass('noSide');
+					} else {
+						$(".justMsgOpenSetting").text('关闭');
+						$('section.content > div.chatBoxContainer').removeClass('noSide');
+						$('section.content > div.sideContainer').fadeIn();
+					}
+				}
+
+			});
+			//布局 - 顶置二维码
+			$('#qrTopOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#qrTopOpenSetting').val() == 1) {
+						$(".qrTopOpenSetting").text('开启');
+						$('section.content > div.sideContainer').addClass('topQrCode');
+					} else {
+						$(".qrTopOpenSetting").text('关闭');
+						$('section.content > div.sideContainer').removeClass('topQrCode');
+					}
+				}
+
+			});
+			//布局 - 右侧聊天窗体
+			$('#chatboxRightOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#chatboxRightOpenSetting').val() == 1) {
+						$(".chatboxRightOpenSetting").text('开启');
+						$('body > section.content').addClass('rightChatBoxContainer');
+					} else {
+						$(".chatboxRightOpenSetting").text('关闭');
+						$('body > section.content').removeClass('rightChatBoxContainer');
+					}
+				}
+
+			});
+
+			//音效 - 霸屏音效
+			$('#bpSoundOpenSetting').multiSwitch({
+				functionOnChange: function() {
+					if ($('#bpSoundOpenSetting').val() == 1) {
+						$(".bpSoundOpenSetting").text('开启');
+					} else {
+						$(".bpSoundOpenSetting").text('关闭');
+					}
+				}
+			});
+		});
+
+	</script>
+</body>
+
+</html>

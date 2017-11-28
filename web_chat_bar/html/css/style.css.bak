@@ -1,0 +1,2070 @@
+@charset 'UTF-8';
+{
+	/* 
+ 	* name: style.css
+	* author：Saint Near
+ 	* edit: 2017.05.20
+	*/
+}
+
+body {
+	background-color: rgba(47, 49, 50, 1);
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+@media (max-width: 320px) {
+	body {
+		padding: 5px;
+	}
+}
+
+*[sex='1'] {
+	border: 1px solid #00a0e9;
+}
+
+*[sex='2'] {
+	border: 1px solid #fe557b;
+}
+
+
+
+
+
+
+
+section.bg {
+	/* ================================================================ *
+	 *
+	 *	bg  背景图 
+	 *
+	 * ================================================================ */
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+section.bg.colorful {
+	-webkit-animation: hue 60s infinite linear;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a) !important;
+}
+
+@-webkit-keyframes hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+
+
+
+
+
+
+
+section.nav {
+	/* ================================================================ *
+	 *
+	 *	nav 左侧栏 
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+}
+
+section.nav > a.bg {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0);
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+section.nav > ul {
+	height: 100%;
+	width: 60%;
+	color: #fff;
+	padding: 20px 20px;
+	position: relative;
+}
+
+section.nav > ul > i.copyright {
+	color: #666;
+	font-size: 1.0rem;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-style: normal;
+}
+
+section.nav > ul > i.avarat {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: 20px auto 10px;
+	border-radius: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+section.nav > ul > span.name {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 5px;
+}
+
+section.nav > ul > b.location {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 100;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 50px;
+}
+
+section.nav > ul > li {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+section.nav > ul > li > a {
+	display: block;
+	line-height: 31px;
+	font-size: 1.6rem;
+	width: 100%;
+	height: 32px;
+	color: #999;
+}
+
+section.nav > ul > li > a:hover,
+section.nav > ul > li > a:focus,
+section.nav > ul > li > a:active {
+	font-size: 1.8rem;
+	color: #fff;
+}
+
+
+
+
+
+
+
+section.bodyBox {
+	/* ================================================================ *
+	 *
+	 *	bodyBox 主窗体 
+	 *
+	 * ================================================================ */
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: margin 0.3s;
+	transition: margin 0.3s;
+}
+
+section.bodyBox > div.box {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: calc(100% - 20px);
+	height: calc(100% - 20px);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, .96);
+}
+
+div.box > div.title {
+	position: relative;
+	width: 100%;
+}
+
+div.box > div.title > .btn-icon {
+	font-size: 2.4rem;
+	line-height: 30px;
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 42px;
+	height: 42px;
+	padding: 6px;
+	text-align: center;
+	line-height: 30px;
+	color: #333;
+}
+
+div.box > div.title > .btn-icon > i {
+	line-height: 30px;
+}
+
+div.box > div.title > .btn-icon.btn-left {
+	left: 0;
+}
+
+div.box > div.title > .btn-icon.btn-right {
+	right: 0;
+}
+
+div.box > div.title > .btn-icon:hover,
+div.box > div.title > .btn-icon:active,
+div.box > div.title > .btn-icon:focus {
+	color: #f39c12;
+}
+
+div.box > div.title > a.text {
+	display: block;
+	width: 50%;
+	min-height: 42px;
+	margin: 0 25%;
+	padding: 6px 20px;
+}
+
+div.box > div.title > a.text > span {
+	display: block;
+}
+
+div.box > div.title > a.text > span:first-child {
+	width: 30px;
+	height: 30px;
+}
+
+div.box > div.title > a.text > span.img {
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+div.box > div.title > a.text > span.img[sex] {
+	border-radius: 30px;
+}
+
+div.box > div.title > a.text > span:last-child {
+	font-size: 1.2rem;
+	line-height: 20px;
+	overflow: hidden;
+	width: 100% !important;
+	height: 30px;
+	padding: 0 20px;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #999;
+}
+
+
+
+
+
+
+
+div.box.chatBox {
+	/* ================================================================ *
+	 *
+	 *	chat box  聊天大厅
+	 *
+	 * ================================================================ */
+	display: block;
+}
+
+div.box.chatBox > div.content {
+	height: calc(100% - 114px);
+}
+
+div.box.chatBox > div.content.hasToolBar {
+	height: calc(100% - 156px);
+}
+
+div.box.chatBox > div.content div#chatScroller {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	width: calc(100% + 10px);
+	height: 100%;
+	margin-left: -5px;
+	padding: 0 5px;
+}
+
+div.box.chatBox > div.content ul.chatList {
+	-webkit-overflow-scrolling: touch;
+}
+
+div.box.chatBox > div.content ul.chatList::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li {
+	position: relative;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+div.box.chatBox > div.content ul.chatList > li > i {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	border-radius: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+div.box.chatBox > div.content ul.chatList > li > div {
+	padding: 0 0 0 56px;
+}
+
+div.box.chatBox > div.content ul.chatList > li > div > span {
+	font-size: 1.2rem;
+	line-height: 23px;
+	display: block;
+	height: 23px;
+	color: #999;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	padding-right: 56px;
+}
+
+div.box.chatBox > div.content ul.chatList div.edit {
+	display: none;
+	clear: both;
+	height: 44px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+div.box.chatBox > div.content ul.chatList div.edit > a {
+	font-size: 12px;
+	line-height: 24px;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0 10px;
+	color: #fff;
+	border-radius: 20px;
+	background: #ccc;
+}
+
+div.box.chatBox > div.content ul.chatList > li > div:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: '.';
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content {
+	font-size: 1.2rem;
+	line-height: 20px;
+	display: inline-block;
+	padding: 13px 15px;
+	color: #8693a4;
+	border-radius: 0 23px 23px 23px;
+	background-color: #e9ecf1;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > span {
+	line-height: 20px;
+	display: block;
+	min-height: 20px;
+	word-wrap: break-word;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > span > b {
+	font-size: 13px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > img {
+	width: auto;
+	max-width: 100px;
+	height: auto;
+	max-height: 100px;
+	margin-top: 13px;
+	border-radius: 10px;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa {
+	line-height: 32px;
+	display: block;
+	height: 32px;
+	margin-top: 10px;
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50px;
+	background: #8693a4;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa:hover,
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa:active,
+div.box.chatBox > div.content ul.chatList div.chatBubble > div.content > a.bpForTa:focus {
+	background: #333;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > span.chatTime {
+	font-size: 1.2rem;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	display: inline-block;
+	width: 46px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+	color: #999;
+}
+
+div.box.chatBox > div.content ul.chatList div.chatBubble > span.chatTime > b {
+	display: block;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my > i {
+	display: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my > div > span {
+	display: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.edit {
+	text-align: right;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.chatBubble {
+	float: right;
+	padding-right: 0;
+	padding-left: 56px;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.chatBubble > div.content {
+	color: #fff;
+	border-radius: 23px 23px 0 23px;
+	background-color: #b3d465;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chat-my div.chatBubble > span.chatTime {
+	left: 0;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatBp div.chatBubble > div.content {
+	color: #fff;
+	background: -moz-linear-gradient(left top, #f1c40f, #fff100);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#f1c40f), to(#fff100));
+	background: -o-linear-gradient(left top, #f1c40f, #fff100);
+}
+
+div.box.chatBox > div.content ul.chatList > li div.chatBubble > div.content > span > b > i {
+	font-style: normal;
+	margin: 0 5px;
+	border: none;
+}
+
+div.box.chatBox > div.content ul.chatList > li div.chatBubble > div.content > span > b > i[sex='1'] {
+	color: #00a0e9;
+}
+
+div.box.chatBox > div.content ul.chatList > li div.chatBubble > div.content > span > b > i[sex='2'] {
+	color: #fe557b;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content {
+	color: #fff;
+	background: -moz-linear-gradient(left top, #fa0103, #860c39);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#fa0103), to(#860c39));
+	background: -o-linear-gradient(left top, #fa0103, #860c39);
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a {
+	position: relative;
+	display: block;
+	width: 150px;
+	min-height: 100px;
+	margin: -13px -15px;
+	padding: 100px 13px 40px;
+	text-align: center;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a > b {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	left: 0;
+	display: block;
+	height: 58px;
+	background-image: url(../images/images/chatHb-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a > span {
+	display: block;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatHb div.chatBubble > div.content > a > i {
+	font-style: normal;
+	color: #333;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatDs div.chatBubble > div.content {
+	color: #fff;
+	background: -moz-linear-gradient(left top, #8701ae, #e900cb);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#8701ae), to(#e900cb));
+	background: -o-linear-gradient(left top, #8701ae, #e900cb);
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatBp div.chatBubble,
+div.box.chatBox > div.content ul.chatList > li.chatDs div.chatBubble {
+	width: 100%;
+}
+
+div.box.chatBox > div.content ul.chatList > li.chatBp div.chatBubble > .content,
+div.box.chatBox > div.content ul.chatList > li.chatDs div.chatBubble > .content {
+	width: 100%;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown {
+	padding: 0;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullUp {
+	padding: 0;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown span.flip,
+div.box.chatBox > div.content ul.chatList > li#pullUp span.flip {
+	font-size: 12px;
+	display: none;
+	-webkit-transition: opacity 10s;
+	transition: opacity 10s;
+	text-align: center;
+	opacity: 0;
+	color: #999;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown.flip span.flip,
+div.box.chatBox > div.content ul.chatList > li#pullUp.flip span.flip {
+	display: block;
+	opacity: 1;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown div.loading,
+div.box.chatBox > div.content ul.chatList > li#pullUp div.loading {
+	display: none;
+	padding: 0;
+	text-align: center;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullDown.loading div.loading,
+div.box.chatBox > div.content ul.chatList > li#pullUp.loading div.loading {
+	display: block;
+}
+
+div.box.chatBox > div.content ul.chatList > li#pullUp.flip div.loading {
+	display: block;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 3px;
+	-webkit-animation: loading 1s infinite alternate;
+	animation: loading 1s infinite alternate;
+	vertical-align: middle;
+	border-radius: .6em;
+	background: #ffdc69;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span:nth-of-type(2) {
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s;
+	background: #ffdd68;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span:nth-of-type(3) {
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s;
+	background: #ffd340;
+}
+
+div.box.chatBox > div.content ul.chatList > li.loading span:nth-of-type(4) {
+	-webkit-animation-delay: 1.0s;
+	animation-delay: 1.0s;
+	background: #ffca18;
+}
+
+div.box.chatBox > div.content ul.chatList > li .loading span:nth-of-type(5) {
+	-webkit-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+	background: #ffc500;
+}
+
+@-webkit-keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes loading {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+div.box.chatBox > div.content ul.chatList > li.active div.edit {
+	/* 消息编辑 */
+	display: block;
+}
+
+
+
+
+
+
+
+section.bodyBox > div.box.listBox {
+	/* ================================================================ *
+	 *
+	 *	 bodyBox > listBox  主窗体 > 列表
+	 *
+	 * ================================================================ */
+	display: none;
+}
+
+section.bodyBox > div.box.listBox > div.title {
+	text-align: center;
+}
+
+section.bodyBox > div.box.listBox > div.title > div.tap {
+	margin: 0 auto;
+	display: inline-block;
+	padding: 6px 0 0;
+}
+
+section.bodyBox > div.box.listBox > div.title > div.tap > a {
+	display: inline-block;
+	height: 34px;
+	line-height: 32px;
+	text-align: center;
+	width: 50%;
+	float: left;
+	color: #333;
+	font-size: 1.4rem;
+	font-weight: 400;
+	width: 50px;
+	margin: 0 5px;
+}
+
+section.bodyBox > div.box.listBox > div.title > div.tap > a.active {
+	color: #f39c12;
+	font-size: 1.6rem;
+	font-weight: bold;
+	border-bottom: 2px solid #f39c12;
+}
+
+
+div.box.listBox > div.chatListContent {
+	height: calc(100% - 54px);
+	padding: 10px 0 10px 10px;
+	overflow-y: scroll;
+}
+
+div.box.listBox > div.chatListContent > ul::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background: none;
+}
+
+div.box.listBox > div.chatListContent > ul > li {
+	position: relative;
+	height: 66px;
+	padding: 0;
+	border-top: 1px solid #eee;
+}
+
+div.box.listBox > div.chatListContent > ul > li:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a {
+	position: relative;
+	height: 100%;
+	width: calc(100% + 10px);
+	margin-left: -10px;
+	display: block;
+	padding: 8px 10px 8px 70px;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a:hover,
+div.box.listBox > div.chatListContent > ul > li > a:focus,
+div.box.listBox > div.chatListContent > ul > li > a:active {
+	background-color: #eee;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > i.avarat {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	height: 50px;
+	width: 50px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 100px;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > span.name {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #333;
+	line-height: 25px;
+	margin-bottom: 6px;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > b.time {
+	position: absolute;
+	top: 8px;
+	line-height: 25px;
+	font-size: 1.2rem;
+	font-weight: 100;
+	color: #666;
+	right: 10px;
+}
+
+div.box.listBox > div.chatListContent > ul > li > a > h5.msg {
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 25px;
+	color: #999;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+div.box.listBox > div.userListContent {
+	height: calc(100% - 45px);
+	padding: 10px 0 10px 0;
+	overflow-y: scroll;
+}
+
+div.box.listBox > div.userListContent > div.sort {
+	height: 42px;
+	width: 100%;
+	overflow-x: scroll;
+	line-height: 32px;
+	padding: 5px 10px;
+	position: relative;
+}
+
+div.box.listBox > div.userListContent > div.sort > i {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	display: block;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	text-align: center;
+	color: #999;
+}
+
+div.box.listBox > div.userListContent > div.sort > label {
+	width: 100%;
+	height: 32px;
+	background: #eee;
+	border-radius: 50px;
+}
+
+div.box.listBox > div.userListContent > div.sort select {
+	display: block;
+	width: 100%;
+	height: 32px;
+	outline: none;
+	background: none;
+	border: none;
+	padding: 0 15px;
+	color: #999;
+}
+
+div.box.listBox > div.userListContent > ul {
+	width: 100%;
+	padding: 10px;
+}
+
+div.box.listBox > div.userListContent > ul > li {
+	float: left;
+	width: 33.33%;
+	padding: 5px 10px;
+}
+
+div.box.listBox > div.userListContent > ul > li > a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+div.box.listBox > div.userListContent > ul > li > a > i.avarat {
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin: 0 auto 6px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 100px;
+}
+
+div.box.listBox > div.userListContent > ul > li > a > span.name {
+	font-size: 1.4rem;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #333;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+div.box.listBox > div.userListContent > ul > li > a > b.tiper {
+	font-size: 1.2rem;
+	font-weight: 100;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #333;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+
+
+
+
+
+
+div.chatBox > div.inputBar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar  聊天大厅输入框
+	 *
+	 * ================================================================ */
+	position: absolute;
+	z-index: 99;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	min-height: 52px;
+	border-radius: 0 0 10px 10px;
+	background: #fff;
+}
+
+div.chatBox > div.inputBar > div.inputbar {
+	min-height: 52px;
+}
+
+div.chatBox > div.inputBar.bp > div.inputbar,
+div.chatBox > div.inputBar.ds > div.inputbar,
+div.chatBox > div.inputBar.hb > div.inputbar,
+div.chatBox > div.inputBar.sr > div.inputbar {
+	display: none;
+}
+
+div.chatBox > div.inputBar textarea {
+	display: none;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a {
+	font-size: 2.8rem;
+	line-height: 40px;
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 6px;
+	text-align: center;
+	color: #8693a4;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.tools.open > i:before {
+	content: '\f13a';
+}
+
+div.chatBox > div.inputBar > div.inputbar > a:hover,
+div.chatBox > div.inputBar > div.inputbar > a:active,
+div.chatBox > div.inputBar > div.inputbar > a:focus {
+	color: #bdc3c7;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit {
+	font-size: 1.6rem;
+	color: #fff;
+	border-radius: 50px;
+	background: #f39c12;
+}
+
+div.chatBox > div.inputBar > div.inputbar > a.sumbit:hover,
+div.chatBox > div.inputBar > div.inputbar > a.sumbit:focus,
+div.chatBox > div.inputBar > div.inputbar > a.sumbit:active {
+	font-size: 1.4rem;
+	background: #f1c40f;
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input {
+	position: relative;
+	display: block;
+	float: left;
+	width: calc(100% - 104px);
+	min-height: 40px;
+	margin: 6px 0;
+	padding-right: 40px;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input > a.imgMassage {
+	position: relative;
+	display: block;
+	float: left;
+	width: 50px;
+	height: 30px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 2px;
+	border-radius: 500px;
+	background: #eee;
+}
+
+div.chatBox > div.inputBar a.imgMassage > span.mask {
+	line-height: 28px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 28px !important;
+	height: 28px !important;
+	-webkit-animation: maskChange 2s linear infinite;
+	text-align: center;
+	color: #fff;
+	background: #333;
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input > a.imgMassage > span {
+	display: inline-block;
+	float: left;
+	width: 26px;
+	height: 26px;
+	margin-right: 4px;
+	border-radius: 50px;
+	background: #333;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+@-webkit-keyframes maskChange {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+div.chatBox > div.inputBar > div.inputbar > div.input > a.imgMassage > i {
+	line-height: 26px;
+	display: inline-block;
+	height: 26px;
+	color: #ccc;
+}
+
+div.chatBox > div.inputBar > div.toolbar {
+	display: none;
+	height: 53px;
+	padding: 6px 0;
+	border-top: 1px solid #eee;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0 6px;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.imgMsg {
+	background-image: url(../images/images/icon-imgMsg.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > input.imgMsg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999em;
+	opacity: 0;
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.bp {
+	background-image: url(../images/images/icon-bp.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.ds {
+	background-image: url(../images/images/icon-ds.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.hb {
+	background-image: url(../images/images/icon-hb.png);
+}
+
+div.chatBox > div.inputBar > div.toolbar > ul > li > a.sr {
+	background-image: url(../images/images/icon-srbp.png);
+}
+
+
+
+
+
+
+
+div.chatBox > div.inputBar > div.toolbar-box {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > toolbar  聊天大厅输入框下功能条
+	 *
+	 * ================================================================ */
+	display: none;
+}
+
+div.chatBox > div.inputBar.bp > div.bpbar,
+div.chatBox > div.inputBar.hb > div.hbbar,
+div.chatBox > div.inputBar.ds > div.dsbar,
+div.chatBox > div.inputBar.sr > div.srbar {
+	display: block;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li {
+	position: relative;
+	padding: 0 10px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li:last-child {
+	padding: 0 10px;
+	border-bottom: none;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li.title > a.icon {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 20px 0;
+	border-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li.title > h5 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 80px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li.title > a.closebtn {
+	font-size: 2.4rem;
+	line-height: 40px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	text-align: center;
+	color: #333;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > h6 {
+	font-size: 12px;
+	line-height: 40px;
+	text-align: center;
+	color: #ccc;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > a.sumbit {
+	font-size: 1.8rem;
+	line-height: 42px;
+	display: block;
+	width: 100%;
+	height: 42px;
+	margin: 10px 0;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+	background: #f39c12;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.input {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-height: 40px;
+	margin: 6px 0;
+	padding-right: 40px;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.select {
+	height: 40px;
+	margin: 6px 0;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.select > select {
+	line-height: 40px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	color: #8693a4;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.toolbar-box > ul > li > div.select > i {
+	font-size: 1.8rem;
+	line-height: 40px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	display: block;
+	height: 100%;
+	color: #ccc;
+}
+
+div.chatBox > div.inputBar > div.bpbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > bpbar  聊天大厅输入框霸屏功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li.title {
+	border-top: 2px solid #f1c40f;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li.title > a.bp {
+	background-image: url(../images/images/icon-bp.png);
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit {
+	background: #f1c40f;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.bpbar > ul > li > a.sumbit:focus {
+	background: #f39c12;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin: 6px 0;
+	padding-right: 40px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > .btbox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > .btbox > a {
+	font-size: 2.4rem;
+	line-height: 40px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #8693a4;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > .btbox > input.imgUpdata[type='file'] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999em;
+	opacity: 0;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a {
+	display: block;
+	float: left;
+	height: 30px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 500px;
+	background: #eee;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.text {
+	line-height: 30px;
+	padding: 0 15px;
+	color: #8693a4;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.imgMassage {
+	width: 50px;
+	padding: 2px;
+	position: relative;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.imgMassage > span {
+	display: inline-block;
+	float: left;
+	width: 26px;
+	height: 26px;
+	margin-right: 4px;
+	border-radius: 50px;
+	background: #333;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.chatBox > div.inputBar > div.bpbar > ul > li > div.img > div.imgbox > a.imgMassage > i {
+	line-height: 26px;
+	display: inline-block;
+	height: 26px;
+	color: #ccc;
+}
+
+div.chatBox > div.inputBar > div.hbbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > hbbar  聊天大厅输入框红包功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li.title {
+	border-top: 2px solid #e74c3c;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li.title > a.hb {
+	background-image: url(../images/images/icon-hb.png);
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit {
+	background: #e74c3c;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.hbbar > ul > li > a.sumbit:focus {
+	background: #c0392b;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > div.input > input {
+	line-height: 40px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	color: #8693a4;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.hbbar > ul > li > div.input > span {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #8693a4;
+}
+
+div.chatBox > div.inputBar > div.dsbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > dsbar  聊天大厅输入框打赏功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li.title {
+	border-top: 2px solid #e900ca;
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li.title > a.ds {
+	background-image: url(../images/images/icon-ds.png);
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit {
+	background: #e900ca;
+}
+
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.dsbar > ul > li > a.sumbit:focus {
+	background: #8701ae;
+}
+
+div.chatBox > div.inputBar > div.srbar {
+	/* ================================================================ *
+	 *
+	 *	chat box > inputBar > srbar  聊天大厅输入框生日功能
+	 *
+	 * ================================================================ */
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li.title {
+	border-top: 2px solid #e5789e;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li.title > a.sr {
+	background-image: url(../images/images/icon-srbp.png);
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit {
+	background: #e5789e;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit:hover,
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit:active,
+div.chatBox > div.inputBar > div.srbar > ul > li > a.sumbit:focus {
+	background: #bd4e67;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin: 6px 0;
+	padding-right: 40px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > .btbox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > .btbox > a {
+	font-size: 2.4rem;
+	line-height: 40px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #8693a4;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > .btbox > input.imgUpdata[type='file'] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -9999em;
+	opacity: 0;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a {
+	display: block;
+	float: left;
+	height: 30px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 500px;
+	background: #eee;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.text {
+	line-height: 30px;
+	padding: 0 15px;
+	color: #8693a4;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.imgMassage {
+	width: 50px;
+	padding: 2px;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.imgMassage > span {
+	display: inline-block;
+	float: left;
+	width: 26px;
+	height: 26px;
+	margin-right: 4px;
+	border-radius: 50px;
+	background: #333;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.img > div.imgbox > a.imgMassage > i {
+	line-height: 26px;
+	display: inline-block;
+	height: 26px;
+	color: #ccc;
+}
+
+div.chatBox > div.inputBar > div.srbar > ul > li > div.input > input {
+	line-height: 40px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	color: #8693a4;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+
+
+
+
+
+
+section.chatMsg_img {
+	/* ================================================================ *
+	 *
+	 *	chatMsg_img  显示大图
+	 *
+	 * ================================================================ */
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+	background: rgba(0, 0, 0, .9);
+}
+
+section.chatMsg_img > div.image {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+
+
+
+
+
+
+section.info {
+	/* ================================================================ *
+	 *
+	 *	info  用户商家详情
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	display: none;
+}
+
+section.info > div.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.86);
+	z-index: 1;
+}
+
+section.info > div.content.user {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 80%;
+	background: #fff;
+	border-radius: 10px;
+	padding-bottom: 80px;
+	z-index: 2;
+	display: none;
+}
+
+section.info > div.content.user > a.closebtn {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 2.4rem;
+	color: #333;
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+section.info > div.content.user > img {
+	display: block;
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	border-radius: 100px;
+	margin: 40px auto 20px;
+}
+
+section.info > div.content.user > i.sex {
+	position: absolute;
+	top: 120px;
+	left: calc(50% + 25px);
+	border-radius: 50px;
+	display: block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	background: #333;
+}
+
+section.info > div.content.user > i.sex[sex="1"] {
+	background: #00a0e9;
+}
+
+section.info > div.content.user > i.sex[sex="2"] {
+	background: #fe557b;
+}
+
+section.info > div.content.user > i.sex:before {
+	content: "\f228";
+}
+
+section.info > div.content.user > i.sex[sex="1"]:before {
+	content: "\f222";
+}
+
+section.info > div.content.user > i.sex[sex="2"]:before {
+	content: "\f221";
+}
+
+section.info > div.content.user > h3.name {
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
+	margin: 0 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 10px;
+}
+
+section.info > div.content.user > h3.name[sex="1"] {
+	border: none;
+	color: #00a0e9;
+}
+
+section.info > div.content.user > h3.name[sex="2"] {
+	border: none;
+	color: #fe557b;
+}
+
+section.info > div.content.user > h4.location {
+	font-weight: 100;
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 0 0 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 10px;
+	color: #999;
+}
+
+section.info > div.content.user > h5.marking {
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 0 0 10px;
+	padding: 0 20px;
+	line-height: 20px;
+	color: #333;
+	font-weight: 100;
+}
+
+section.info > div.content.user > ul {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 41px;
+	border-top: 1px solid #eee;
+}
+
+section.info > div.content.user > ul > li {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 50%;
+	float: left;
+}
+
+section.info > div.content.user > ul > li > a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #333;
+}
+
+section.info > div.content.user > ul > li:first-child {
+	border-right: 1px solid #eee;
+}
+
+section.info > div.content.bar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 80%;
+	background: #fff;
+	border-radius: 10px;
+	padding-bottom: 80px;
+	z-index: 2;
+	display: none;
+}
+
+section.info > div.content.bar > a.closebtn {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 2.4rem;
+	color: #333;
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+section.info > div.content.bar > img {
+	display: block;
+	max-height: 100px;
+	width: auto;
+	height: auto;
+	max-width: 80%;
+	margin: 40px auto 20px;
+}
+
+section.info > div.content.bar > h3.name {
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
+	margin: 0 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 10px;
+}
+
+section.info > div.content.bar > h4.location {
+	font-weight: 100;
+	font-size: 1.3rem;
+	text-align: center;
+	margin: 0 0 20px;
+	padding: 0 10px;
+	color: #999;
+}
+
+section.info > div.content.bar > h5.marking {
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 0 0 10px;
+	padding: 0 20px;
+	line-height: 20px;
+	color: #333;
+	font-weight: 100;
+}
+
+section.info > div.content.bar > ul {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 41px;
+	border-top: 1px solid #eee;
+}
+
+section.info > div.content.bar > ul > li {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 100%;
+}
+
+section.info > div.content.bar > ul > li > a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #333;
+}
+
+
+
+
+
+
+
+section.redBagPopup {
+	/* ================================================================ *
+	 *
+	 *	redBagPopup  红包弹出层
+	 *
+	 * ================================================================ */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	display: none;
+}
+
+section.redBagPopup > div.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.86);
+	z-index: 1;
+}
+
+section.redBagPopup > div.content.redbag {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 80%;
+	background: -moz-linear-gradient(left top, #fa0103, #860c39);
+	background: -webkit-gradient(linear, 0 0, 45 bottom, from(#fa0103), to(#860c39));
+	background: -o-linear-gradient(left top, #fa0103, #860c39);
+	border-radius: 10px;
+	padding-bottom: 80px;
+	z-index: 2;
+	overflow: hidden;
+	display: none;
+}
+
+section.redBagPopup > div.content.redbag > i.sex {
+	position: absolute;
+	top: 120px;
+	left: calc(50% + 25px);
+	border-radius: 50px;
+	display: block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	background: #333;
+}
+
+section.redBagPopup > div.content.redbag > i.sex[sex="1"] {
+	background: #00a0e9;
+}
+
+section.redBagPopup > div.content.redbag > i.sex[sex="2"] {
+	background: #fe557b;
+}
+
+section.redBagPopup > div.content.redbag > i.sex:before {
+	content: "\f228";
+}
+
+section.redBagPopup > div.content.redbag > i.sex[sex="1"]:before {
+	content: "\f222";
+}
+
+section.redBagPopup > div.content.redbag > i.sex[sex="2"]:before {
+	content: "\f221";
+}
+
+
+section.redBagPopup > div.content.redbag > i.bg {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.2);
+	z-index: -1;
+	display: block;
+	bottom: 80px;
+	left: 50%;
+	height: 1000px;
+	width: 1000px;
+	margin-left: -500px;
+	border-radius: 2000px;
+	border: 3px rgba(245, 217, 50, 1) solid;
+}
+
+section.redBagPopup > div.content.redbag.redbag.redbag-null > i.bg {
+
+	border: 3px rgba(243, 229, 181, 1) solid;
+}
+
+section.redBagPopup > div.content.redbag > a.closebtn {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 2.4rem;
+	color: #fff;
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+section.redBagPopup > div.content.redbag > img {
+	display: block;
+	height: 100px;
+	width: 100px;
+	background-size: cover;
+	border-radius: 100px;
+	margin: 40px auto 20px;
+}
+
+section.redBagPopup > div.content.redbag > h3.name {
+	font-weight: bold;
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 0 0 10px;
+	width: 100%;
+	padding: 0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: rgba(227, 219, 115, 1);
+}
+
+section.redBagPopup > div.content.redbag > h3.name > b {
+	display: inline-block;
+	font-style: normal;
+	width: 58px;
+	text-align: right;
+	line-height: 16px;
+}
+
+section.redBagPopup > div.content.redbag > h3.name > b.name {
+	width: auto;
+	max-width: calc(100% - 58px) !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 14px;
+}
+
+section.redBagPopup > div.content.redbag > h5.marking {
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 0 0 60px;
+	padding: 0 40px;
+	line-height: 20px;
+	color: rgba(243, 229, 181, 1);
+	font-weight: 100;
+}
+
+section.redBagPopup > div.content.redbag > div.open {
+	position: absolute;
+	bottom: 52px;
+	left: 0;
+	width: 100%;
+	height: 56px;
+}
+
+section.redBagPopup > div.content.redbag > div.open > a > i {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 56px;
+	-webkit-animation: maskChange 2s linear infinite;
+	color: #333;
+}
+
+section.redBagPopup > div.content.redbag > span.detail {
+	font-size: 3rem;
+	text-align: center;
+	display: block;
+	margin: 0 auto 60px;
+	color: #fff;
+	position: relative;
+}
+
+section.redBagPopup > div.content.redbag > span.detail > i {
+	font-weight: 200px;
+	font-style: normal;
+	font-size: 1.4rem;
+	margin-right: 10px;
+	color: #fff;
+}
+
+section.redBagPopup > div.content.redbag > span.detail > b {
+	font-weight: 200px;
+	font-style: normal;
+	color: #fff;
+	font-size: 1.4rem;
+	margin-left: 10px;
+}
+
+section.redBagPopup > div.content.redbag.redbag-null > div.open {
+	display: none;
+}
+
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag {
+	background: rgba(245, 217, 50, 1);
+	display: block;
+	color: #fff;
+	border-radius: 1000px;
+	height: 56px;
+	width: 56px;
+	font-size: 2.6rem;
+	text-align: center;
+	line-height: 56px;
+	margin: 0 auto;
+}
+
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag:hover,
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag:focus,
+section.redBagPopup > div.content.redbag > div.open > a.openRedBag:active {
+	background: rgba(243, 229, 181, 1);
+}
+
+section.redBagPopup > div.content.redbag > a.hand {
+	position: absolute;
+	bottom: 10px;
+	color: rgba(243, 229, 181, 1);
+	font-size: 1.2rem;
+	text-align: center;
+	display: block;
+	width: 100%;
+}

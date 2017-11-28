@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="renderer" content="webkit">
+	<title>抽奖游戏</title>
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="game">
+		<div class="people">
+			<span>参与人数 : 300人</span>
+		</div>
+		<div class="mainContainer" style="display:block;">
+			<div class="list listOne" style="display:none">
+
+				<div class="userList">
+					<div class="title icon_01"><span>一等奖</span></div>
+					<ul>
+						<div class="btn">
+							<a class="add">+</a>
+							<a class="del null">-</a>
+						</div>
+						<li><i sex="2" style=""></i><span>幸运者</span></li>
+					</ul>
+				</div>
+				<div class="userList">
+					<div class="title icon_02">
+						<span>二等奖</span>
+					</div>
+					<ul>
+						<div class="btn">
+							<a class="add">+</a>
+							<a class="del">-</a>
+						</div>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+					</ul>
+				</div>
+				<div class="userList">
+					<div class="title icon_03"><span>三等奖</span></div>
+					<ul>
+						<div class="btn">
+							<a class="add">+</a>
+							<a class="del null">-</a>
+						</div>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="2" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="2" style=""></i><span>幸运者</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end .listOne -->
+			<div class="list listTwo">
+				<div class="userList">
+					<div class="title icon_01"><span>获奖</span></div>
+					<ul>
+						<div class="btn">
+							<a class="add">+</a>
+							<a class="del">-</a>
+						</div>
+						<li><i sex="1" style=""></i><span>幸运者幸运者幸运者幸运者幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+						<li><i sex="1" style=""></i><span>幸运者</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end .listTwo -->
+		</div>
+		<div class="qrContainer" style="display:none;">
+			<div class="qr"><img src="">
+				<span>扫描二维码参与抽奖</span></div>
+			<a class="close closeQR" href="#">准备抽奖</a>
+		</div>
+		<div class="btnContainer" style="display:block;">
+			<ul>
+				<li>
+					<a href="#" title="开始抽奖" class="start">开始抽奖</a>
+				</li>
+				<li>
+					<a title="切换模式" class="tab toListOne null">切换模式</a>
+				</li>
+				<li>
+					<a title="放大二维码" class="qr openQR">放大二维码</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- end .game -->
+	<section class="bg">
+		<div class="lineLeft"></div>
+		<div class="lineRight"></div>
+		<div class="bg"></div>
+		<div class="title"></div>
+	</section>
+	<!-- end .bg -->
+
+	<section class="animateContainer">
+		<span class="num1 animated zoomIn">1</span>
+		<span class="num2 animated zoomIn">2</span>
+		<span class="num3 animated zoomIn">3</span>
+		<span class="num4 animated zoomIn">GO</span>
+	</section>
+
+	<!--Include jquery -->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script>
+		var _setFont = function() {
+			var w = $(window).width();
+			var h = $(window).height();
+			var maxWidth = 1920;
+			var maxHeight = 960;
+			if (w >= h) {
+				var zoom = h / maxHeight;
+				if (w / h > 3 && w / maxWidth > 2) {
+					zoom += 0.1;
+				}
+				$('body').css({
+					zoom: zoom
+				});
+			} else {
+				var zoom = w / maxWidth;
+				$('body').css({
+					zoom: zoom
+				});
+			}
+		};
+		$(window).bind('resize', function() {
+			_setFont();
+		});
+		$(document).ready(function() {
+			_setFont();
+
+			$(document).on('click', '.closeQR', function() {
+				$('.qrContainer').hide();
+				$('.mainContainer').fadeIn();
+				$('.btnContainer').fadeIn();
+			});
+			$(document).on('click', '.openQR', function() {
+				$('.qrContainer').fadeIn();
+				$('.mainContainer').hide();
+				$('.btnContainer').hide();
+			});
+			$(document).on('click', '.tab', function() {
+				var _this = $('.tab');
+				if (_this.hasClass('toListOne')) {
+					_this.removeClass('toListOne').addClass('toListTwo');
+					$('.listTwo').hide();
+					$('.listOne').fadeIn();
+				} else {
+					_this.removeClass('toListTwo').addClass('toListOne');
+					$('.listTwo').fadeIn();
+					$('.listOne').hide();
+				}
+			});
+			$(document).on('click', 'a.start', function() {
+
+				_321goAnimate();
+			});
+		});
+		var _321goAnimate = function() {
+			var goAnimate = $('section.animateContainer');
+			var _game = $('section.game');
+			var _bg = $('section.bg');
+			var time = 1500;
+			_game.addClass('blur');
+			_bg.addClass('blur');
+			goAnimate.fadeIn(function() {
+				$(this).find('span.num3').show(time, function() {
+					$(this).hide();
+					goAnimate.find('span.num2').show(time, function() {
+						$(this).hide();
+						goAnimate.find('span.num1').show(time, function() {
+							$(this).hide();
+							_game.removeClass('blur');
+							_bg.removeClass('blur');
+							goAnimate.fadeOut();
+						});
+					});
+				});
+			});
+		};
+
+	</script>
+</body>
+
+</html>

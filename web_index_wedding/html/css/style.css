@@ -1,0 +1,418 @@
+@charset "UTF-8";
+meta.cssInfo {
+	name: 'style.css';
+	author: 'NearSaint';
+	time: '2017.0626';
+}
+body {
+	background: #ccc;
+}
+
+/* public */
+
+body > section {
+	display: block;
+	position: relative;
+}
+section h5.title {
+	font-size: 28px;
+	text-align: center;
+	margin: 0 0 40px;
+	padding-top: 60px;
+	height: 92px;
+	line-height: 32px;
+}
+section h5.title > i {
+	display: inline-block;
+	height: 4px;
+	width: 80px;
+	background: #333;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	margin: 7px 15px;
+}
+
+/* index */
+
+section.index {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+section.index > div.bg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/images/indexBg.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+section.index > div.bgmask {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 0;
+}
+section.index div.scene {
+	display: block;
+	position: absolute;
+	height: 300px;
+	width: 600px;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -300px;
+	z-index: 1;
+}
+section.index div.scene > div.layer {
+	position: absolute;
+	background-position: center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+section.index div.scene > div.layer.title {
+	height: 300px;
+	width: 600px;
+	background-image: url(../images/images/title@3x.png);
+	z-index: 2;
+}
+section.index div.scene > div.layer.titleleft {
+	height: 30px;
+	width: 600px;
+	margin: 200px 0 0 -120px;
+	background-image: url(../images/images/titleleft@3x.png);
+	z-index: 2;
+}
+section.index div.scene > div.layer.titleright {
+	height: 30px;
+	width: 600px;
+	margin: 220px 0 0 100px;
+	background-image: url(../images/images/titleright@3x.png);
+	z-index: 2;
+}
+section.index div.scene > div.layer.lineright {
+	height: 8px;
+	width: 600px;
+	margin: 205px 0 0 160px;
+	background-image: url(../images/images/lineright@3x.png);
+	z-index: 2;
+}
+section.index div.scene > div.layer.lineleft {
+	height: 8px;
+	width: 600px;
+	margin: 240px 0 0 -180px;
+	background-image: url(../images/images/lineleft@3x.png);
+	z-index: 2;
+}
+section.index div.scene > div.layer.male {
+	height: 800px;
+	width: 800px;
+	margin: -100px 0 0 400px;
+	background-image: url(../images/images/male@3x.png);
+	z-index: -1;
+}
+section.index div.scene > div.layer.female {
+	height: 800px;
+	width: 800px;
+	margin: -20px 0 0 150px;
+	background-image: url(../images/images/female@3x.png);
+	z-index: -1;
+}
+section.index div.scene > div.layer.dian00 {
+	height: 200px;
+	width: 200px;
+	margin: -170px 0 0 -190px;
+	background-image: url(../images/images/dian0@3x.png);
+	z-index: 1;
+	opacity: 0.4;
+}
+section.index div.scene > div.layer.dian01 {
+	height: 150px;
+	width: 150px;
+	margin: 380px 0 0 650px;
+	background-image: url(../images/images/dian1@3x.png);
+	z-index: 1;
+	opacity: 0.8;
+}
+section.index div.scene > div.layer.dian02 {
+	height: 650px;
+	width: 650px;
+	margin: 350px 0 0 -650px;
+	background-image: url(../images/images/dian2@3x.png);
+	z-index: 1;
+	opacity: 0.5;
+}
+section.index div.scene > div.layer.dian11 {
+	height: 320px;
+	width: 320px;
+	margin: -200px 0 0 850px;
+	background-image: url(../images/images/dian-1@3x.png);
+	z-index: 1;
+	opacity: 0.8;
+}
+section.index div.scene > div.layer.dian12 {
+	height: 90px;
+	width: 90px;
+	margin: -200px 0 0 -450px;
+	background-image: url(../images/images/dian-2@3x.png);
+	z-index: 1;
+	opacity: 0.8;
+}
+section.index div.scene > div.btnContainer {
+	position: absolute;
+	bottom: -40px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+}
+section.index div.scene > div.btnContainer > a {
+	display: block;
+	line-height: 3.2rem;
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 30px;
+	margin: 0 20px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	border: 2px solid;
+	border-color: rgb(228, 51, 63);
+	color: rgb(228, 51, 63);
+	background-color: rgba(255, 255, 255, 0.4)
+}
+section.index div.scene > div.btnContainer > a:hover {
+	background: rgba(255, 255, 255, 0.8);
+	border-color: rgb(228, 51, 63);
+	color: rgb(228, 51, 63);
+}
+@media screen and (max-width:767px) {
+	section.index div.scene {
+		height: 220px;
+		width: 520px;
+		margin: -150px 0 0 -260px;
+	}
+	section.index div.scene > div.layer.text01 {
+		height: 40px;
+		margin: 60px 0 0 -70px;
+	}
+	section.index div.scene > div.layer.text02 {
+		height: 40px;
+		margin: 105px 0 0 60px;
+	}
+	section.index div.scene > div.btnContainer > a.sign {
+		display: none;
+	}
+}
+@media screen and (max-width:520px) {
+	section.index div.scene {
+		height: 180px;
+		width: 320px;
+		margin: -120px 0 0 -160px;
+	}
+	section.index div.scene > div.layer.text01 {
+		height: 30px;
+		margin: 54px 0 0 -55px;
+	}
+	section.index div.scene > div.layer.text02 {
+		height: 30px;
+		margin: 86px 0 0 43px;
+	}
+	section.index div.scene > div.btnContainer > a.btnSign {
+		display: none;
+	}
+	section.index div.scene > div.btnContainer > a {
+		font-size: 1.3rem;
+		padding: 0 30px;
+		margin: 0 20px;
+	}
+	section.index div.scene > div.btnContainer > a:focus,
+	section.index div.scene > div.btnContainer > a:active {
+		background: rgba(255, 255, 255, 0.3);
+		border-color: rgb(255, 242, 9);
+		color: rgb(255, 242, 9);
+	}
+}
+section.activity {
+	height: 200px;
+	width: 100%;
+	background-color: rgb(228, 51, 63);
+}
+section.activity div.text {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 30px;
+}
+section.activity div.text > p {
+	line-height: 42px;
+	color: #fff;
+}
+section.activity div.text > a {
+	display: inline-block;
+	line-height: 3.2rem;
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 30px;
+	margin: 20px 20px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	border: 2px solid;
+	border-color: #fff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+section.activity div.text > a:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+section.pk {
+	background: #fff;
+	padding-bottom: 20px;
+}
+section.pk div.img {
+	width: 800px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+section.swiper {
+	height: 720px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	background-color: rgb(228, 51, 63);
+}
+section.swiper > div.swiper-container {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	height: 480px;
+	width: 900px;
+}
+section.swiper > div.swiper-container > i.left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100px;
+	background: -webkit-linear-gradient(left, rgb(228, 51, 63), rgba(228, 51, 63, 0));
+	z-index: 99;
+}
+section.swiper > div.swiper-container > i.right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100px;
+	background: -webkit-linear-gradient(right, rgb(228, 51, 63), rgba(228, 51, 63, 0));
+	z-index: 99;
+}
+section.swiper > div.swiper-container div.swiper-slide {
+	padding: 10px;
+}
+section.swiper > div.swiper-container div.swiper-slide > div.item {
+	height: 400px;
+	width: 280px;
+	background: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: 0.3s all;
+	-o-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	transition: 0.3s all;
+	margin: 20px 0;
+	padding: 40px 20px;
+}
+section.swiper > div.swiper-container div.swiper-slide.swiper-slide-active > div.item {
+	height: 440px;
+	margin: 0;
+}
+section.swiper > div.swiper-container div.swiper-slide > div.item > img {
+	width: 140px;
+	height: 140px;
+	margin: 0 auto 20px;
+	display: block;
+}
+section.swiper > div.swiper-container div.swiper-slide.swiper-slide-active > div.item > img {
+	height: 200px;
+	width: 200px;
+}
+section.swiper > div.swiper-container div.swiper-slide > div.item > h3 {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: rgb(228, 51, 63);
+}
+section.swiper > div.swiper-container div.swiper-slide > div.item > h5 {
+	text-align: center;
+	font-size: 13px;
+	line-height: 20px;
+	color: #333;
+}
+section.work {
+	width: 100%;
+	position: relative;
+	background: #fff;
+}
+section.work > ul {
+	width: 900px;
+	margin: 0 auto;
+}
+section.work > ul > li {
+	float: left;
+	width: 33.3333%;
+	height: 300px;
+	padding: 20px;
+}
+section.footer {
+	color: #fff;
+	background: #333;
+}
+section.footer > ul {
+	padding: 0 20px 60px;
+	width: 900px;
+	margin: 0 auto;
+}
+section.footer > ul > li {
+	height: 28px;
+	text-align: center;
+}
+section.footer > ul > li > i {
+	margin-right: 10px;
+}
+section.footer > h5 {
+	text-align: center;
+	width: 666px;
+	margin: 40px auto;
+	line-height: 26px;
+}

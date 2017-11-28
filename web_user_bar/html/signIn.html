@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>用户登陆 - 香蕉互娱</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- sign -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- sign -->
+	<link href="css/sign.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="signIn sign">
+		<!-- end .logo -->
+		<div class="content signIn animated bounceInDown">
+			<div class="logo"><a href="#"><i></i><b></b></a></div>
+			<h5>用户登陆</h5>
+			<div class="input">
+				<label>
+					<input type='text' placeholder="输入账号或手机"> <span>账号:</span>
+				</label>
+				<label>
+					<input type='password' placeholder="输入密码"> <span>密码:</span>
+				</label>
+				<label>
+					<input type='text' placeholder="输入右侧验证码"> <span>验证码:</span>
+					<a href="javascript:void(0);"><img id="verifycode_img" src="http://www.balabalafun.cn/index.php/Merchant/Index/get_verifycode.html"></a>
+				</label>
+				<button>登　陆</button>
+				<div>
+					<a class="topSignUp">账号注册</a>
+					<a class="topReset">忘记密码?</a>
+				</div>
+			</div>
+			<!-- end .input -->
+			<div class="bg"></div>
+		</div>
+		<!-- end .signIn -->
+	</section>
+	<!-- end sign -->
+	<section class="sign signUp hiden">
+		<div class="content signUp  animated bounceInDown">
+			<div class="logo"><a href="#"><i></i><b></b></a></div>
+			<h5>用户注册</h5>
+			<div class="input">
+				<label>
+					<input type='text' placeholder="输入账号或手机"> <span>账号:</span>
+				</label>
+				<label>
+					<input type='password' placeholder="输入密码"> <span>密码:</span>
+				</label>
+				<label>
+					<input type='password' placeholder="重复输入密码"> <span>确认密码:</span>
+				</label>
+				<label>
+					<input type='text' placeholder="输入手机验证码"> <span>验证码:</span>
+					<a class="yzm" href="#">发送验证码</a>
+				</label>
+				<button>注　册</button>
+				<div>
+					<a class="topSignIn">已有账号登陆</a>
+				</div>
+			</div>
+			<!-- end .input -->
+			<div class="bg"></div>
+		</div>
+		<!-- end .signUp -->
+	</section>
+	<!-- end .signUp -->
+	<section class="sign reset hiden">
+		<div class="content reset animated bounceInDown">
+			<div class="logo"><a href="#"><i></i><b></b></a></div>
+			<h5>重置密码</h5>
+			<div class="input">
+				<label>
+					<input type='text' placeholder="输入账号或手机"> <span>账号:</span>
+				</label>
+				<label>
+					<input type='password' placeholder="输入密码"> <span>密码:</span>
+				</label>
+				<label>
+					<input type='password' placeholder="重复输入密码"> <span>确认密码:</span>
+				</label>
+				<label>
+					<input type='text' placeholder="输入手机验证码"> <span>验证码:</span>
+					<a class="yzm" href="#">发送验证码</a>
+				</label>
+				<button>确　认</button>
+				<div>
+					<a class="topSignIn">返回登陆</a>
+					<a class="topSignUp">注册新账户</a>
+				</div>
+			</div>
+			<!-- end .input -->
+			<div class="bg"></div>
+		</div>
+		<!-- end .reset -->
+	</section>
+	<!-- end reset -->
+	<!--Include jquery-->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap-3.3.7.min.js "></script>
+	<script>
+		$(document).ready(function () {
+			$('.topSignIn').click(function () {
+				$(this).parents('section').fadeOut();
+				$('section.signIn').fadeIn();
+			});
+			$('.topSignUp').click(function () {
+				$(this).parents('section').fadeOut();
+				$('section.signUp').fadeIn();
+			});
+			$('.topReset').click(function () {
+				$(this).parents('section').fadeOut();
+				$('section.reset').fadeIn();
+			});
+		});
+	</script>
+</body>
+
+</html>

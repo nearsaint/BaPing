@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>含七吧 - 香蕉互娱</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-3.3.7.min.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Begin emoji-picker Stylesheets -->
+	<link href="lib/css/emoji.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="bodyBox">
+		<!-- 私聊 -->
+		<div class="chatBox person box animated">
+			<div class="title">
+				<a class="btn-icon btn-meun btn-left" id="chatGoToNav"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+				<a class="text">
+					<span class="img" sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+					<span>Herman</span>
+				</a>
+			</div>
+			<!-- end .title -->
+			<div class="content">
+				<div id="chatScroller">
+					<ul class="chatList" id="thelist">
+						<li id="pullDown">
+							<span class="flip">加载历史信息</span>
+							<div class="loading">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+						<li class="">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Herman</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>来喝酒啊！臭HI们，我系342台！</span>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+							</div>
+						</li>
+						<li class="chat-my">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Herman</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！</span>
+										<img class="userImgMsg" src="images/updata/testImg2.jpg">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+								</div>
+							</div>
+						</li>
+						<li class="">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Herman</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊来喝酒啊！</span>
+										<img class="userImgMsg" src="images/updata/testImg.jpg">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+							</div>
+						</li>
+						<li class="chat-my">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Herman</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span>你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！你有种别跑！</span>
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatDs chat-my">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Herman</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span><b>给您送
+										超级跑车</b>屌臭啊 ！</span>
+										<img src="images/updata/testImgDs.png">
+									</div>
+									<span class="chatTime">23:07</span>
+								</div>
+								<div class="edit">
+									<a>删除</a>
+									<a>重发</a>
+								</div>
+							</div>
+						</li>
+						<li class="chatDs">
+							<i sex="1" style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></i>
+							<div>
+								<span>Herman</span>
+								<div class="chatBubble">
+									<div class="content">
+										<span><b>给您送 超级跑车</b>屌臭啊 ！</span>
+										<img src="images/updata/testImgDs.png">
+									</div>
+									<span class="chatTime">11-23<br>23:07</span>
+								</div>
+							</div>
+						</li>
+						<li id="pullUp">
+							<div class="loading">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- end .chatScroller -->
+			</div>
+			<!-- end .content -->
+			<div class="inputBar index">
+				<div class="inputbar">
+					<a class="tools"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+					<div class="input">
+						<a class="imgMassage">
+							<span class="mask"><i class="fa fa-spinner" aria-hidden="true"></i></span>
+							<span style="background-image:url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</a>
+						<textarea placeholder="上墙内容" data-emojiable="true" data-emoji-input="unicode"></textarea>
+					</div>
+					<a class="sumbit"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+					<div class="clr"></div>
+				</div>
+				<!-- end .inputbar -->
+				<div class="toolbar">
+					<ul>
+						<li><a class="imgMsg"><i></i></a>
+							<input class="imgMsg" type="file" accept="image/jpg,image/jpeg,image/png" />
+						</li>
+						<li><a class="ds gift"><i></i></a></li>
+					</ul>
+				</div>
+				<!-- end .toolbar -->
+				<div class="dsbar toolbar-box">
+					<ul>
+						<li class="title">
+							<a class="ds gift icon"><i></i></a>
+							<h5>送礼给 Herman</h5>
+							<a class="closebtn"><i class="fa fa-times" aria-hidden="true"></i></a>
+							<div class="clr"></div>
+						</li>
+						<li>
+							<div class="select">
+								<select>
+                                    <option>选择打赏礼品</option>
+                                    <option>豪车　　　￥20.00</option>
+                                    <option>动人玫瑰　　￥25.00</option>
+                                    <option>生日蛋糕　　￥30.00</option>
+                                    <option>人气流星　　￥58.00</option>
+                                    <option>皇冠　　　　￥90.00</option>
+                                </select>
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</div>
+						</li>
+						<li>
+							<div class="input">
+								<textarea placeholder="打赏语(限30字内,选填)" data-emojiable="true" data-emoji-input="unicode"></textarea>
+							</div>
+						</li>
+						<li>
+							<h6>需要支付<b>￥88.00</b>,打赏不支持退款</h6>
+							<a class='sumbit' href="#">打赏</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end .dsbar -->
+			</div>
+			<!-- end .inputBar -->
+		</div>
+		<!-- end .chatBox person -->
+	</section>
+	<!-- end .bodyBox -->
+
+	<!-- 用户信息/酒吧信息 -->
+	<section class="info">
+		<div class="content user">
+			<a class="closebtn"><i class="fa fa-close" aria-hidden="true"></i></a>
+			<img class="userImgMsg" sex="1" src="http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0">
+			<i class="sex fa" sex="1" aria-hidden="true"></i>
+			<h3 class="name" sex="1">爱汁如命的Herman</h3>
+			<h4 class="location">广东 广州</h4>
+			<h5 class="marking">我是酒吧的一枝独秀，喝的是寂寞。PS:我车上有瓶红牛，有兴趣微信联系我 “herman”。</h5>
+		</div>
+		<div class="bg"></div>
+	</section>
+	<!-- end .info -->
+
+	<!-- 大图 -->
+	<section class="chatMsg_img">
+	</section>
+	<!-- end .chatMsg-img-->
+
+	<!-- 背景 -->
+	<section class="bg" style="background-image: url(images/updata/bg-01.png);"></section>
+	<!-- end .bg -->
+
+
+	<!--Include jquery -->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap-3.3.7.min.js "></script>
+	<!-- Include emoji-picker JavaScript -->
+	<script src="lib/js/config.js"></script>
+	<script src="lib/js/util.js"></script>
+	<script src="lib/js/jquery.emojiarea.js"></script>
+	<script src="lib/js/emoji-picker.js"></script>
+	<!--Include iscroll-->
+	<script src="js/iscroll-4.2.5.js"></script>
+	<!--Include pinchzoom-->
+	<script src="js/pinchzoom.min.js"></script>
+	<script>
+		//=====================
+		//
+		//       聊天
+		//
+		//=====================
+
+
+		//======气泡框高度改变
+		(function($, h, c) {
+			var a = $([]),
+				e = $.resize = $.extend($.resize, {}),
+				i,
+				k = "setTimeout",
+				j = "resize",
+				d = j + "-special-event",
+				b = "delay",
+				f = "throttleWindow";
+			e[b] = 250;
+			e[f] = true;
+			$.event.special[j] = {
+				setup: function() {
+					if (!e[f] && this[k]) {
+						return false;
+					}
+					var l = $(this);
+					a = a.add(l);
+					$.data(this, d, {
+						w: l.width(),
+						h: l.height()
+					});
+					if (a.length === 1) {
+						g();
+					}
+				},
+				teardown: function() {
+					if (!e[f] && this[k]) {
+						return false;
+					}
+					var l = $(this);
+					a = a.not(l);
+					l.removeData(d);
+					if (!a.length) {
+						clearTimeout(i);
+					}
+				},
+				add: function(l) {
+					if (!e[f] && this[k]) {
+						return false;
+					}
+					var n;
+
+					function m(s, o, p) {
+						var q = $(this),
+							r = $.data(this, d);
+						r.w = o !== c ? o : q.width();
+						r.h = p !== c ? p : q.height();
+						n.apply(this, arguments);
+					}
+					if ($.isFunction(l)) {
+						n = l;
+						return m;
+					} else {
+						n = l.handler;
+						l.handler = m;
+					}
+				}
+			};
+
+			function g() {
+				i = h[k](function() {
+						a.each(function() {
+							var n = $(this),
+								m = n.width(),
+								l = n.height(),
+								o = $.data(this, d);
+							if (m !== o.w || l !== o.h) {
+								n.trigger(j, [o.w = m, o.h = l]);
+							}
+						});
+						g();
+					},
+					e[b]);
+			}
+		})(jQuery, this);
+		//结束
+
+		//======表情
+		$(function() {
+			// Initializes and creates emoji set from sprite sheet
+			window.emojiPicker = new EmojiPicker({
+				emojiable_selector: '[data-emojiable=true]',
+				assetsPath: 'lib/img/',
+				popupButtonClasses: 'fa fa-smile-o'
+			});
+			// Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+			// You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+			// It can be called as many times as necessary; previously converted input fields will not be converted again
+			window.emojiPicker.discover();
+		});
+		//结束
+
+		//======加载更多
+		var myScroll,
+			pullDownEl,
+			pullDownOffset,
+			pullUpEl,
+			pullUpOffset,
+			generatedCount = 0;
+
+
+		var init_ = {
+
+			pullDownAction: function() {
+				console.log('up');
+				setTimeout(function() {
+					myScroll.refresh();
+				}, 1000);
+			},
+
+			pullUpAction: function() {
+				console.log('down');
+				setTimeout(function() {
+					myScroll.refresh();
+				}, 1000);
+			},
+			scroll_loaded: function() {
+				console.log('loaded');
+				pullDownEl = $('#pullDown'); //document.getElementById('pullDown');//$('#pullDown');
+				pullDownOffset = parseInt(pullDownEl.height()); //pullDownEl.offsetHeight;
+				pullUpEl = $('#pullUp');
+				pullUpOffset = parseInt(pullUpEl.height());
+
+				myScroll = new iScroll($('#chatScroller')[0], {
+					scrollbars: true,
+					mouseWheel: true,
+					interactiveScrollbars: true,
+					shrinkScrollbars: 'scale',
+					fadeScrollbars: true,
+					bounce: true,
+					useTransition: true, //表示是否使用css3中的过渡效果，默认为true;
+					topOffset: pullDownOffset, //pullDown区间高度
+					hScrollbar: true, //false隐藏水平方向上的滚动条
+					vScrollbar: false, // false 隐藏垂直方向上的滚动条
+					onRefresh: function() {
+						if (pullDownEl.hasClass('loading')) {
+							add_remove_next('loading', 'flip', pullDownEl, '.pullDownLabel', 'Pull down to load more...', 0);
+						} else if (pullUpEl.hasClass('loading')) {
+							add_remove_next('loading', 'flip', pullUpEl, '.pullUpLabel', 'Pull up to refresh...', 0);
+						}
+					},
+					onScrollMove: function() {
+						console.log('on_scroll_move');
+						$('div.box.chatBox > div.content ul.chatList > li').removeClass('active');
+						if (this.y > 5 && !pullDownEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullDownEl, '.pullDownLabel', 'Release to load more...', 1);
+							this.minScrollY = 0;
+						} else if (this.y < 5 && pullDownEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullDownEl, '.pullDownLabel', 'Pull down to load more...', 0);
+							this.minScrollY = -pullDownOffset;
+						} else if (this.y < (this.maxScrollY - 5) && !pullUpEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullUpEl, '.pullUpLabel', 'Release to refresh...', 1);
+							this.maxScrollY = this.maxScrollY;
+						} else if (this.y > (this.maxScrollY + 5) && pullUpEl.hasClass('flip')) {
+							add_remove_next('flip', '', pullUpEl, '.pullUpLabel', 'Pull up to refresh...', 0);
+							this.maxScrollY = pullUpOffset;
+						} else {
+							return false;
+						}
+					},
+					onScrollEnd: function() {
+						if (pullDownEl.hasClass('flip')) {
+							add_remove_next('loading', '', pullDownEl, '.pullDownLabel', 'Loading...', 1);
+							init_.pullDownAction();
+						} else if (pullUpEl.hasClass('flip')) {
+							add_remove_next('loading', '', pullUpEl, '.pullUpLabel', 'Loading...', 1);
+							init_.pullUpAction();
+						} else {
+							return false;
+						}
+					}
+				});
+
+				setTimeout(function() {
+					$('#chatScroller').css({
+						'left': '0'
+					});
+				}, 300);
+
+				function add_remove_next(c1, c2, dom_p, dom, txt, type) {
+					if (type == 1) {
+						dom_p.addClass(c1).find(dom).html(txt);
+					} else {
+						c2 ? dom_p.removeClass(c2) : '';
+						dom_p.removeClass(c1).find(dom).html(txt);
+					}
+				}
+
+			},
+			scroll_to_bottom: function() {
+				myScroll.scrollToElement($("#pullUp")[0], 300);
+			}
+		}
+
+		//结束
+
+		//=====================
+		//
+		//       ready
+		//
+		//=====================
+		$(document).ready(function() {
+			// 聊天======滚动/加载更多
+			init_.scroll_loaded();
+			//结束
+
+			// 聊天======呼出/关闭 输入工具条
+			$('div.inputbar a.tools').click(function() {
+				if ($(this).hasClass('open')) {
+					$(this).removeClass('open');
+					$(this).parents('div.inputBar').find('div.toolbar').hide();
+				} else {
+					$(this).addClass('open');
+					$(this).parents('div.inputBar').find('div.toolbar').fadeIn();
+				}
+			});
+			//结束
+
+			// 聊天======呼出输入框下功能菜单
+			$('div.toolbar a.ds').on('click', function() {
+				$(this).parents('div.inputBar').addClass('ds');
+				$(this).parents('div.inputBar').children('.toolbar').hide();
+			});
+			$('div.inputBar li.title > a.closebtn').on('click', function() {
+				$(this).parents('div.inputBar').removeClass('bp').removeClass('hb').removeClass('ds').removeClass('sr');
+				$(this).parents('div.inputBar').children('.toolbar').show();
+			});
+			//结束
+
+			// 聊天======删输入框中图片
+			$('div.inputbar a.imgMassage').click(function() {
+				$(this).remove();
+			});
+			//结束
+
+			// 聊天======气泡框高度改变 与 滚动位置 
+			$(".inputBar").resize(function() {
+				var inputBarAddHeight = $('div.inputBar').height() - 42;
+				$(this).parents('div.chatBox').children('div.content').css({
+					height: 'calc(100% - ' + (inputBarAddHeight + 114) + 'px)'
+				});
+				myScroll.refresh();
+				myScroll.scrollToElement($("#pullUp")[0], 300);
+			});
+			$('.inputBar div.input').click(function() {
+				myScroll.scrollToElement($("#pullUp")[0], 300);
+				var bodyHeight = $(window).height();
+				$(window).scrollTop(bodyHeight);
+			});
+			//结束
+
+			// 聊天======点击大图/关闭大图/大图拖动
+			$('img.userImgMsg').on('click', function() {
+				var userImgMsgLocation = $(this)[0].src;
+				$('section.chatMsg_img').append("<div class='image pinch-zoom'><img/></div>");
+				$(".pinch-zoom > img").attr('src', userImgMsgLocation);
+				new RTP.PinchZoom($('.pinch-zoom'), {});
+
+				$('section.chatMsg_img').fadeIn();
+			});
+
+			$('section.chatMsg_img').click(function() {
+				$(this).fadeOut();
+				$('section.chatMsg_img > div').remove();
+			});
+			//结束
+
+
+			// 聊天======消息操作显示/隐藏
+			$('.chatList > li div.chatBubble > div.content').on('click', function() {
+				if ($(this).parents('.chatList > li').hasClass('chat-my')) {
+					$(this).parents('.chatList > li').addClass('active').siblings().removeClass('active');
+				} else {
+					$('.chatList > li').removeClass("active");
+				}
+				myScroll.refresh();
+			});
+			//结束
+
+			// 聊天======用户信息显示/隐藏
+			$(document).on('click', '.chatList > li > i', function() {
+				$('section.info').fadeIn();
+				$('section.info > div.content.user').slideDown();
+			});
+			$(document).on('click', 'section.info > div.bg', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.user').slideUp();
+			});
+			$(document).on('click', 'section.info a.closebtn', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.user').slideUp();
+			});
+			//结束
+			
+			
+			// 聊天======酒吧信息显示/隐藏
+			$(document).on('click', '.chatBox.index > div.title > a.text', function() {
+				$('section.info').fadeIn();
+				$('section.info > div.content.user').slideDown();
+			});
+			$(document).on('click', 'section.info > div.bg', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.user').slideUp();
+			});
+			$(document).on('click', 'section.info a.closebtn', function() {
+
+				$('section.info').fadeOut();
+				$('section.info > div.content.user').slideUp();
+			});
+			//结束
+		});
+
+	</script>
+</body>
+
+</html>

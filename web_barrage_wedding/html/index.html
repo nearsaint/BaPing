@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<meta name="renderer" content="webkit">
+	<title>弹幕 swiper版</title>
+	<!-- Font Awesome -->
+	<link href="css/font-awesome-4.7.0.min.css" rel="stylesheet">
+	<!-- swiper -->
+	<link href="css/swiper.min.css" rel="stylesheet">
+	<!-- animate -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- base -->
+	<link href="css/base.css" rel="stylesheet">
+	<!-- style -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- list -->
+	<link href="css/list.css" rel="stylesheet">
+	<!-- bp -->
+	<link href="css/bp.css" rel="stylesheet">
+	<!-- ds -->
+	<link href="css/ds.css" rel="stylesheet">
+	<!-- hb -->
+	<link href="css/hb.css" rel="stylesheet">
+	<!-- join -->
+	<link href="css/join.css" rel="stylesheet">
+	<!-- avatar -->
+	<link href="css/avatar.css" rel="stylesheet">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv-3.7.2.js"></script>
+      <script src="js/respond-1.4.2.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section class="header">
+		<h5 class="name center"><i class="l"></i><span>李磊</span><i class="min"></i><span>韩梅梅</span><i class="r"></i></h5>
+		<!--		<marquee scrollamount=5><span>我是第一条跑马灯</span><span>我是第二条跑马灯</span><span>我是第三条跑马灯</span></marquee>-->
+	</section>
+	<!-- end .header -->
+	<section class="bubble fontsize-XL">
+
+	</section>
+	<section class="list">
+		<div class="swiper-container swiper-bubble">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="on_chat" style="top:180px;">
+						<div class="bubble hasImage">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1"><b></b></i>
+							<h5 class="userName">Herman</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">自己抢去丽自己抢去丽自己抢去丽自己抢去丽</h6>
+							<i class="icon"></i>
+							<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=234678545,1658968919&fm=173&s=1A05FC0460005AF9120E3044030050FD&w=600&h=839&img.JPEG">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_hongbao" style="top:180px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1"><b></b></i>
+							<h5 class="userName">Herman 塞了[200元]红包</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">自己抢,去丽池吧!</h6>
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat move" style="top:320px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(images/userAvatar.jpeg);" sex="2"><b></b></i>
+							<h5 class="userName">贱贱小碧池</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">我饿了!!谁下面给我吃</h6>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_wall move" style="top:110px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(images/userAvatar.jpeg);" sex="2"><b></b></i>
+							<h5 class="userName">贱贱小碧池</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">我饿了!!谁下面给我吃</h6>
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_gift" style="top:430px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/wDGDpYBPmLalcOWOFzgwy89OgA5YicKd4m8PsAtlyqlycdo8ESNqUC7SJmEmicpWEezSibjSkRhIuBiaWNucYsekwdnVxgYuFUaS/0);" sex="1"><b></b></i>
+							<h5 class="userName">小津津 送出超级跑车</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">字字字字字字字字字字字字字字字</h6>
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<!--
+				<div class="swiper-slide">
+					<div class="on_chat" style="bottom:20px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/wDGDpYBPmLalcOWOFzgwy89OgA5YicKd4m8PsAtlyqlycdo8ESNqUC7SJmEmicpWEezSibjSkRhIuBiaWNucYsekwdnVxgYuFUaS/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">小津津</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">有! 我兄弟! 微信名 Herman! 你找他!</h6>
+							<img class="imageMsg" src="http://upyunoss.balabalafun.cn/uploads/2017/06/13/upload_w9bg9aglgaiotjqj23nmvcxvuuybz66g">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat" style="bottom:0px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">Herman</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">有着你便有着我!真爱是永不死!</h6>
+							<img class="imageMsg" src="http://upyunoss.balabalafun.cn/uploads/2017/06/13/upload_w9bg9aglgaiotjqj23nmvcxvuuybz66g">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat" style="top:60px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(images/userAvatar.jpeg);" sex="2" money="1"><b></b></i>
+							<h5 class="userName">贱贱小碧池</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">两个一起来! </h6>
+							<img class="imageMsg" src="http://balabalafun.b0.upaiyun.com/uploads/2017/06/13/upload_qz39p11mcgquxfqh0juknxypn8tkfi4e">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">Herman</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg"> 不来不来! 后面留给兄弟吃!后面留给兄弟吃!后面留给兄弟吃! 重要的事说三遍!</h6>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/wDGDpYBPmLalcOWOFzgwy89OgA5YicKd4m8PsAtlyqlycdo8ESNqUC7SJmEmicpWEezSibjSkRhIuBiaWNucYsekwdnVxgYuFUaS/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">小津津</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg"> 滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚滚!</h6>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_gift" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/wDGDpYBPmLalcOWOFzgwy89OgA5YicKd4m8PsAtlyqlycdo8ESNqUC7SJmEmicpWEezSibjSkRhIuBiaWNucYsekwdnVxgYuFUaS/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">小津津</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">打赏[超级跑车] 给 Herman<br>下面给我吃!</h6>
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_redbag" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">Herman</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">塞了[200元]红包 给 小津津<br>自己抢,去丽池吧!</h6>
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_birth" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(images/userAvatar.jpeg);" sex="2" money="1"><b></b></i>
+							<h5 class="userName">贱贱小碧池</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">为 贱贱小碧池 生日霸屏<br>祝自己生日快乐!今晚我生日,你们两真的不来? 宁愿互吃后面?</h6>
+							<img class="imageMsg" src="http://upyunoss.balabalafun.cn/uploads/2017/06/13/upload_w9bg9aglgaiotjqj23nmvcxvuuybz66g">
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat on_ba" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(images/userAvatar.jpeg);" sex="2" money="1"><b></b></i>
+							<h5 class="userName">贱贱小碧池</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">重金霸屏<br>你们两给我过来!后面给你吃!</h6>
+							<img class="imageMsg" src="http://upyunoss.balabalafun.cn/uploads/2017/06/13/upload_w9bg9aglgaiotjqj23nmvcxvuuybz66g">
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="on_chat" style="top:80px;">
+						<div class="bubble">
+							<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1" money="1"><b></b></i>
+							<h5 class="userName">Herman</h5>
+							<b class="msgTime">07-20 17:39</b>
+							<h6 class="textMsg">马上就到!</h6>
+						</div>
+					</div>
+				</div>
+-->
+			</div>
+			<!-- end .swiper-wrapper -->
+		</div>
+		<!-- end .swiper-container -->
+	</section>
+	<!-- end .list -->
+	<section class="qrCode bottomNright">
+
+		<div class="swiper-container swiper-qrcode">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><span class="logo" style="background-image: url(images/love_w.png)"></span><img src="http://upyunoss.balabalafun.cn/uploads/2017/06/28/upload_b8fecr6ev1d5eougcco0wvn44181sv85.png">
+
+					<h5>扫一扫进入聊天室</h5>
+				</div>
+			</div>
+		</div>
+		<i class="border-t"></i>
+		<i class="border-l"></i>
+		<i class="border-r"></i>
+		<i class="border-b"></i>
+	</section>
+	<!-- end .qrCode -->
+
+	<section class="hb animated fadeIn hiden">
+
+		<!--
+		<ul class="couten">
+</ul>
+-->
+
+		<div class="avatar avatarGold bounceIn">
+			<div class="bg"></div>
+			<span style="
+	background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);"></span>
+			<i></i>
+			<div class="text">
+				<div class="name"><span>新娘的二舅<br>Herman</span>发了个<strong>1000元</strong>的红包</div>
+				<div class="wish">早点生个大胖子早点生个大胖子早点生个大胖子早点生个大</div>
+			</div>
+			<dd></dd>
+		</div>
+		<div class="mark"></div>
+	</section>
+	<!-- end .hb 红包 -->
+
+	<section class="bp hiden">
+		<div class="flash">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1200" height="1200" title="flash">
+				<param name="movie" value="images/BANNER.swf" />
+				<param name="quality" value="high" />
+				<param name="wmode" value="transparent">
+				<embed src="images/test5.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1200" height="1200" wmode=transparent />
+			</object>
+		</div>
+		<div class="bg btxl"></div>
+		<div class="text">
+			<div class="bubble">
+				<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1"><b></b><dd></dd></i>
+				<h5 class="userName" sex="1">
+					<span>新娘的前男友</span> <span>Herman</span>
+				</h5>
+				<span class="line"></span>
+				<h6 class="textMsg">祝福新人新婚快乐,白头偕老,爱情永恒。</h6>
+				<i class="borderL"></i>
+				<i class="borderR"></i>
+				<i class="borderB"></i>
+				<i class="borderBB"></i>
+			</div>
+			<i class="type">霸屏<b>64</b>秒</i>
+			<b class="time">05-04 17:39</b>
+		</div>
+	</section>
+	<!-- end .bp -->
+
+	<section class="bp on_gift hiden">
+		<div class="flash">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1200" height="1200" title="flash">
+				<param name="movie" value="images/BANNER.swf" />
+				<param name="quality" value="high" />
+				<param name="wmode" value="transparent">
+				<embed src="images/01.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1200" height="1200" wmode=transparent />
+			</object>
+		</div>
+		<div class="bg btxl"></div>
+		<div class="text">
+			<div class="bubble">
+				<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1"><b></b><dd></dd></i>
+				<h5 class="userName" sex="1">
+					<span>新娘的前男友</span> <span>Herman</span>
+				</h5>
+				<span class="line"></span>
+				<h6 class="textMsg"><span>送给新人皮皮虾一对</span>祝福新人新婚快乐,白头偕老,爱情永恒。</h6>
+				<i class="borderL"></i>
+				<i class="borderR"></i>
+				<i class="borderB"></i>
+				<i class="borderBB"></i>
+			</div>
+			<i class="type">霸屏<b>64</b>秒</i>
+			<b class="time">05-04 17:39</b>
+		</div>
+	</section>
+	<!-- end .ds -->
+
+	<section class="hb-xc hiden">
+		<div class="on_xchongbao animated bounceInRight">
+			<b></b>
+			<i class="userAvatar avarat" style="background-image: url(http://wx.qlogo.cn/mmopen/ajNVdqHZLLBoT0NKhJ8ibys3MPNvaEcCzC5rPAYPic0gA7SaibvyYAaRVn8ojOia18pDAic2GzOxTf6m24x1icjr5dEjtBzRan5hd1sDN0qfl4bng/0);" sex="1"><b></b></i>
+			<h5 class="userName"><span>Herman</span>发了22个红包</h5>
+			<b class="msgTime">07-20 17:39</b>
+			<h6 class="textMsg">谢谢参与我前男票的婚谢谢参与我前男票的婚谢谢参与我前男票的婚</h6>
+			<h3>(扫码进入抢红包)</h3>
+		</div>
+	</section>
+	<!-- end .hb-xc -->
+
+	<section class="bg">
+		<div class="img-bg" style="background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502875562642&di=92c44c0849dd7257551ed2a12e2ec4e9&imgtype=0&src=http%3A%2F%2Fpic6.wed114.cn%2F20140528%2F2014052816454660.jpg);"></div>
+		<div class="media-bg">
+			<video src="images/white.mov" autoplay loop muted></video>
+		</div>
+	</section>
+	<!-- end .bg -->
+
+	<!--Include jquery -->
+	<script src="js/jquery-3.2.1.min.js "></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!--Include jquery.swiper -->
+	<script src="js/jquery.swiper-3.4.2.min.js "></script>
+	<script>
+		var _setFont = function() {
+			var w = $(window).width();
+			var h = $(window).height();
+			var maxWidth = 1920;
+			var maxHeight = 960;
+			if (w >= h) {
+				var zoom = h / maxHeight;
+				if (w / h > 3 && w / maxWidth > 2) {
+					zoom += 0.1;
+				}
+				$('section.content').css({
+					zoom: zoom
+				});
+				$('section.bp').css({
+					zoom: zoom
+				});
+				$('section.bp.on_gift div.bubble').css({
+					zoom: zoom
+				});
+				$('section.ds').css({
+					zoom: zoom
+				});
+			} else {
+				var zoom = w / maxWidth;
+				$('section.content').css({
+					zoom: zoom
+				});
+				$('section.bp').css({
+					zoom: zoom
+				});
+				$('section.ds').css({
+					zoom: zoom
+				});
+			}
+		};
+		$(window).bind('resize', function() {
+			_setFont();
+		});
+		var change_chat = function() {
+			var chatBox = $(".swiper-bubble > .swiper-wrapper");
+			var time = 5000;
+			var time2 = time * 3;
+			var html = "<div class='bubble-item'>" + chatBox.find("div:first").html() + "</div>";
+			var bubble = $("section.bubble");
+			bubble.append(html);
+			var bubbleW = bubble.find("div.bubble-item:last").width();
+			bubble.find("div.bubble-item:last").animate({
+				left: 0 - bubbleW,
+			}, time2, 'linear', function() {
+				$(this).remove();
+			});
+			setTimeout(function() {
+				chatBox.append(chatBox.find("div:first"));
+				next();
+			}, time);
+
+			function next() {
+				try {
+					chatBox = null;
+				} catch (e) {
+					console.log(e);
+				} finally {
+					change_chat();
+				}
+			}
+		}
+
+
+
+		//		var change_chat = function() {
+		//			var chatBox = $(".swiper-bubble > .swiper-wrapper");
+		//			var chatBoxLiW
+		//
+		//			chatBox.find("div.swiper-slide").eq(0).addClass('showing');
+		//			chatBox.find("div.swiper-slide").eq(1).addClass('showing');
+		//			chatBox.find("div.swiper-slide").eq(2).addClass('showing');
+		//			chatBoxLiW = chatBox.width() / 2;
+		//			chatBox.animate({
+		//				marginLeft: -1 * chatBoxLiW,
+		//			}, 5000, 'linear', function() {
+		//				chatBox.find("div:first").removeClass("showing");
+		//				chatBox.append(chatBox.find("div:first"));
+		//				chatBox.animate({
+		//					marginLeft: 0
+		//				}, 0, function() {
+		//					next();
+		//				});;
+		//			});
+		//
+		//			function next() {
+		//				try {
+		//					chatBox = null;
+		//					chatBoxLiW = null;
+		//				} catch (e) {
+		//					console.log(e);
+		//				} finally {
+		//					change_chat();
+		//				}
+		//			}
+		//		}
+
+
+		// windows.ready
+		$(document).ready(function() {
+			change_chat();
+			_setFont();
+			//swiper
+			//			var willRemove = 1; // var i = 0; // var remove = function() { // mySwiper.removeSlide([0, 1]); // mySwiper.reLoop(); // mySwiper.startAutoplay(); // } // var mySwiper = new Swiper('.swiper-bubble', { // autoplay: 1, //可选选项，自动滑动 // loop: true, //循环 // speed: 5000, //滑动速度 // spaceBetween: 20, //间隔 // freeMode: true, // slidesPerView: 'auto', // slidesPerGroup: 1, // // onTransitionStart: function(swiper) { // // if (willRemove == 1) { // // i++; // // console.log(i); // // if (i == 6) { // // remove(); // // willRemove = 0; // // } // // } // // },//删除空白 // });
+			//end swiper
+
+			var mySwiper = new Swiper('.swiper-qrcode', {
+				loop: true,
+				autoplay: 3000,
+				effect: 'cube',
+				cube: {
+					slideShadows: true,
+					shadow: true,
+					shadowOffset: 100,
+					shadowScale: 0.6
+				}
+			});
+
+			var win = (parseInt($(".couten").css("width"))) - 60;
+			$(".couten").css({
+				height: $(document).height(),
+				width: $(document).width(),
+			});
+			$("li").css({});
+			var add = function() {
+					var hb = parseInt(Math.random() * (3 - 1) + 1);
+					var Wh = parseInt(Math.random() * (60 - 10) + 20);
+					var Left = parseInt(Math.random() * (win - 0) + 0);
+					var rot = (parseInt(Math.random() * (45 - (-45)) - 45)) + "deg";
+					num++;
+					$(".couten").append("<li class='li" + num + "' ><a href='javascript:;'><img src='images/hb_" + hb + ".png'></a></li>");
+					$(".li" + num).css({
+						"left": Left,
+					});
+					$(".li" + num + " a img").css({
+						"width": Wh,
+						"transform": "rotate(" + rot + ")",
+						"-webkit-transform": "rotate(" + rot + ")",
+						"-ms-transform": "rotate(" + rot + ")",
+						/* Internet Explorer */
+						"-moz-transform": "rotate(" + rot + ")",
+						/* Firefox */
+						"-webkit-transform": "rotate(" + rot + ")",
+						/* Safari 和 Chrome */
+						"-o-transform": "rotate(" + rot + ")" /* Opera */
+					});
+					$(".li" + num).animate({
+						'top': $(window).height() + 20
+					}, 5000, function() {
+						this.remove()
+					});
+					setTimeout(add, 300)
+				}
+				//增加红包
+			var num = 0;
+			add();
+		});
+		// end windows.ready
+
+	</script>
+</body>
+
+</html>

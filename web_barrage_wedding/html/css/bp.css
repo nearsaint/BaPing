@@ -1,0 +1,457 @@
+@charset "UTF-8";
+meta.cssInfo {
+	name: 'bp.css';
+	author: 'NearSaint';
+	time: '2017.0821';
+}
+body > section.bg > div.mask,
+section.bp {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+section.bp {
+	right: 0;
+	z-index: 99;
+	overflow: hidden;
+}
+section.bp > div.flash {
+	position: absolute;
+	top: -270px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 2;
+}
+section.bp > div.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+section.bp > div.bg.btxl {
+	background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(219, 151, 191, 0.94)), to(rgba(177, 180, 219, 0.94)));
+	/*	background: rgba(0, 0, 0, .9);*/
+}
+section.bp > div.text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+section.bp > div.text > .bubble {
+	position: absolute;
+	left: 50%;
+	top: 640px;
+	height: auto;
+	width: 600px;
+	display: inline-block;
+	margin: 0 auto;
+	/*
+	border: 4px dashed rgba(255, 255, 255, 0.9);
+background-color: rgba(0, 0, 0, 0.5);
+*/
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 60px 20px 20px;
+	z-index: 3;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+section.bp > div.text > .bubble > i.userAvatar {
+	height: 80px;
+	width: 80px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	top: -86px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 5;
+}
+section.bp > div.text > .bubble > i.userAvatar > dd {
+	display: block;
+	position: absolute;
+	height: 490px;
+	width: 488px;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background-image: url(../images/images/bp-top.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -6;
+}
+section.bp > div.text > .bubble > h5.userName {
+	line-height: 32px;
+	height: 32px;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: -webkit-calc(100% - 40px);
+	width: -moz-calc(100% - 40px);
+	width: -webkit-calc(100% - 40px);
+	width: calc(100% - 40px);
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+/*
+section.bp > div.text > .bubble > h5.userName[sex="1"] {
+	color: #00b7ee;
+}
+section.bp > div.text > .bubble > h5.userName[sex="2"] {
+	color: #e4007f;
+}
+*/
+
+section.bp > div.text > .bubble > h5.userName > span {
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	max-width: 50%;
+	display: inline-block;
+	padding: 0 5px;
+}
+section.bp > div.text > .bubble > h5.userName > span.left {
+	text-align: right;
+	left: 0;
+}
+section.bp > div.text > .bubble > h5.userName > span.right {
+	text-align: left;
+	right: 0;
+}
+section.bp > div.text > .bubble > h6.textMsg {
+	font-size: 42px;
+	text-align: center;
+	padding: 20px 10px 10px;
+	line-height: 1.4em;
+	/*	border-top: 1px solid #fff;*/
+	color: #fff;
+}
+section.bp > div.text > .bubble > h6.textMsg {
+	-webkit-background-clip: text;
+	-webkit-background-size: 200% 100%;
+	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(left, #f1c40f, #fff000 10%, #fff 20%, #fff000 30%, #cbb524 40%, #f1c40f 50%, #fff000 60%, #fff 70%, #fff000 80%, #cbb524 90%, #f1c40f);
+	/*	background-image: -webkit-linear-gradient(left, #c0392b, #e74c3c 10%, red 20%, #fff 30%, red 40%, #c0392b 50%, #e74c3c 60%, red 70%, #fff 80%, red 90%, #c0392b);*/
+	/*	background-image: -webkit-linear-gradient(left, #ff1abc, #e71aff 10%, #c554ff 20%, #fff 30%, #c554ff 40%, #ff1abc 50%, #e71aff 60%, #c554ff 70%, #fff 80%, #c554ff 90%, #ff1abc);*/
+	-webkit-animation: on_wall_font 1.6s infinite linear;
+}
+@-webkit-keyframes on_wall_font {
+	0% {
+		background-position: 0 0
+	}
+	to {
+		background-position: -100% 0
+	}
+}
+section.bp > div.text > .bubble > span.line {
+	height: 1px;
+	width: 420px;
+	background: #fff;
+	display: block;
+	margin: 0 auto;
+}
+section.bp > div.text > .bubble > i.borderTL {
+	position: absolute;
+	background-image: url(../images/border-ds.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	top: -50px;
+	left: -50px;
+	height: 140px;
+	width: 140px;
+}
+section.bp > div.text > .bubble > i.borderBR {
+	position: absolute;
+	background-image: url(../images/border-ds.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: block;
+	bottom: -50px;
+	right: -50px;
+	height: 140px;
+	width: 140px;
+	-webkit-transform: scaleX(-1) scaleY(-1);
+	-moz-transform: scaleX(-1) scaleY(-1);
+	-ms-transform: scaleX(-1) scaleY(-1);
+	-o-transform: scaleX(-1) scaleY(-1);
+	transform: scaleX(-1) scaleY(-1);
+}
+section.bp > div.text > .bubble > i.borderB {
+	position: absolute;
+	background-image: url(../images/images/bp-bottom.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	display: block;
+	bottom: -100px;
+	left: 50%;
+	height: 200px;
+	width: 500px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+section.bp > div.text > .bubble > i.borderL {
+	position: absolute;
+	background-image: url(../images/images/bp-right.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	display: block;
+	top: 70%;
+	left: -280px;
+	height: 300px;
+	width: 300px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+section.bp > div.text > .bubble > i.borderR {
+	position: absolute;
+	background-image: url(../images/images/bp-left.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+	display: block;
+	top: 70%;
+	right: -280px;
+	height: 300px;
+	width: 300px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+section.bp i.type {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	font-size: 26px;
+	color: #fff;
+	z-index: 3;
+	font-style: normal;
+}
+section.bp b.time {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-size: 26px;
+	color: #fff;
+	z-index: 3;
+	font-style: normal;
+}
+section.bp.on_gift > div.flash {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-moz-transform: translateY(-50%) translateX(-50%);
+	-ms-transform: translateY(-50%) translateX(-50%);
+	-o-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+	z-index: 2;
+}
+section.bp.on_gift > div.text > div.bubble {
+	position: absolute;
+	right: 80px;
+	left: auto;
+	top: 50%;
+	height: auto;
+	width: 640px;
+	display: inline-block;
+	margin: 0 auto;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding: 60px 20px 20px;
+	z-index: 3;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+section.bp.on_gift > div.text > .bubble > i.userAvatar {
+	height: 110px;
+	width: 110px;
+	top: -140px;
+}
+section.bp.on_gift > div.text > .bubble > i.userAvatar > dd {
+	display: block;
+	position: absolute;
+	height: 180px;
+	width: 180px;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background-image: url(../images/images/ds-top.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -6;
+}
+section.bp.on_gift > div.text > .bubble > i.borderL {
+	position: absolute;
+	background-image: url(../images/images/ds-border.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	display: block;
+	top: -120px;
+	left: 0;
+	height: 240px;
+	width: 240px;
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+section.bp.on_gift > div.text > .bubble > i.borderR {
+	position: absolute;
+	background-image: url(../images/images/ds-border.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	display: block;
+	top: -120px;
+	right: 0;
+	height: 240px;
+	width: 240px;
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	-o-transform: scaleX(1);
+	transform: scaleX(1);
+}
+section.bp.on_gift > div.text > .bubble > i.borderB {
+	position: absolute;
+	background-image: url(../images/images/ds-border.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	display: block;
+	bottom: -120px;
+	left: 0;
+	height: 240px;
+	width: 240px;
+	-webkit-transform: scaleX(-1) scaleY(-1);
+	-moz-transform: scaleX(-1) scaleY(-1);
+	-ms-transform: scaleX(-1) scaleY(-1);
+	-o-transform: scaleX(-1) scaleY(-1);
+	transform: scaleX(-1) scaleY(-1);
+}
+section.bp.on_gift > div.text > .bubble > i.borderBB {
+	position: absolute;
+	background-image: url(../images/images/ds-border.png);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	display: block;
+	bottom: -120px;
+	right: 0;
+	height: 240px;
+	width: 240px;
+	-webkit-transform: scaleX(1) scaleY(-1);
+	-moz-transform: scaleX(1) scaleY(-1);
+	-ms-transform: scaleX(1) scaleY(-1);
+	-o-transform: scaleX(1) scaleY(-1);
+	transform: scaleX(1) scaleY(-1);
+}
+section.bp.on_gift > div.text > .bubble > h6.textMsg {
+	font-size: 42px;
+	text-align: center;
+	padding: 80px 100px 40px;
+	line-height: 1.4em;
+	color: #fff;
+}
+section.bp.on_gift > div.text > .bubble > h6.textMsg > span {
+	display: block;
+	margin-bottom: 20px;
+}

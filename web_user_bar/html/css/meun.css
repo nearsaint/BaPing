@@ -1,0 +1,622 @@
+@charset "UTF-8";
+body {
+	background: #eeeeee;
+	padding: 0 20px 20px 220px;
+	transition: padding 0.3s;
+}
+
+@keyframes shake {
+	2% {
+		transform: translate(0.5px, -1.5px) rotate(-0.5deg);
+	}
+	4% {
+		transform: translate(0.5px, 1.5px) rotate(1.5deg);
+	}
+	6% {
+		transform: translate(1.5px, 1.5px) rotate(1.5deg);
+	}
+	8% {
+		transform: translate(2.5px, 1.5px) rotate(0.5deg);
+	}
+	10% {
+		transform: translate(0.5px, 2.5px) rotate(0.5deg);
+	}
+	12% {
+		transform: translate(1.5px, 1.5px) rotate(0.5deg);
+	}
+	14% {
+		transform: translate(0.5px, 0.5px) rotate(0.5deg);
+	}
+	16% {
+		transform: translate(-1.5px, -0.5px) rotate(1.5deg);
+	}
+	18% {
+		transform: translate(0.5px, 0.5px) rotate(1.5deg);
+	}
+	20% {
+		transform: translate(2.5px, 2.5px) rotate(1.5deg);
+	}
+	22% {
+		transform: translate(0.5px, -1.5px) rotate(1.5deg);
+	}
+	24% {
+		transform: translate(-1.5px, 1.5px) rotate(-0.5deg);
+	}
+	26% {
+		transform: translate(1.5px, 0.5px) rotate(1.5deg);
+	}
+	28% {
+		transform: translate(-0.5px, -0.5px) rotate(-0.5deg);
+	}
+	30% {
+		transform: translate(1.5px, -0.5px) rotate(-0.5deg);
+	}
+	32% {
+		transform: translate(2.5px, -1.5px) rotate(1.5deg);
+	}
+	34% {
+		transform: translate(2.5px, 2.5px) rotate(-0.5deg);
+	}
+	36% {
+		transform: translate(0.5px, -1.5px) rotate(0.5deg);
+	}
+	38% {
+		transform: translate(2.5px, -0.5px) rotate(-0.5deg);
+	}
+	40% {
+		transform: translate(-0.5px, 2.5px) rotate(0.5deg);
+	}
+	42% {
+		transform: translate(-1.5px, 2.5px) rotate(0.5deg);
+	}
+	44% {
+		transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+	}
+	46% {
+		transform: translate(1.5px, -0.5px) rotate(-0.5deg);
+	}
+	48% {
+		transform: translate(2.5px, -0.5px) rotate(0.5deg);
+	}
+	50% {
+		transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+	}
+	52% {
+		transform: translate(-0.5px, 1.5px) rotate(0.5deg);
+	}
+	54% {
+		transform: translate(-1.5px, 1.5px) rotate(0.5deg);
+	}
+	56% {
+		transform: translate(0.5px, 2.5px) rotate(1.5deg);
+	}
+	58% {
+		transform: translate(2.5px, 2.5px) rotate(0.5deg);
+	}
+	60% {
+		transform: translate(2.5px, -1.5px) rotate(1.5deg);
+	}
+	62% {
+		transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+	}
+	64% {
+		transform: translate(-1.5px, 1.5px) rotate(1.5deg);
+	}
+	66% {
+		transform: translate(0.5px, 2.5px) rotate(1.5deg);
+	}
+	68% {
+		transform: translate(2.5px, -1.5px) rotate(1.5deg);
+	}
+	70% {
+		transform: translate(2.5px, 2.5px) rotate(0.5deg);
+	}
+	72% {
+		transform: translate(-0.5px, -1.5px) rotate(1.5deg);
+	}
+	74% {
+		transform: translate(-1.5px, 2.5px) rotate(1.5deg);
+	}
+	76% {
+		transform: translate(-1.5px, 2.5px) rotate(1.5deg);
+	}
+	78% {
+		transform: translate(-1.5px, 2.5px) rotate(0.5deg);
+	}
+	80% {
+		transform: translate(-1.5px, 0.5px) rotate(-0.5deg);
+	}
+	82% {
+		transform: translate(-1.5px, 0.5px) rotate(-0.5deg);
+	}
+	84% {
+		transform: translate(-0.5px, 0.5px) rotate(1.5deg);
+	}
+	86% {
+		transform: translate(2.5px, 1.5px) rotate(0.5deg);
+	}
+	88% {
+		transform: translate(-1.5px, 0.5px) rotate(1.5deg);
+	}
+	90% {
+		transform: translate(-1.5px, -0.5px) rotate(-0.5deg);
+	}
+	92% {
+		transform: translate(-1.5px, -1.5px) rotate(1.5deg);
+	}
+	94% {
+		transform: translate(0.5px, 0.5px) rotate(-0.5deg);
+	}
+	96% {
+		transform: translate(2.5px, -0.5px) rotate(-0.5deg);
+	}
+	98% {
+		transform: translate(-1.5px, -1.5px) rotate(-0.5deg);
+	}
+	0%,
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}
+
+
+/***************************************
+*
+*	左侧 导航条
+*
+****************************************/
+
+section.meunLeft {
+	width: 200px;
+	height: 100%;
+	background: #fdfdfd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: width 0.3s;
+	z-index: 10;
+}
+
+section.meunLeft > div.logo {
+	background-size: 85% auto;
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+
+section.meunLeft > div.logo > a.logo {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0 20px;
+}
+
+section.meunLeft > div.logo > a.meunLeftCloseBtn {
+	display: none;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	background: #333;
+}
+
+div.meunLeftOpenBtn {
+	display: none;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+section.meunLeft > div.logo > a.logo > i {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	margin: 25px 0;
+	background-image: url(../images/logoIcon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+section.meunLeft > div.logo > a.logo > b {
+	display: inline-block;
+	height: 30px;
+	width: calc(100% - 40px);
+	max-width: 120px;
+	margin: 25px 0 25px 10px;
+	background-image: url(../images/logoText.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+section.meunLeft > div.logo > a.logo > b:hover,
+section.meunLeft > div.logo > a.logo > i:hover {
+	-webkit-animation-name: shake;
+	-ms-animation-name: shake;
+	animation-name: shake;
+	-webkit-animation-duration: 5s;
+	-ms-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-ms-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	animation-delay: 0s;
+	-webkit-animation-play-state: running;
+	-ms-animation-play-state: running;
+	animation-play-state: running;
+}
+
+section.meunLeft > div.logo > span {
+	position: absolute;
+	display: block;
+	background: #ccc;
+	height: 1px;
+	width: calc(100% - 30px);
+	top: 78px;
+	left: 15px;
+}
+
+section.meunLeft > ul {
+	padding: 15px;
+	width: 100%;
+}
+
+section.meunLeft > ul > li {
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+section.meunLeft > ul > li > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	color: #adaca7;
+	font-size: 12px;
+}
+
+section.meunLeft > ul > li.signOut {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+section.meunLeft > ul > li > a > i {
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 18px;
+	margin-right: 5px;
+}
+
+section.meunLeft > ul > li > a:focus,
+section.meunLeft > ul > li > a:active,
+section.meunLeft > ul > li > a:hover {
+	background: #f5f5f5;
+	color: #333;
+	font-size: 15px;
+}
+
+section.meunLeft > ul > li.active > a {
+	background: #F1C40F;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+section.meunLeft > ul > li.active > a > i {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+section.meunLeft > span.bg {
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 400px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: calc(100% - 400px);
+	background-image: url(../images/bg.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-color: #e3e3e3;
+}
+
+
+/******************************************************/
+
+
+/******************************************************/
+
+
+/******************************************************/
+
+
+/******************************************************/
+
+
+/******************************************************/
+
+
+/******************************************************/
+
+
+/* 超小屏幕（手机，小于 580px） */
+
+@media (max-width: 579px) {
+	body {
+		padding: 60px 15px 20px 15px;
+	}
+	span.meunLeftMask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.66);
+		z-index: 9;
+		display: none;
+	}
+	section.meunLeft {
+		width: 60px;
+		display: none;
+		left: -60px;
+	}
+	section.meunLeft > div.logo {
+		height: 60px;
+	}
+	section.meunLeft > div.logo > a.logo {
+		display: none;
+	}
+	section.meunLeft > div.logo > a.meunLeftCloseBtn {
+		display: block;
+	}
+	div.meunLeftOpenBtn {
+		display: block;
+	}
+	section.meunLeft > div.logo > span {
+		height: 1px;
+		width: 100%;
+		top: 59px;
+		left: 0;
+	}
+	section.meunLeft > ul {
+		padding: 0;
+	}
+	section.meunLeft > ul > li {
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		margin-bottom: 0;
+		overflow: hidden
+	}
+	section.meunLeft > ul > li > a {
+		border-radius: 0;
+	}
+	@media (min-height: 550px) {
+		section.meunLeft > ul > li.signOut {
+			display: block;
+		}
+	}
+	section.meunLeft > ul > li > a > i {
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+	}
+	section.meunTop {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+/* 小屏幕（平板，大于等于 580px） */
+
+@media (min-width: 580px) and (max-width: 992px) {
+	body {
+		padding: 20px 15px 20px 75px;
+	}
+	section.meunLeft {
+		width: 60px;
+		display: block;
+	}
+	section.meunLeft > div.logo {
+		height: 60px;
+	}
+	section.meunLeft > div.logo > a.logo {
+		padding: 0;
+	}
+	section.meunLeft > div.logo > a.logo > i {
+		height: 30px;
+		width: 30px;
+		margin: 15px;
+	}
+	section.meunLeft > div.logo > a.logo > b {
+		display: none;
+	}
+	section.meunLeft > div.logo > span {
+		height: 1px;
+		width: 100%;
+		top: 59px;
+		left: 0;
+	}
+	section.meunLeft > ul {
+		padding: 0;
+	}
+	section.meunLeft > ul > li {
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		margin-bottom: 0;
+		overflow: hidden
+	}
+	section.meunLeft > ul > li > a {
+		border-radius: 0;
+	}
+	section.meunLeft > ul > li > a > i {
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+	}
+	@media (min-height: 550px) {
+		section.meunLeft > ul > li.signOut {
+			display: block;
+		}
+	}
+	section.meunTop {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+	section.meunLeft {
+		width: 200px;
+		display: block !important;
+	}
+	body {
+		padding: 0 20px 20px 220px;
+	}
+}
+
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+	section.meunLeft {
+		width: 240px;
+		display: block !important;
+	}
+	body {
+		padding: 0 20px 20px 260px;
+	}
+}
+
+@media (min-width: 1600px) {
+	section.meunLeft {
+		width: 320px;
+		display: block !important;
+	}
+	body {
+		padding: 0 20px 20px 340px;
+	}
+}
+
+
+/***************************************
+*
+*	头部 工具条
+*
+****************************************/
+
+section.meunTop {
+	height: 80px;
+	width: 100%;
+}
+
+section.meunTop > div.brandMeun {
+	float: left;
+	height: 100%;
+	width: auto;
+}
+
+section.meunTop > div.brandMeun > ul {
+	color: #999;
+	line-height: 80px;
+}
+
+section.meunTop > div.brandMeun > ul > li {
+	color: #333;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+section.meunTop > div.brandMeun > ul > li > a {
+	color: #999;
+	font-size: 13px;
+}
+
+section.meunTop > div.brandMeun > ul > li > a:hover {
+	color: #000;
+	font-weight: 400;
+}
+
+section.meunTop > div.brandMeun > ul > li > a.active {
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+section.meunTop > div.tools {
+	float: right;
+	height: 80px;
+}
+
+section.meunTop > div.tools > ul {
+	height: 80px;
+}
+
+section.meunTop > div.tools > ul > li {
+	margin-left: 5px;
+	height: 80px;
+	display: inline-block;
+}
+
+section.meunTop > div.tools > ul > li > a {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 20px 0;
+	color: #999;
+	font-size: 18px;
+}
+
+section.meunTop > div.tools > ul > li > a:hover {
+	color: #000;
+}
+
+section.meunTop > div.tools > ul > li > a > b {
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 22px;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 2px solid #eeeeee;
+	background: red;
+}
